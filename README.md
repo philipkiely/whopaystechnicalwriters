@@ -76,7 +76,27 @@ The functions can be found in the `/js` folder.
 
 JavaScript for Bootstrap 5 is also loaded.
 
-Data is stored in (json || javascript).
+Data is stored in data.json and should be read into index.js.
+
+Object Structure (Bold is required):
+
+* **name**: the name of the site
+* **type**: one of publication (they pay for articles), publisher (they make book deals), agency (they find technical content work on hourly or project basis)
+* **link**: a URL to find out more information
+* contact: an email address to submit pitches
+* topics: an array of topics covered, at most 3. Options are:
+  * Front-End Development
+  * Back-End Development
+  * Data Science
+  * Infrastructure
+* minRate: The minimum a publication or agency pays for an article (int)
+* maxRate: The most a publication or agency pays for an article <3,000 words (int) (default if there's not a range)
+* royaltyRate: A publisher's royalty structure (string)
+* hourlyMinRate: An agency's hourly rate (min) (int)
+* hourlyMaxRate: An agency's hourly rate (max) (int) (default if there is not a range)
+* notes: A string of at most 140 characters.
+
+The json file itself does not need to be alphabetized (it may be though) but the data should render in alpha order on the website by default.
 
 ### Python
 
