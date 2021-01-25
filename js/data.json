@@ -1,0 +1,29 @@
+[
+    {
+        "name": "CSS Tricks",
+        "type": "publication",
+        "link": "https://css-tricks.com/guest-posting/",
+        "contact": null,
+        "topics": ["Front-End Development"],
+        "maxRate": 250
+    },
+    {
+        "name": "DigitalOcean",
+        "type": "publication",
+        "link": "https://www.digitalocean.com/community/pages/write-for-digitalocean",
+        "topics": ["Infrastructure"],
+        "maxRate": 300
+    },
+    {
+        "name": "No Starch Press",
+        "type": "publisher",
+        "link": "https://nostarch.com/writeforus",
+        "contact": "editors@nostarch.com",
+        "royaltyRate": "15%"
+    },
+    {
+        "name": "ContentLab",
+        "type": "agency",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    }
+]
