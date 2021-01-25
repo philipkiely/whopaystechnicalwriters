@@ -19,12 +19,120 @@
 </head>
 <body>
     <!--Shared Header-->
-<div class="container">
-    
-<h1>Form</h1>
+    <header class="w-100" style="background: #FFF0A7;">  
+        <div class="container d-flex justify-content-between align-items-center py-4">
+            <h4 class="mono fst-italic">Who Pays Technical Writers?</h4>
+            <img src="img/graphic.svg" class="w-25" style="min-width: 240px" alt="illustration">
+        </div>
+    </header>
 
-</div>
-<!--Shared Right Sidebar (Moves to Bottom on Mobile)-->
-<!--Shared Footer-->
+    <section class="container py-4 pt-5">
+        <div class="row">
+
+            
+    <div class="col-lg-9 order-lg-1 mb-5">
+                
+
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span>Suggest a resource</span>
+            <a class="link fs-6 mx-4 link-custom" style="cursor: pointer" href="index.html">Return home</a>
+        </h4>                
+        <form class="needs-validation" novalidate>
+
+            <div class="mb-3">
+                <label for="username">What publisher(s) do you know of that are not currently listed?</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                    Your username is required.
+                    </div>
+                </div>
+            </div>
+            <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="same-address">
+                <label class="custom-control-label" for="same-address">Publishers listed pay for all content</label>
+            </div>      
+            <div class="mb-3">
+                <label for="username">Additional details</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                    Your username is required.
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="username">Suggestions or comments about the website</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                    <div class="invalid-feedback" style="width: 100%;">
+                    Your username is required.
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- inputs for min/max rates -->
+            <!-- <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="username">Username</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="username" placeholder="Username" required>
+                        <div class="invalid-feedback" style="width: 100%;">
+                        Your username is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="username">Username</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" id="username" placeholder="Username" required>
+                        <div class="invalid-feedback" style="width: 100%;">
+                        Your username is required.
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <button class="btn btn-custom btn-block" type="submit">Submit</button>
+        </form>
+
+    </div>
+
+            <aside class="col-lg-3 order-lg-2 inline-flex pt-lg-0 pt-2 mt-lg-0 mt-2">
+                <hr class="d-block d-lg-none mx-auto" style="max-width: calc(100% - var(--bs-gutter-x));"></hr>
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span>About this website</span>
+                </h4>
+                <img class="w-25 float-end rounded m-1" style="max-width: 75px;" src="img/headshot.jpg">
+                <p>
+                    This website was made by <a href="http://philipkiely.com" target="_blank">Philip Kiely</a>.
+                </p>
+                <p>
+                    If you write technical tutorials, or you want to in the future, you should read <a href="https://writingforsoftwaredevelopers.com/" target="_blank">his book</a>.</p>
+                </p>
+                <p>
+                    Design and frontend development by <a href="https://jeev.me" class="link" target="_blank">Jeev Prayaga</a>.
+                </p>
+            </aside>
+
+        </div>
+
+
+
+    </section>
+
+    <!--Shared Right Sidebar (Moves to Bottom on Mobile)-->
+
+    <!--Shared Footer-->
+    <footer class="container pt-4 my-md-5 pt-md-5 border-top">
+        Footer goes here
+    </footer>
 </body>
 </html>
