@@ -11,6 +11,7 @@ TODO:
 * Netlify Function
 * Deploy/live
 * Analytics (incl link to parametered philipkiely.com)
+* Standardize to /dist folder structure
 
 
 ## Setup
