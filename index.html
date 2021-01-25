@@ -19,12 +19,125 @@
 </head>
 <body>
     <!--Shared Header-->
-<div class="container">
-    
-<h1>Index 3</h1>
+    <header class="w-100" style="background: #FFF0A7;">  
+        <div class="container d-flex justify-content-between align-items-center py-4">
+            <h4 class="mono fst-italic">Who Pays Technical Writers?</h4>
+            <img src="img/graphic.svg" class="w-25" style="min-width: 240px" alt="illustration">
+        </div>
+    </header>
 
+    <section class="container py-4 pt-5">
+        <div class="row">
+
+            
+<!-- 
+<section class="w-100 p-0 bg-accent text-white" style="border-top: 16px solid var(--accent-color-dark)">
+    <div class="container py-4 d-flex justify-content-between flex-wrap flex-md-nowrap align-items-start" >
+        <p class="fs-5 flex-fill col-md-8 ">            
+            A very partial and incomplete list of sites known to pay for technical tutorials and other articles of interest to software developers.
+        </p>
+        <div class="flex-fill">
+            <button style="background: var(--accent-color-dark)" type="button" class="btn btn-custom float-end text-nowrap text-light" onclick="window.location.href='form.html'">
+                Suggest a resource
+            </button>
+        </div>
+    </div>
+</section> -->
+
+<div class="col-lg-9 order-lg-1">
+        
+    <div class="">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span>Displaying 49 publications</span>
+            <a class="link fs-6 mx-4 link-custom" style="cursor: pointer" href="form.html">Suggest a resource</a>
+        </h4>
+        
+        <form class="row g-2 align-items-center my-3">
+            <div class="col-md-8">
+                <div class="input-group col-md-5">
+                    <input type="text" class="form-control" placeholder="Filter by publication, agency, or topic">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="input-group col-md-3">
+                    <div class="input-group-text">Sort by</div>
+                    <select class="form-select" id="inlineFormSelectPref">
+                        <option selected>A-Z</option>
+                        <option value="1">Rate (low to high)</option>
+                        <option value="2">Rate (high to low)</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="my-4 mb-5">
+        <div class="card my-2">
+            <div class="card-body">
+                <h5 class="card-title">PaperSpace</h5>
+                <p class="card-text">
+                    <span class="fw-bold">$300 - $400</span> for first article
+                </p>
+            </div>
+        </div>
+        <div class="card my-2">
+            <div class="card-body">
+                <h5 class="card-title">PaperSpace</h5>
+                <p class="card-text">
+                    <span class="fw-bold">$300 - $400</span> for first article
+                </p>
+            </div>
+        </div>
+        <div class="card my-2">
+            <div class="card-body">
+                <h5 class="card-title">PaperSpace</h5>
+                <p class="card-text">
+                    <span class="fw-bold">$300 - $400</span> for first article
+                </p>
+            </div>
+        </div>
+        <div class="card my-2">
+            <div class="card-body">
+                <h5 class="card-title">PaperSpace</h5>
+                <p class="card-text">
+                    <span class="fw-bold">$300 - $400</span> for first article
+                </p>
+            </div>
+        </div>
+    </div>
+      
 </div>
-<!--Shared Right Sidebar (Moves to Bottom on Mobile)-->
-<!--Shared Footer-->
+
+
+            <aside class="col-lg-3 order-lg-2 inline-flex pt-lg-0 pt-2 mt-lg-0 mt-2">
+                <hr class="d-block d-lg-none mx-auto" style="max-width: calc(100% - var(--bs-gutter-x));"></hr>
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span>About this website</span>
+                </h4>
+                <img class="w-25 float-end rounded m-1" style="max-width: 75px;" src="img/headshot.jpg">
+                <p>
+                    This website was made by <a href="http://philipkiely.com" target="_blank">Philip Kiely</a>.
+                </p>
+                <p>
+                    If you write technical tutorials, or you want to in the future, you should read <a href="https://writingforsoftwaredevelopers.com/" target="_blank">his book</a>.</p>
+                </p>
+                <p>
+                    Design and frontend development by <a href="https://jeev.me" class="link" target="_blank">Jeev Prayaga</a>.
+                </p>
+            </aside>
+
+        </div>
+
+
+
+    </section>
+
+    <!--Shared Right Sidebar (Moves to Bottom on Mobile)-->
+
+    <!--Shared Footer-->
+    <footer class="container pt-4 my-md-5 pt-md-5 border-top">
+        Footer goes here
+    </footer>
 </body>
 </html>

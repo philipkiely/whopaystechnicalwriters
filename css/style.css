@@ -1,0 +1,56 @@
+
+:root {
+    --font-sans: 'IBM Plex Sans', sans-serif;
+    --font-mono: 'IBM Plex Mono', sans-serif;
+    --text-color: #0F1215;
+    --bg-color: #F8F9FA;
+    --accent-color: #139F38;
+    --accent-color-dark: #02651D;
+    --off-white: #FFF0A7;
+}
+
+body {
+    font-family: var(--font-sans);
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.mono {
+    font-family: var(--font-mono);
+}
+
+.bg-accent {
+    background: var(--accent-color);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.btn-custom {
+    border: none;
+    background: var(--accent-color);
+    color: var(--bg-color);
+}
+
+.btn-custom:hover {
+    color: var(--bg-color);
+    background: var(--accent-color-dark);
+}
+
+.link-custom {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);;
+}
+
+.link-custom:hover {
+    color: var(--accent-color-dark);
+    border-bottom: 1px solid var(--accent-color-dark);
+}
+
+@media (min-width: 1200px) {
+    .container-narrow {
+        max-width: 970px;
+    }
+}
