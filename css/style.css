@@ -28,6 +28,10 @@ code {
     background: var(--accent-color);
 }
 
+.bg-off-white {
+    background: var(--off-white);
+}
+
 .text-accent {
     color: var(--accent-color);
 }
@@ -58,4 +62,40 @@ code {
     .container-narrow {
         max-width: 970px;
     }
+}
+
+.card-topic {
+    background: var(--off-white);
+    border-radius: 2px;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 0.85em;
+    width: fit-content;
+    padding: 2px 6px;
+    margin-right: 5px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.card-topic:hover {
+    background: #FFE14D;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: initial;
+}
+
+#clear-btn {    
+    z-index: 100;
+    opacity: 0.4;
+    background: transparent;
+    border-left: none;
+    margin-left: -1.75rem;
+    margin-top: -0.25rem;
+    cursor: pointer;
+}
+
+#search-input:focus + #clear-btn {
+    opacity: 0.7;
 }
