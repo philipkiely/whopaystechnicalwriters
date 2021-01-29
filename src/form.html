@@ -5,49 +5,70 @@
 {% endblock %}
 
 {% block content %}
-    <div class="col-lg-9 order-lg-1 mb-5">
-                
+<div class="col-lg-9 order-lg-1 mb-5">
 
-        <h4 class="d-flex justify-content-between align-items-center mb-3">
-            <span>Suggest a resource</span>
-            <a class="link fs-6 mx-4 link-custom" href="index.html">Return home</a>
-        </h4>                
-        <form class="needs-validation" novalidate>
 
-            <div class="mb-3">
-                <label for="username">What publisher(s) do you know of that are not currently listed?</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="username" placeholder="Username" required>
-                    <div class="invalid-feedback w-100">
-                    Your username is required.
-                    </div>
-                </div>
+    <h3 class="d-flex justify-content-between align-items-center mb-3">
+        <span>Add a Publication</span>
+        <a class="link fs-6 mx-4 link-custom" style="cursor: pointer" href="index.html">Return home</a>
+    </h3>
+    <form class="needs-validation" novalidate>
+
+        <div class="mb-3 required">
+            <label for="company-name" class="form-label">Company Name</label>
+            <input type="text" class="form-control" id="company-name" placeholder="CSS Tricks">
+        </div>
+        <div class="mb-3 required">
+            <label for="company-type" class="form-label">Company Type</label>
+            <select class="form-select" id="company-type" aria-label="Company Type" aria-describedby="ct-description">
+                <option selected value="Publication">Publication</option>
+                <option value="Publisher">Publisher</option>
+                <option value="Agency">Agency</option>
+            </select>
+            <div class="form-text" id="ct-description">
+                <ul>
+                    <li>"Publication" means a blog, magazine, or newsletter that buys articles.</li>
+                    <li>"Publisher" means they publish books and pay royalties.</li>
+                    <li>"Agency" means they find writers hourly or project work.</li>
+                </ul>
             </div>
-            <div class="custom-control custom-checkbox mb-3">
-                <input type="checkbox" class="custom-control-input" id="same-address">
-                <label class="custom-control-label" for="same-address">Publishers listed pay for all content</label>
-            </div>      
-            <div class="mb-3">
-                <label for="username">Additional details</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="username" placeholder="Username" required>
-                    <div class="invalid-feedback w-100">
-                    Your username is required.
-                    </div>
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="username">Suggestions or comments about the website</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="username" placeholder="Username" required>
-                    <div class="invalid-feedback w-100">
-                    Your username is required.
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class="mb-3 required">
+            <label for="link" class="form-label">Link</label>
+            <input type="text" class="form-control" id="link" placeholder="https://css-tricks.com/guest-posting/"
+                aria-describedby="link-description">
+            <div class="form-text" id="link-description">If possible, link directly to the company's "write for us" or
+                "guest post" page. Otherwise, link to the publication's main page.</div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Editor's Email</label>
+            <input type="email" class="form-control" id="email" placeholder="team@css-tricks.com"
+                aria-describedby="email-description">
+            <div class="form-text" id="email-description">If the editor has a <b>public</b> email address that they
+                <b>invite prospective authors to contact them at</b>, enter it here.</div>
+        </div>
+        <div class="mb-3">
+            <label for="topics" class="form-label">Topic(s)</label>
+            <input type="text" class="form-control" id="topics" placeholder="Front-End Development"
+                aria-describedby="topics-description">
+            <div class="form-text" id="email-description">General topics like Front-End Development, Back-End
+                Development, Data Science, Infrastructure, etc.</div>
+        </div>
+        <div class="mb-3">
+            <label for="rates" class="form-label">Rate</label>
+            <input type="text" class="form-control" id="rates" placeholder="$250 per article"
+                aria-describedby="topics-description">
+            <div class="form-text" id="email-description">The rate, in <b>USD</b>, that the company offers <b>first-time
+                    writers</b>. This can be a per-article rate, hourly rate, or royalty structure. Ranges are ok!</div>
+        </div>
+        <div class="mb-3">
+            <label for="notes" class="form-label">Notes</label>
+            <input type="text" class="form-control" id="notes" placeholder="Editors give great feedback!"
+                aria-describedby="notes-description">
+            <div class="form-text" id="notes-description">Any other information you know about the publication.</div>
+        </div>
+        <button class="btn btn-custom btn-block" type="submit">Send</button>
+    </form>
 
-            <button class="btn btn-custom btn-block" type="submit">Submit</button>
-        </form>
-
-    </div>
+</div>
 {% endblock %}
