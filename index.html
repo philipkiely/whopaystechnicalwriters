@@ -49,64 +49,53 @@
 
 <div class="col-lg-9 order-lg-1">
         
-    <div class="">
+    <div>
         <h4 class="d-flex justify-content-between align-items-center mb-3">
-            <span>Displaying 49 publications</span>
+            <span>
+                <span id="resource-count">Loading resources...</span>
+            </span>
             <a class="link fs-6 mx-4 link-custom" style="cursor: pointer" href="form.html">Suggest a resource</a>
         </h4>
-        
-        <form class="row g-2 align-items-center my-3">
-            <div class="col-md-8">
-                <div class="input-group col-md-5">
-                    <input type="text" class="form-control" placeholder="Filter by publication, agency, or topic">
+        <form class="g-2 align-items-center my-2 row">
+            <div class="col-lg-12 col-xl-6">
+                <div class="d-flex align-items-center">
+                    <input type="text" class="form-control" id="search-input" placeholder="Search by resource name or topic">
+                    <div id="clear-btn" onclick="Resources.handleSearch('')">
+                        <i class="bi bi-x-circle"></i>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="input-group col-md-3">
+            <div class="col-lg-6 col-xl-3">
+                <div class="input-group">
+                    <div class="input-group-text">Type</div>
+                    <select class="form-select" id="type-input" onchange="Resources.updateType()">
+                        <option selected value="everything">All resources</option>
+                        <option value="publication">Publications</option>
+                        <option value="agency">Agencies</option>
+                        <option value="publisher">Publishers</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-3">
+                <div class="input-group">
                     <div class="input-group-text">Sort by</div>
-                    <select class="form-select" id="inlineFormSelectPref">
-                        <option selected>A-Z</option>
-                        <option value="1">Rate (low to high)</option>
-                        <option value="2">Rate (high to low)</option>
+                    <select class="form-select" id="sort-input" onchange="Resources.updateSort()">
+                        <option selected value="alpha">A-Z</option>
+                        <option value="rate_increasing">Rate (low to high)</option>
+                        <option value="rate_decreasing">Rate (high to low)</option>
                     </select>
                 </div>
             </div>
         </form>
     </div>
 
-
     <div class="my-4 mb-5">
-        <div class="card my-2">
-            <div class="card-body">
-                <h5 class="card-title">PaperSpace</h5>
-                <p class="card-text">
-                    <span class="fw-bold">$300 - $400</span> for first article
-                </p>
-            </div>
-        </div>
-        <div class="card my-2">
-            <div class="card-body">
-                <h5 class="card-title">PaperSpace</h5>
-                <p class="card-text">
-                    <span class="fw-bold">$300 - $400</span> for first article
-                </p>
-            </div>
-        </div>
-        <div class="card my-2">
-            <div class="card-body">
-                <h5 class="card-title">PaperSpace</h5>
-                <p class="card-text">
-                    <span class="fw-bold">$300 - $400</span> for first article
-                </p>
-            </div>
-        </div>
-        <div class="card my-2">
-            <div class="card-body">
-                <h5 class="card-title">PaperSpace</h5>
-                <p class="card-text">
-                    <span class="fw-bold">$300 - $400</span> for first article
-                </p>
-            </div>
+        <div id="cards-container"></div>
+        <div id="no-results" class="d-none o-8 text-black-50 py-4 text-center">
+            <h5>
+                Oops, no results found... try a less restrictive search or filter.
+            </h5>
+            
         </div>
     </div>
       
