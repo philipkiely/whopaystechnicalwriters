@@ -8,7 +8,10 @@ var Resources = {
     cardsPerPage: 5,
     resultsCount: 0,
     pagesToDisplay: 0,
-    currentPage: 0,
+    activePageIndex: 0,
+
+
+    relevantData: [],
 
     // DOM element variables (denoted by '$')
     $cardsContainer: null,
@@ -19,6 +22,8 @@ var Resources = {
     $sortInput: null,
     $clearBtn: null,
     $pagination: null,
+    $paginationPrevBtn: null,
+    $paginationNextBtn: null,
 
     loadJSON() {
         var xmlhttp = new XMLHttpRequest()
@@ -44,16 +49,18 @@ var Resources = {
         this.$clearBtn = document.querySelector('#clear-btn')
         this.$pagination = document.querySelector('#pagination')
 
+        this.$paginationPrevBtn = document.querySelector('#pagination-prev-btn')
+        this.$paginationNextBtn = document.querySelector('#pagination-next-btn')
+
         // initialize state variables as default DOM variable values
         this.activeType = this.$typeInput.value
         this.activeSort = this.$sortInput.value
 
-        this.endIndex = this.resourceData.length - 1
+        this.relevantData = this.resourceData
+        this.endIndex = this.cardsPerPage
 
         // render resource cards with JSON data 
-        this.renderCards(this.resourceData, this.startIndex, this.endIndex)
-
-        this.renderPagination()
+        this.renderCards()
 
         // create inital resource count message with total number of resources
         this.$resourceCount.textContent = `Displaying ${this.resourceData.length} resources`
@@ -62,16 +69,22 @@ var Resources = {
         this.setListeners()
         
         // set up resource type & sort type variables
-        this.updateType()
-        this.updateSort()
+        this.updateAll()
     },
 
     renderPagination() {
-        this.pagesToDisplay = Math.floor(this.resourceData.length / this.cardsPerPage) + 1
+        this.pagesToDisplay = Math.floor(this.relevantData.length / this.cardsPerPage) + 1
 
-        console.log(this.pagesToDisplay)
+        console.log('pages to display', this.pagesToDisplay)
 
-        if (this.pagesToDisplay < 1) {
+        var $allPaginationItems = this.$pagination.getElementsByClassName('page-number')
+        if ($allPaginationItems.length) {
+            while ($allPaginationItems.length > 0){
+                $allPaginationItems[0].parentNode.removeChild($allPaginationItems[0]);
+            }
+        }
+
+        if (this.pagesToDisplay < 2) {
             this.$pagination.classList.add('d-none')
         }
         else {
@@ -80,22 +93,57 @@ var Resources = {
 
         for (let i = 0; i < this.pagesToDisplay; i++) {
             let $paginationTab = document.createElement("li")
-            $paginationTab.classList.add('page-item')
+            $paginationTab.classList.add('page-item', 'page-number')
+
+            if (i == this.activePageIndex) { 
+                $paginationTab.classList.add('active')
+            }
 
             $paginationTab.innerHTML = `
-                <a class="page-link" href="#">${i+1}</a></li>
+                <a class="page-link" onclick="Resources.setPageIndex(${i})">${i+1}</a></li>
             `
-            console.log($paginationTab)
 
-            let $paginationNextBtn = document.querySelector('#pagination-next-btn')
-            this.$pagination.insertBefore($paginationTab, $paginationNextBtn)
+            this.$pagination.insertBefore($paginationTab, this.$paginationNextBtn)
         }
-
-        this.currentPage = 1
         
     },
 
-    renderCards(lst, startIndex, endIndex) {
+    setPageIndex(index) {
+
+        this.activePageIndex = index
+
+        if (this.activePageIndex < 1) {
+            this.$paginationPrevBtn.classList.add('disabled')
+            this.$paginationPrevBtn.firstElementChild.setAttribute('aria-disabled', 'true')
+            this.$paginationPrevBtn.firstElementChild.setAttribute('tab-index', '-1')
+        }
+        else {
+            this.$paginationPrevBtn.classList.remove('disabled')
+            this.$paginationPrevBtn.firstElementChild.setAttribute('aria-disabled', 'false')
+            this.$paginationPrevBtn.firstElementChild.setAttribute('tab-index', '0')
+        }
+
+        if (this.activePageIndex >= this.pagesToDisplay - 1) {
+            this.$paginationNextBtn.classList.add('disabled')
+            this.$paginationNextBtn.firstElementChild.setAttribute('aria-disabled', 'true')
+            this.$paginationNextBtn.firstElementChild.setAttribute('tab-index', '-1')
+        }
+        else {
+            this.$paginationNextBtn.classList.remove('disabled')
+            this.$paginationNextBtn.firstElementChild.setAttribute('aria-disabled', 'false')
+            this.$paginationNextBtn.firstElementChild.setAttribute('tab-index', '0')
+        }
+
+        this.startIndex = index * this.cardsPerPage
+        this.endIndex = (this.cardsPerPage * (index + 1)) - 1
+
+        console.log("start index is", this.startIndex)
+        console.log("end index is", this.endIndex)
+
+        this.renderCards()
+    },
+
+    renderCards() {
 
         // console.log(startIndex, endIndex);
         // if (endIndex <= this.cardsPerPage) {
@@ -103,11 +151,19 @@ var Resources = {
         //     this.$pagination.classList.add("d-none")
         // }
 
+        // remove all cards from the DOM
+        var $allItems = this.$cardsContainer.getElementsByClassName('card')
+        if ($allItems.length) {
+            while ($allItems.length > 0){
+                $allItems[0].parentNode.removeChild($allItems[0]);
+            }
+        }
+
         // reset results count
         this.resultsCount = 0
         let cardIndex = 0
 
-        lst.forEach(el => {
+        this.relevantData.forEach(el => {
             this.resultsCount++
 
             // add divs for card and card content to the DOM
@@ -155,7 +211,11 @@ var Resources = {
             let cardTopics = ''
             if (el.topics) {
                 el.topics.forEach(topic => {
-                    cardTopics += `<span class="card-topic" onclick="Resources.handleSearch('${topic}')">${topic}</span>`
+                    cardTopics += `
+                        <span class="card-topic" onclick="Resources.searchByTopic('${topic}')">
+                            ${topic}
+                        </span>
+                    `
                 }); 
             }
     
@@ -172,70 +232,111 @@ var Resources = {
             // append card to container div
             this.$cardsContainer.appendChild($cardItem)
 
-            cardIndex++
+            console.log("CARD INDEX", cardIndex)
+
             if (cardIndex > this.endIndex || cardIndex < this.startIndex ) {
-                cardIndex == 0
+                console.log("card hidden, index:", cardIndex)
+                $cardItem.classList.add('pagination-hidden')
+            }
+            else {
+                $cardItem.classList.remove('pagination-hidden')
             }
 
+            cardIndex++
 
         });
+
+        this.renderPagination()
 
     },
     setListeners() {
         // handle search each time a key is pressed
         this.$searchInput.addEventListener("keyup", () => {
-            this.handleSearch(this.$searchInput.value)
+            this.updateAll()
         });
 
         // re-sort the array each time the sort select is changed
         this.$sortInput.addEventListener("change", () => {
-            this.updateSort()
-            this.handleSearch(this.$searchInput.value)
+            this.updateAll()
         });
 
         // update resource type when type select is changed
         this.$typeInput.addEventListener("change", () => {
-            console.log("type is changed")
-            this.updateType()
+            this.updateAll()
         });
 
         // clear search field when clear button is clicked
         this.$clearBtn.addEventListener("click", () => {
-            this.handleSearch('')
+            this.$searchInput.value = ''
+            this.updateAll()
+        });
+        
+        this.$paginationNextBtn.addEventListener("click", () => {
+            
+            if (this.activePageIndex < this.pagesToDisplay - 1) {
+                this.setPageIndex(this.activePageIndex + 1)
+            }
+
+        });
+      
+        this.$paginationPrevBtn.addEventListener("click", () => {
+            if (this.activePageIndex > 0) {
+                this.$paginationPrevBtn.classList.add('disabled')
+                this.setPageIndex(this.activePageIndex - 1)
+            }
+            else {
+                this.$paginationPrevBtn.classList.add('disabled')
+            }
         });
     },
     updateType() {
         // set active type to value in type select
         this.activeType = this.$typeInput.value
 
-        // run search function to display updated results
-        this.handleSearch(this.$searchInput.value)
+        // reset relevant data to all data
+        this.relevantData = this.resourceData
+
+        let updatedRelevantData = []
+
+        this.relevantData.forEach(el => {
+            // make element visible if resource type is 'everything' or the active type
+            if (el.type == this.activeType || this.activeType == 'everything') {
+                updatedRelevantData.push(el)
+            }
+        })
+
+        this.relevantData = updatedRelevantData
+
+        // this.renderCards()
     },
+
+    updateAll() {
+        this.setPageIndex(0)
+        this.updateType()
+        this.updateSort()
+        this.updateSearch(this.$searchInput.value)
+        this.updateCount()
+        this.renderCards()
+    },
+
     updateSort() {
         // set active sort to value in sort select
         this.activeSort = this.$sortInput.value
 
-        // get all elements with 'card' class in cards container and remove them from DOM
-        var $allItems = this.$cardsContainer.getElementsByClassName('card')
-        while($allItems.length > 0){
-            $allItems[0].parentNode.removeChild($allItems[0]);
-        }
-
-        // rebuild DOM with 
         switch (this.activeSort) {
             case 'alpha':
                 // sort array alphabetically by resource name
-                this.resourceData.sort((a, b) => (a.name.toUpperCase() > b.name.toUpperCase()) ? 1 : -1)
+                this.relevantData.sort((a, b) => (a.name.toUpperCase() > b.name.toUpperCase()) ? 1 : -1)
                 break;
                 case 'rate_increasing':
                 // sort array by resource payment rate in increasing order
-                this.resourceData.sort((a, b) => (
+                this.relevantData.sort((a, b) => (
                     (a.maxRate || a.hourlyMaxRate) > (b.maxRate || b.hourlyMaxRate) ? 1 : -1
                 ))
                 break;
             case 'rate_decreasing':
                 // sort array by resource payment rate in decreasing order
-                this.resourceData.sort((a, b) => (
+                this.relevantData.sort((a, b) => (
                     (a.maxRate || a.hourlyMaxRate) < (b.maxRate || b.hourlyMaxRate) ? 1 : -1
                 ))
                 break;
@@ -243,73 +344,63 @@ var Resources = {
                 break;
         }
 
-        // re-render cards in the DOM with sorted resource array
-        this.renderCards(this.resourceData, this.startIndex, this.endIndex)
-
-        // run update type function to display updated results
-        this.updateType()
+        console.log("sorted:")
+        console.log(this.relevantData)
 
     },
-    handleSearch(val) {
+    updateSearch(val) {
         // set search field input value to search term
         this.$searchInput.value = val
+
         var search = val.toLowerCase();
 
-        // loop through resources in resource data array
-        this.resourceData.forEach(el => {
-            // reference element by class and data-name attribute value
-            const $el = document.querySelector(`.card[data-name="${el.name}"]`)
 
-            // remove class that hides element
-            $el.classList.remove('d-none')
-    
-            // create array for any topics included in the search term
-            let searchedTopics = []
-            if (el.topics) {
-                searchedTopics = el.topics.filter(topic => {
-                    return topic.toLowerCase().includes(search)
-                })
-            }
-    
-            // make element visible if:
-            //    1) search term includes resource name or >= 1 resource topic
-            //    2) resource type is 'everything' or the active type
-            if (
-                (el.name.toLowerCase().includes(search) || searchedTopics.length) &&
-                (el.type == this.activeType || this.activeType == 'everything')
-            ) {
-                $el.classList.remove('d-none')
-            }
-            else {
-                $el.classList.add('d-none')
-            }
-        });
+        console.log(this.relevantData)
+        if (search != '') {
 
-        // get number of elements with hidden class in cards container
-        let numberHidden = this.$cardsContainer.getElementsByClassName('d-none').length
+            console.log("valid search:", search)
+            let updatedRelevantData = []
 
-        // get total number of resources
-        let totalItems = this.resourceData.length
+            // loop through resources in resource data array
+            this.relevantData.forEach(el => {
 
-        // calculate total number of cards shown (total cards minus hidden cards)
-        let numberShown = totalItems - numberHidden
+                // create array for any topics included in the search term
+                let searchedTopics = []
+                if (el.topics) {
+                    searchedTopics = el.topics.filter(topic => {
+                        return topic.toLowerCase().includes(search)
+                    })
+                }
+                    
+                // make element visible if search term includes resource name or >= 1 resource topic
+                if (el.name.toLowerCase().includes(search) || searchedTopics.length) {
+                    console.log("match")
+                    updatedRelevantData.push(el)
+                }
+
+            });
+            this.relevantData = updatedRelevantData
+        }
+
+    },
+    updateCount() {
 
         // create string for number of resources shown
-        let resourceCountText = `Displaying ${numberShown} `
+        let resourceCountText = `Displaying ${this.relevantData.length} `
 
         // add type of resource to resource count string
         switch (this.activeType) {
             case 'agency':
-                resourceCountText += numberShown != 1 ? 'agencies' : 'agency'
+                resourceCountText += this.relevantData.length != 1 ? 'agencies' : 'agency'
                 break;
             case 'publication':
-                resourceCountText += numberShown != 1 ? 'publications' : 'publication'
+                resourceCountText += this.relevantData.length != 1 ? 'publications' : 'publication'
                 break;
             case 'publisher':
-                resourceCountText += numberShown != 1 ? 'publishers' : 'publisher'
+                resourceCountText += this.relevantData.length != 1 ? 'publishers' : 'publisher'
                 break;
             default:
-                resourceCountText += numberShown != 1 ? 'resources' : 'resource'
+                resourceCountText += this.relevantData.length != 1 ? 'resources' : 'resource'
                 break;
         }
 
@@ -318,13 +409,14 @@ var Resources = {
 
         // only display "no results" message if no resources are shown
         this.$noResults.classList.add('d-none')
-        if (numberShown == 0) {
+        if (this.relevantData.length == 0) {
             this.$noResults.classList.remove('d-none')
         }
     },
-
-
-
+    searchByTopic(topic) {
+        this.$searchInput.value = topic;
+        this.updateAll()
+    }
 
 }
 

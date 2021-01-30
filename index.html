@@ -49,19 +49,7 @@
 
 <div class="col-lg-9 order-lg-1">
 
-        
     <div>
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center" id="pagination">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                </li>
-                
-                <li class="page-item" id="pagination-next-btn">
-                    <a class="page-link" href="#">Next</a>
-                </li>
-            </ul>
-        </nav>
         <h4 class="d-flex justify-content-between align-items-center mb-3">
             <span>
                 <span id="resource-count">Loading resources...</span>
@@ -107,8 +95,18 @@
             <h5>
                 Oops, no results found... try a less restrictive search or filter.
             </h5>
-            
         </div>
+        <nav aria-label="Page navigation" class="mt-4">
+            <ul class="pagination justify-content-end" id="pagination">
+                <li class="page-item" id="pagination-prev-btn">
+                    <a class="page-link" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                
+                <li class="page-item" id="pagination-next-btn">
+                    <a class="page-link">Next</a>
+                </li>
+            </ul>
+        </nav>
     </div>
       
 </div>
@@ -119,7 +117,7 @@
                 <h4 class="d-flex justify-content-between align-items-center mb-3">
                     <code>BROUGHT TO YOU BY</code>
                 </h4>
-                <img class="w-25 float-end rounded m-1" id="headshot" src="img/headshot.jpg">
+                <img class="w-25 float-end rounded m-1" id="headshot" src="../img/headshot.jpg">
                 <p>
                     This website was made by <a href="http://philipkiely.com" target="_blank">Philip Kiely</a>.
                 </p>

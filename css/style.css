@@ -113,4 +113,10 @@ code {
     min-width: 240px;
 }
 
-  
+.pagination-hidden {
+    display: none;
+}
+
+#pagination li a {
+    cursor: pointer;
+}
