@@ -48,9 +48,10 @@ code {
 }
 
 .link-custom {
+    cursor: pointer;
     color: var(--accent-color);
     text-decoration: none;
-    border-bottom: 1px solid var(--accent-color);;
+    border-bottom: 1px solid var(--accent-color);
 }
 
 .link-custom:hover {
@@ -98,4 +99,16 @@ code {
 
 #search-input:focus + #clear-btn {
     opacity: 0.7;
+}
+
+#separator {
+    max-width: calc(100% - var(--bs-gutter-x));
+}
+
+#headshot {
+    max-width: 75px;
+}
+
+#graphic {
+    min-width: 240px;
 }

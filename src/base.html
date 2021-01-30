@@ -18,10 +18,10 @@
 </head>
 <body>
     <!--Shared Header-->
-    <header class="w-100" style="background: #FFF0A7;">  
+    <header class="w-100 bg-off-white">  
         <div class="container d-flex justify-content-between align-items-center py-4">
             <h4 class="mono fst-italic">Who Pays Technical Writers?</h4>
-            <img src="img/graphic.svg" class="w-25" style="min-width: 240px" alt="illustration">
+            <img src="img/graphic.svg" id="graphic" class="w-25" alt="illustration">
         </div>
     </header>
 
@@ -32,13 +32,14 @@
 
             {% block content %}{% endblock %}
             <aside class="col-lg-3 order-lg-2 inline-flex pt-lg-0 pt-2 mt-lg-0 mt-2">
-                <hr class="d-block d-lg-none mx-auto" style="max-width: calc(100% - var(--bs-gutter-x));"></hr>
+                <hr class="d-block d-lg-none mx-auto" id="separator"></hr>
                 <h4 class="d-flex justify-content-between align-items-center mb-3">
                     <code>BROUGHT TO YOU BY</code>
                 </h4>
-                <a href="https://philipkiely.com/wfsd/?utm_source=wptw"><img class="img-fluid" src="img/wfsd_gumroad_thumbnail.png"></a>
-                <br>
-                <br>
+                <img class="w-25 float-end rounded m-1" id="headshot" src="img/headshot.jpg">
+                <p>
+                    This website was made by <a href="http://philipkiely.com" target="_blank">Philip Kiely</a>.
+                </p>
                 <p>
                     Hi, I'm Philip. I wrote <a href="https://philipkiely.com/wfsd/?utm_source=wptw">Writing for Software Developers</a> to teach developers how to craft and publish technical content. It includes
                     advice on writing style, editing, and monetization &mdash; all based on my personal experience writing for top tech

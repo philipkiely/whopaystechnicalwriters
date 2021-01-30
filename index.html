@@ -20,10 +20,10 @@
 </head>
 <body>
     <!--Shared Header-->
-    <header class="w-100" style="background: #FFF0A7;">  
+    <header class="w-100 bg-off-white">  
         <div class="container d-flex justify-content-between align-items-center py-4">
             <h4 class="mono fst-italic">Who Pays Technical Writers?</h4>
-            <img src="img/graphic.svg" class="w-25" style="min-width: 240px" alt="illustration">
+            <img src="img/graphic.svg" id="graphic" class="w-25" alt="illustration">
         </div>
     </header>
 
@@ -54,13 +54,13 @@
             <span>
                 <span id="resource-count">Loading resources...</span>
             </span>
-            <a class="link fs-6 mx-4 link-custom" style="cursor: pointer" href="form.html">Suggest a resource</a>
+            <a class="link fs-6 mx-4 link-custom" href="form.html">Suggest a resource</a>
         </h4>
         <form class="g-2 align-items-center my-2 row">
             <div class="col-lg-12 col-xl-6">
                 <div class="d-flex align-items-center">
                     <input type="text" class="form-control" id="search-input" placeholder="Search by resource name or topic">
-                    <div id="clear-btn" onclick="Resources.handleSearch('')">
+                    <div id="clear-btn">
                         <i class="bi bi-x-circle"></i>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
             <div class="col-lg-6 col-xl-3">
                 <div class="input-group">
                     <div class="input-group-text">Type</div>
-                    <select class="form-select" id="type-input" onchange="Resources.updateType()">
+                    <select class="form-select" id="type-input">
                         <option selected value="everything">All resources</option>
                         <option value="publication">Publications</option>
                         <option value="agency">Agencies</option>
@@ -79,7 +79,7 @@
             <div class="col-lg-6 col-xl-3">
                 <div class="input-group">
                     <div class="input-group-text">Sort by</div>
-                    <select class="form-select" id="sort-input" onchange="Resources.updateSort()">
+                    <select class="form-select" id="sort-input">
                         <option selected value="alpha">A-Z</option>
                         <option value="rate_increasing">Rate (low to high)</option>
                         <option value="rate_decreasing">Rate (high to low)</option>
@@ -103,13 +103,14 @@
 
 
             <aside class="col-lg-3 order-lg-2 inline-flex pt-lg-0 pt-2 mt-lg-0 mt-2">
-                <hr class="d-block d-lg-none mx-auto" style="max-width: calc(100% - var(--bs-gutter-x));"></hr>
+                <hr class="d-block d-lg-none mx-auto" id="separator"></hr>
                 <h4 class="d-flex justify-content-between align-items-center mb-3">
                     <code>BROUGHT TO YOU BY</code>
                 </h4>
-                <a href="https://philipkiely.com/wfsd/?utm_source=wptw"><img class="img-fluid" src="img/wfsd_gumroad_thumbnail.png"></a>
-                <br>
-                <br>
+                <img class="w-25 float-end rounded m-1" id="headshot" src="img/headshot.jpg">
+                <p>
+                    This website was made by <a href="http://philipkiely.com" target="_blank">Philip Kiely</a>.
+                </p>
                 <p>
                     Hi, I'm Philip. I wrote <a href="https://philipkiely.com/wfsd/?utm_source=wptw">Writing for Software Developers</a> to teach developers how to craft and publish technical content. It includes
                     advice on writing style, editing, and monetization &mdash; all based on my personal experience writing for top tech

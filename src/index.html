@@ -26,13 +26,13 @@
             <span>
                 <span id="resource-count">Loading resources...</span>
             </span>
-            <a class="link fs-6 mx-4 link-custom" style="cursor: pointer" href="form.html">Suggest a resource</a>
+            <a class="link fs-6 mx-4 link-custom" href="form.html">Suggest a resource</a>
         </h4>
         <form class="g-2 align-items-center my-2 row">
             <div class="col-lg-12 col-xl-6">
                 <div class="d-flex align-items-center">
                     <input type="text" class="form-control" id="search-input" placeholder="Search by resource name or topic">
-                    <div id="clear-btn" onclick="Resources.handleSearch('')">
+                    <div id="clear-btn">
                         <i class="bi bi-x-circle"></i>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
             <div class="col-lg-6 col-xl-3">
                 <div class="input-group">
                     <div class="input-group-text">Type</div>
-                    <select class="form-select" id="type-input" onchange="Resources.updateType()">
+                    <select class="form-select" id="type-input">
                         <option selected value="everything">All resources</option>
                         <option value="publication">Publications</option>
                         <option value="agency">Agencies</option>
@@ -51,7 +51,7 @@
             <div class="col-lg-6 col-xl-3">
                 <div class="input-group">
                     <div class="input-group-text">Sort by</div>
-                    <select class="form-select" id="sort-input" onchange="Resources.updateSort()">
+                    <select class="form-select" id="sort-input">
                         <option selected value="alpha">A-Z</option>
                         <option value="rate_increasing">Rate (low to high)</option>
                         <option value="rate_decreasing">Rate (high to low)</option>
