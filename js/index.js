@@ -3,6 +3,12 @@ var Resources = {
     resourceData: [],
     activeType: '',
     activeSort: '',
+    startIndex: 0,
+    endIndex: 0,
+    cardsPerPage: 5,
+    resultsCount: 0,
+    pagesToDisplay: 0,
+    currentPage: 0,
 
     // DOM element variables (denoted by '$')
     $cardsContainer: null,
@@ -12,6 +18,7 @@ var Resources = {
     $typeInput: null,
     $sortInput: null,
     $clearBtn: null,
+    $pagination: null,
 
     loadJSON() {
         var xmlhttp = new XMLHttpRequest()
@@ -35,13 +42,21 @@ var Resources = {
         this.$typeInput = document.querySelector('#type-input')
         this.$sortInput = document.querySelector('#sort-input')
         this.$clearBtn = document.querySelector('#clear-btn')
+        this.$pagination = document.querySelector('#pagination')
 
         // initialize state variables as default DOM variable values
         this.activeType = this.$typeInput.value
         this.activeSort = this.$sortInput.value
 
+        this.endIndex = this.resourceData.length - 1
+
         // render resource cards with JSON data 
-        this.renderCards()
+        this.renderCards(this.resourceData, this.startIndex, this.endIndex)
+
+        this.renderPagination()
+
+        // create inital resource count message with total number of resources
+        this.$resourceCount.textContent = `Displaying ${this.resourceData.length} resources`
 
         // establish listeners for interactive DOM elements
         this.setListeners()
@@ -50,8 +65,51 @@ var Resources = {
         this.updateType()
         this.updateSort()
     },
-    renderCards() {
-        this.resourceData.forEach(el => {
+
+    renderPagination() {
+        this.pagesToDisplay = Math.floor(this.resourceData.length / this.cardsPerPage) + 1
+
+        console.log(this.pagesToDisplay)
+
+        if (this.pagesToDisplay < 1) {
+            this.$pagination.classList.add('d-none')
+        }
+        else {
+            this.$pagination.classList.remove('d-none')
+        }
+
+        for (let i = 0; i < this.pagesToDisplay; i++) {
+            let $paginationTab = document.createElement("li")
+            $paginationTab.classList.add('page-item')
+
+            $paginationTab.innerHTML = `
+                <a class="page-link" href="#">${i+1}</a></li>
+            `
+            console.log($paginationTab)
+
+            let $paginationNextBtn = document.querySelector('#pagination-next-btn')
+            this.$pagination.insertBefore($paginationTab, $paginationNextBtn)
+        }
+
+        this.currentPage = 1
+        
+    },
+
+    renderCards(lst, startIndex, endIndex) {
+
+        // console.log(startIndex, endIndex);
+        // if (endIndex <= this.cardsPerPage) {
+        //     console.log("hello")
+        //     this.$pagination.classList.add("d-none")
+        // }
+
+        // reset results count
+        this.resultsCount = 0
+        let cardIndex = 0
+
+        lst.forEach(el => {
+            this.resultsCount++
+
             // add divs for card and card content to the DOM
             let $cardItem = document.createElement("div")
             let $cardBody = document.createElement("div")
@@ -114,9 +172,14 @@ var Resources = {
             // append card to container div
             this.$cardsContainer.appendChild($cardItem)
 
-            // create resource count message with total number of resources
-            this.$resourceCount.textContent = `Displaying ${this.resourceData.length} resources`
+            cardIndex++
+            if (cardIndex > this.endIndex || cardIndex < this.startIndex ) {
+                cardIndex == 0
+            }
+
+
         });
+
     },
     setListeners() {
         // handle search each time a key is pressed
@@ -181,7 +244,7 @@ var Resources = {
         }
 
         // re-render cards in the DOM with sorted resource array
-        this.renderCards()
+        this.renderCards(this.resourceData, this.startIndex, this.endIndex)
 
         // run update type function to display updated results
         this.updateType()
@@ -259,9 +322,15 @@ var Resources = {
             this.$noResults.classList.remove('d-none')
         }
     },
+
+
+
+
 }
 
 // on window load, run function to load/parse JSON file
 window.onload = () => {
     Resources.loadJSON()
 }
+
+

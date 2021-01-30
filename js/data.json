@@ -25,5 +25,25 @@
         "name": "ContentLab",
         "type": "agency",
         "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "BontentLab",
+        "type": "agency",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "FontentLab",
+        "type": "publication",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "RontentLab",
+        "type": "publisher",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "PontentLab",
+        "type": "agency",
+        "link": "https://contentlab.io/write-for-contentlab/"
     }
 ]
