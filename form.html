@@ -12,6 +12,7 @@
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/css/style.css">
+<script src="/js/script.js"></script>
 <title>Who Pays Technical Writers?</title>
 
 <script src="/js/form.js"></script>
@@ -25,6 +26,8 @@
             <img src="img/graphic.svg" class="w-25" style="min-width: 240px" alt="illustration">
         </div>
     </header>
+
+    <!--Shared Right Sidebar (Moves to Bottom on Mobile)-->
 
     <section class="container py-4 pt-5">
         <div class="row">
@@ -108,17 +111,15 @@
             <aside class="col-lg-3 order-lg-2 inline-flex pt-lg-0 pt-2 mt-lg-0 mt-2">
                 <hr class="d-block d-lg-none mx-auto" style="max-width: calc(100% - var(--bs-gutter-x));"></hr>
                 <h4 class="d-flex justify-content-between align-items-center mb-3">
-                    <span>About this website</span>
+                    <code>BROUGHT TO YOU BY</code>
                 </h4>
-                <img class="w-25 float-end rounded m-1" style="max-width: 75px;" src="img/headshot.jpg">
+                <a href="https://philipkiely.com/wfsd/?utm_source=wptw"><img class="img-fluid" src="img/wfsd_gumroad_thumbnail.png"></a>
+                <br>
+                <br>
                 <p>
-                    This website was made by <a href="http://philipkiely.com" target="_blank">Philip Kiely</a>.
-                </p>
-                <p>
-                    If you write technical tutorials, or you want to in the future, you should read <a href="https://writingforsoftwaredevelopers.com/" target="_blank">his book</a>.</p>
-                </p>
-                <p>
-                    Design and frontend development by <a href="https://jeev.me" class="link" target="_blank">Jeev Prayaga</a>.
+                    Hi, I'm Philip. I wrote <a href="https://philipkiely.com/wfsd/?utm_source=wptw">Writing for Software Developers</a> to teach developers how to craft and publish technical content. It includes
+                    advice on writing style, editing, and monetization &mdash; all based on my personal experience writing for top tech
+                    publications plus interviews with 11 successful writers. <a href="https://philipkiely.com/wfsd/?utm_source=wptw">Click here to get the book</a> and support this site!
                 </p>
             </aside>
 
@@ -128,11 +129,12 @@
 
     </section>
 
-    <!--Shared Right Sidebar (Moves to Bottom on Mobile)-->
-
     <!--Shared Footer-->
     <footer class="container pt-4 my-md-5 pt-md-5 border-top">
-        Footer goes here
+        <p>Copyright &copy; 2020 &ndash; <span id="year">2021</span> <a href="https://pkandc.com/">Philip Kiely & Company</a></p>
+        <p>Open source on <a href="https://github.com/philipkiely/whopaystechnicalwriters/">GitHub</a> under the <a href="https://github.com/philipkiely/whopaystechnicalwriters/blob/main/LICENSE">MIT License</a></p>
+        <p>Concept and development by <a href="https://philipkiely.com/">Philip Kiely</a>. Design and front-end development by <a href="https://jeev.me" class="link" target="_blank">Jeev Prayaga</a>.</p>
+        <p>Inspired by, but not associated with, <a href="http://whopayswriters.com/#/results">Who Pays Writers</a>, and specifically created to host resouces disallowed by their <a href="http://whopayswriters.com/#/about">policies</a>.</p>
     </footer>
 </body>
 </html>
