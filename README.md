@@ -4,15 +4,6 @@ Who Pays Technical Writers is a project that aims to collect every good recurrin
 
 To contribute a fix (dead link update, copy correction, etc) to the site, please open an issue or pull request. Do the same if you want to contribute a feature. To request a publication be added, you can use the form on the site itself, but pull requests and issues are also accepted.
 
-TODO:
-
-* Favicon
-* Preview description, image, etc (twitter card, og:description, etc)
-* Netlify Function
-* Deploy/live
-* Analytics (incl link to parametered philipkiely.com)
-* Standardize to /dist folder structure
-
 
 ## Setup
 
