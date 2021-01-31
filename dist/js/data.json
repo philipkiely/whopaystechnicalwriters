@@ -1,0 +1,89 @@
+[
+    {
+        "name": "CSS Tricks",
+        "type": "publication",
+        "link": "https://css-tricks.com/guest-posting/",
+        "contact": null,
+        "topics": ["Front-End Development"],
+        "maxRate": 250
+    },
+    {
+        "name": "DigitalOcean",
+        "type": "publication",
+        "link": "https://www.digitalocean.com/community/pages/write-for-digitalocean",
+        "topics": ["Infrastructure"],
+        "maxRate": 300
+    },
+    {
+        "name": "No Starch Press",
+        "type": "publisher",
+        "link": "https://nostarch.com/writeforus",
+        "contact": "editors@nostarch.com",
+        "royaltyRate": "15%"
+    },
+    {
+        "name": "ContentLab",
+        "type": "agency",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "BontentLab",
+        "type": "agency",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "FontentLab",
+        "type": "publication",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "RontentLab",
+        "type": "publisher",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "PontentLab",
+        "type": "agency",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "SontentLab",
+        "type": "agency",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "ChontentLab",
+        "type": "publication",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "PlontentLab",
+        "type": "publisher",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "YontentLab",
+        "type": "agency",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "GontentLab",
+        "type": "agency",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "JontentLab",
+        "type": "publication",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "HontentLab",
+        "type": "publisher",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    },
+    {
+        "name": "VontentLab",
+        "type": "agency",
+        "link": "https://contentlab.io/write-for-contentlab/"
+    }
+]

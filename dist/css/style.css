@@ -1,0 +1,122 @@
+
+:root {
+    --font-sans: 'IBM Plex Sans', sans-serif;
+    --font-mono: 'IBM Plex Mono', sans-serif;
+    --text-color: #0F1215;
+    --bg-color: #F8F9FA;
+    --accent-color: #139F38;
+    --accent-color-dark: #02651D;
+    --off-white: #FFF0A7;
+}
+
+body {
+    font-family: var(--font-sans);
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.mono {
+    font-family: var(--font-mono);
+}
+
+code {
+    font-family: var(--font-mono);
+    color: var(--text-color);
+}
+
+.bg-accent {
+    background: var(--accent-color);
+}
+
+.bg-off-white {
+    background: var(--off-white);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.btn-custom {
+    border: none;
+    background: var(--accent-color);
+    color: var(--bg-color);
+}
+
+.btn-custom:hover {
+    color: var(--bg-color);
+    background: var(--accent-color-dark);
+}
+
+.link-custom {
+    cursor: pointer;
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.link-custom:hover {
+    color: var(--accent-color-dark);
+    border-bottom: 1px solid var(--accent-color-dark);
+}
+
+@media (min-width: 1200px) {
+    .container-narrow {
+        max-width: 970px;
+    }
+}
+
+.card-topic {
+    background: var(--off-white);
+    border-radius: 2px;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 0.85em;
+    width: fit-content;
+    padding: 2px 6px;
+    margin-right: 5px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.card-topic:hover {
+    background: #FFE14D;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: initial;
+}
+
+#clear-btn {    
+    z-index: 100;
+    opacity: 0.4;
+    background: transparent;
+    border-left: none;
+    margin-left: -1.75rem;
+    margin-top: -0.25rem;
+    cursor: pointer;
+}
+
+#search-input:focus + #clear-btn {
+    opacity: 0.7;
+}
+
+#separator {
+    max-width: calc(100% - var(--bs-gutter-x));
+}
+
+#headshot {
+    max-width: 75px;
+}
+
+#graphic {
+    min-width: 240px;
+}
+
+.pagination-hidden {
+    display: none;
+}
+
+#pagination li a {
+    cursor: pointer;
+}

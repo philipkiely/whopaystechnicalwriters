@@ -12,7 +12,7 @@ from watchdog.events import FileSystemEventHandler
 
 def render_page(root, env, page):
     html = env.get_template(page).render()
-    f = open(root+page, "w")
+    f = open(root+"dist/"+page, "w")
     f.write(html)
     f.close()
     return
@@ -29,6 +29,14 @@ def jinja():
     render_page(root, env, "form.html")
     print("Jinja Built")
     return
+
+def static():
+    root = os.path.dirname(os.path.realpath(__file__))[:-5]
+    os.system("cp -r {}css {}dist/".format(root, root))
+    os.system("cp -r {}js {}dist/".format(root, root))
+    os.system("cp -r {}img {}dist/".format(root, root))
+    print("Static Copied")
+    return 
 
 
 ###############
@@ -66,6 +74,7 @@ class Handler(FileSystemEventHandler):
         elif event.event_type == 'modified' or event.event_type == 'created' or event.event_type == 'deleted':
             if "src" in event.src_path:
                 jinja()
+                static()
 
 
 ##################
@@ -79,6 +88,7 @@ if __name__ == '__main__':
     if sys.argv[1] == "--dev":
         print("Who Pays Technical Writers Development Environment Active")
         jinja()
+        static()
         w = Watcher()
         w.run()
     elif sys.argv[1] == "--prod":
