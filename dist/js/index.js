@@ -29,8 +29,23 @@ var Resources = {
         var xmlhttp = new XMLHttpRequest()
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
+                
+                s = this.responseText
+                // preserve newlines, etc - use valid JSON
+                s = s.replace(/\\n/g, "\\n")  
+                            .replace(/\\'/g, "\\'")
+                            .replace(/\\"/g, '\\"')
+                            .replace(/\\&/g, "\\&")
+                            .replace(/\\r/g, "\\r")
+                            .replace(/\\t/g, "\\t")
+                            .replace(/\\b/g, "\\b")
+                            .replace(/\\f/g, "\\f");
+                // remove non-printable and other non-valid JSON chars
+                s = s.replace(/[\u0000-\u0019]+/g,""); 
+
                 // if successful, store JSON in resourceData array
-                Resources.resourceData = JSON.parse(this.responseText)
+
+                Resources.resourceData = JSON.parse(s)
                 // set up DOM
                 Resources.displayPage()
             }
@@ -238,7 +253,6 @@ var Resources = {
 
             // add all card content HTML to the card
             $cardBody.innerHTML = `    
-            <div class="card-body">
                 <div class="card-content border-bottom py-2">
                     ${resourceTitle}
                     ${rateInfo}
@@ -249,7 +263,6 @@ var Resources = {
                     ${resourceNotes}
                     ${resourceTopics}
                 </div>
-            </div>
             `
     
             // append card body to parent card div
