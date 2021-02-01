@@ -165,51 +165,70 @@ var Resources = {
             $cardItem.className = 'card my-2';
             $cardItem.setAttribute('data-name', el.name)
             $cardBody.className = 'card-body';
-    
-            // create string to build card's HTML content
-            let cardContent = `
-                <h5 class="card-title w-100 d-flex justify-content-between">
+
+            let resourceTitle = `
+                <h5 class="card-title w-100 d-flex justify-content-between mb-3">
                     <a href="${el.link}" target="_blank">${el.name}</a>
                     <span class="badge rounded-pill type-badge">
                         ${el.type}
                     </span>
                 </h5>
             `
-                 
-            cardContent += '<div class="py-1 my-1 border-bottom">'
-
-            // create string for payment rate information
-            let rateInfo = '<p class="card-text">'
+            
+            let rateInfo = ''
 
             // determine relevant payment rate information based on resource type
             switch (el.type) {
                 case 'publication':
-                    rateInfo += el.minRate ? `<strong>$${el.minRate} &ndash; </strong>` : ''
-                    rateInfo += el.maxRate ? `<strong>$${el.maxRate}</strong>` : ''
+                    rateInfo += el.minRate ? `$${el.minRate} &ndash; ` : ''
+                    rateInfo += el.maxRate ? `$${el.maxRate}` : ''
                     break;
     
                 case 'publisher':
-                    rateInfo += el.royaltyRate ? `<strong>$${el.royaltyRate}</strong>` : ''
+                    rateInfo += el.royaltyRate ? `$${el.royaltyRate}` : ''
                     break;
             
                 case 'agency':
-                    rateInfo += el.hourlyMinRate ? `<strong>$${el.hourlyMinRate}/hr &ndash; </strong>` : ''
-                    rateInfo += el.hourlyMaxRate ? `<strong>$${el.hourlyMaxRate}/hr</strong>` : ''
+                    rateInfo += el.hourlyMinRate ? `$${el.hourlyMinRate}/hr &ndash;` : ''
+                    rateInfo += el.hourlyMaxRate ? `$${el.hourlyMaxRate}/hr` : ''
                     break;
             
                 default:
                     break;
             }
-            
-            // add payment rate information to resource card
-            rateInfo += '</p>'
-            cardContent += rateInfo + '<div class="w-100">'
-            
+
+            if (rateInfo.length) {
+                let rawRateInfo = rateInfo
+                rateInfo = `
+                    <h6 class="card-category d-flex align-items-center ">
+                        <i class="bi bi-credit-card me-3"></i>
+                        <span>${rawRateInfo}<span class="fw-normal"> for first-time authors</span></span>
+                    </h6>
+                `
+            }
+    
+            // add optional contact info
+            let contactInfo = el.contact ? `
+                <h6 class="card-category d-flex align-items-center ">
+                    <i class="bi bi-envelope me-3"></i>
+                    <a href="mailto:${el.contact}" class="email-link">${el.contact}</a>
+                </h6>
+            ` : ''
+
+            let resourceNotes = el.notes ? `
+                <h6 class="card-category d-flex align-items-start lh-base">
+                    <i class="bi bi-info-circle me-3"></i>
+                    <p class="fw-normal">
+                        ${el.notes}
+                    </p>
+                </h6>
+            ` : ''
+
             // create labels for each resource topic
-            let cardTopics = ''
+            let resourceTopics = ''
             if (el.topics) {
                 el.topics.forEach(topic => {
-                    cardTopics += `
+                    resourceTopics += `
                         <span class="card-topic" onclick="Resources.searchByTopic('${topic}')">
                             ${topic}
                         </span>
@@ -217,24 +236,21 @@ var Resources = {
                 }); 
             }
 
-            // add optional contact information
-            if (el.contact) {
-                cardContent += `
-                <div class="d-flex align-items-start email-link">
-                <i class="bi bi-envelope"></i>
-                    <a href="mailto:${el.contact}" class="ml-5">
-                        ${el.contact}
-                    </a>
-                </div>
-                `
-            }
-    
-            // add group of resource topics to the card
-            cardContent += '</div>'
-            cardContent += `<div class="w-100">${cardTopics}</div>`
-    
             // add all card content HTML to the card
-            $cardBody.innerHTML = cardContent
+            $cardBody.innerHTML = `    
+            <div class="card-body">
+                <div class="card-content border-bottom py-2">
+                    ${resourceTitle}
+                    ${rateInfo}
+                    ${contactInfo}
+                </div>
+
+                <div class="card-details mt-3">
+                    ${resourceNotes}
+                    ${resourceTopics}
+                </div>
+            </div>
+            `
     
             // append card body to parent card div
             $cardItem.appendChild($cardBody)
