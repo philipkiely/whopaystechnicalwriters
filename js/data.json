@@ -3,19 +3,15 @@
         "name": "CSS Tricks",
         "type": "publication",
         "link": "https://css-tricks.com/guest-posting/",
-        "contact": null,
-        "topics": [
-            "Front-End Development"
-        ],
+        "topics": ["Front-End Development"],
         "maxRate": 250
     },
     {
         "name": "DigitalOcean",
         "type": "publication",
         "link": "https://www.digitalocean.com/community/pages/write-for-digitalocean",
-        "topics": [
-            "Infrastructure"
-        ],
+        "topics": ["Infrastructure"],
+        "contact": "hello@contact.com",
         "maxRate": 300
     },
     {
