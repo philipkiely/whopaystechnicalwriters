@@ -74,6 +74,7 @@ class Handler(FileSystemEventHandler):
         elif event.event_type == 'modified' or event.event_type == 'created' or event.event_type == 'deleted':
             if "src" in event.src_path:
                 jinja()
+            elif ("css" in event.src_path or "js" in event.src_path or "img" in event.src_path) and "dist" not in event.src_path:
                 static()
 
 
