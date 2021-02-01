@@ -64,7 +64,7 @@
         "type": "agency",
         "link": "https://contentlab.io/write-for-contentlab/",
         "maxRate": 500,
-        "notes": "Quoted rate is for articles. Also offers paid opporunities for outlining and content planning, plus higher fees for larger projects."
+        "notes": "Quoted rate is for articles. Also offers paid opportunities for outlining and content planning, plus higher fees for larger projects."
     },
     {
         "name": "Auth0",
@@ -111,7 +111,7 @@
         ],
         "minRate": 300,
         "maxRate": 400,
-        "notes": "Matches payments with donations to tech-focused charities. Further opporunities for paid updates to existing tutorials."
+        "notes": "Matches payments with donations to tech-focused charities. Further opportunities for paid updates to existing tutorials."
     },
     {
         "name": "Fauna",
@@ -183,7 +183,7 @@
             "Open Source"
         ],
         "maxRate": 300,
-        "notes": "Known to pay much higher rates to trusted repeat authors. Further opporunities for paid updates to existing tutorials."
+        "notes": "Known to pay much higher rates to trusted repeat authors. Further opportunities for paid updates to existing tutorials."
     },
     {
         "name": "LogRocket",
@@ -283,7 +283,7 @@
             "Design"
         ],
         "maxRate": 200,
-        "notes": "Smashing pays $250 for articles after your first. They also have conference speaking and long-form content opporunities."
+        "notes": "Smashing pays $250 for articles after your first. They also have conference speaking and long-form content opportunities."
     },
     {
         "name": "Software Engineering Daily",
@@ -436,7 +436,7 @@
         "link": "https://draft.dev/#write",
         "minRate": 300,
         "maxRate": 500,
-        "notes": "Opporunities delivered by email every week or two to all writers."
+        "notes": "Opportunities delivered by email every week or two to all writers."
     },
     {
         "name": "Hit Subscribe",
