@@ -168,8 +168,15 @@ var Resources = {
     
             // create string to build card's HTML content
             let cardContent = `
-                <h5 class="card-title"><a href="${el.link}" target="_blank">${el.name} (${el.type})</a></h5>
+                <h5 class="card-title w-100 d-flex justify-content-between">
+                    <a href="${el.link}" target="_blank">${el.name}</a>
+                    <span class="badge rounded-pill type-badge">
+                        ${el.type}
+                    </span>
+                </h5>
             `
+                 
+            cardContent += '<div class="py-1 my-1 border-bottom">'
 
             // create string for payment rate information
             let rateInfo = '<p class="card-text">'
@@ -208,6 +215,11 @@ var Resources = {
                         </span>
                     `
                 }); 
+            }
+
+            // add optional contact information
+            if (el.contact) {
+                cardContent += `<a href="mailto:${el.contact}" class="email-link">${el.contact}</a>`
             }
     
             // add group of resource topics to the card
