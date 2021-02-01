@@ -4,14 +4,18 @@
         "type": "publication",
         "link": "https://css-tricks.com/guest-posting/",
         "contact": null,
-        "topics": ["Front-End Development"],
+        "topics": [
+            "Front-End Development"
+        ],
         "maxRate": 250
     },
     {
         "name": "DigitalOcean",
         "type": "publication",
         "link": "https://www.digitalocean.com/community/pages/write-for-digitalocean",
-        "topics": ["Infrastructure"],
+        "topics": [
+            "Infrastructure"
+        ],
         "maxRate": 300
     },
     {
@@ -27,63 +31,323 @@
         "link": "https://contentlab.io/write-for-contentlab/"
     },
     {
-        "name": "BontentLab",
-        "type": "agency",
-        "link": "https://contentlab.io/write-for-contentlab/"
-    },
-    {
-        "name": "FontentLab",
+        "name": "Auth0",
         "type": "publication",
-        "link": "https://contentlab.io/write-for-contentlab/"
+        "link": "https://docs.google.com/document/d/1oKF-lg6X46x5Q384XEjbLE_7twXYQ9PIp_KzdfA0HxE/",
+        "topics": [
+            "Authentication"
+        ],
+        "maxRate": 150,
+        "notes": "Articles must implement some part of the Auth0 spec in any programming language."
     },
     {
-        "name": "RontentLab",
-        "type": "publisher",
-        "link": "https://contentlab.io/write-for-contentlab/"
-    },
-    {
-        "name": "PontentLab",
-        "type": "agency",
-        "link": "https://contentlab.io/write-for-contentlab/"
-    },
-    {
-        "name": "SontentLab",
-        "type": "agency",
-        "link": "https://contentlab.io/write-for-contentlab/"
-    },
-    {
-        "name": "ChontentLab",
+        "name": "CircleCI",
         "type": "publication",
-        "link": "https://contentlab.io/write-for-contentlab/"
+        "link": "https://circleci.com/blog/guest-writer-program/",
+        "topics": [
+            "Infrastructure"
+        ],
+        "maxRate": 325,
+        "notes": "Also provides physical CircleCI swag with your first post."
     },
     {
-        "name": "PlontentLab",
-        "type": "publisher",
-        "link": "https://contentlab.io/write-for-contentlab/"
-    },
-    {
-        "name": "YontentLab",
-        "type": "agency",
-        "link": "https://contentlab.io/write-for-contentlab/"
-    },
-    {
-        "name": "GontentLab",
-        "type": "agency",
-        "link": "https://contentlab.io/write-for-contentlab/"
-    },
-    {
-        "name": "JontentLab",
+        "name": "Couchbase",
         "type": "publication",
-        "link": "https://contentlab.io/write-for-contentlab/"
+        "link": "https://www.couchbase.com/community/community-writers-program",
+        "topics": [
+            "Back-End Development",
+            "CouchDB"
+        ],
+        "maxRate": 200
     },
     {
-        "name": "HontentLab",
-        "type": "publisher",
-        "link": "https://contentlab.io/write-for-contentlab/"
-    },
-    {
-        "name": "VontentLab",
+        "name": "Dev Spotlight",
         "type": "agency",
-        "link": "https://contentlab.io/write-for-contentlab/"
+        "link": "https://www.devspotlight.com/jobs/"
+    },
+    {
+        "name": "Digital Ocean",
+        "type": "publication",
+        "link": "https://www.digitalocean.com/community/pages/write-for-digitalocean",
+        "topics": [
+            "Infrastructure",
+            "Open Source"
+        ],
+        "minRate": 300,
+        "maxRate": 400,
+        "notes": "Matches payments with donations to tech-focused charities. Further opporunities for paid updates to existing tutorials."
+    },
+    {
+        "name": "Fauna",
+        "type": "publication",
+        "link": "https://fauna.com/blog/write-with-fauna",
+        "topics": [
+            "Full-Stack Development",
+            "FaunaDB"
+        ],
+        "minRate": 200,
+        "maxRate": 500,
+        "notes": "Also provides Fauna swag to authors."
+    },
+    {
+        "name": "FloydHub",
+        "type": "publication",
+        "link": "https://blog.floydhub.com/write-for-floydhub/",
+        "topics": [
+            "Data Science"
+        ],
+        "maxRate": 150,
+        "notes": "Also provides authors with a small amount of platform credit."
+    },
+    {
+        "name": "Fly",
+        "type": "publication",
+        "link": "https://github.com/superfly/fly#write-for-fly",
+        "topics": [
+            "Infrastructure"
+        ],
+        "maxRate": 150
+    },
+    {
+        "name": "Honeybadger",
+        "type": "publication",
+        "link": "https://www.honeybadger.io/blog/write-for-us/",
+        "maxRate": 500,
+        "topics": [
+            "Back-End Development"
+        ],
+        "notes": "Developer-friendly writing and editing process using Markdown and GitHub. Only accepts Ruby, PHP, JS content."
+    },
+    {
+        "name": "Infantica",
+        "type": "publication",
+        "link": "https://infatica.io/contribute/",
+        "topics": [
+            "Web Scraping"
+        ],
+        "maxRate": 100,
+        "notes": "Also donates to tech-focused charities for articles."
+    },
+    {
+        "name": "IONOS",
+        "type": "publication",
+        "link": "https://devops.ionos.com/tutorials/get-paid-to-write/",
+        "topics": [
+            "Infrastructure"
+        ],
+        "maxRate": 200,
+        "contact": "Authors@cloud.ionos.com"
+    },
+    {
+        "name": "Linode",
+        "type": "publication",
+        "link": "https://www.linode.com/lp/write-for-linode/",
+        "topics": [
+            "Infrastructure",
+            "Open Source"
+        ],
+        "maxRate": 300,
+        "notes": "Known to pay much higher rates to trusted repeat authors. Further opporunities for paid updates to existing tutorials."
+    },
+    {
+        "name": "LogRocket",
+        "type": "publication",
+        "link": "https://blog.logrocket.com/become-a-logrocket-guest-author-7d970eb673f9/",
+        "topics": [
+            "Front-End Development"
+        ],
+        "maxRate": 350,
+        "contact": "brian@logrocket.com"
+    },
+    {
+        "name": "LWN",
+        "type": "publication",
+        "link": "https://lwn.net/op/AuthorGuide.lwn",
+        "maxRate": 300,
+        "topics": [
+            "Linux News"
+        ],
+        "contact": "authors@lwn.net",
+        "notes": "Authors retain copyright, CC BY-SA 4.0 after 2 weeks exclusivity. Experienced authors and ambitious projects earn more."
+    },
+    {
+        "name": "Make Use Of",
+        "type": "publication",
+        "link": "https://www.makeuseof.com/contributor/",
+        "topics": [
+            "Consumer Tech"
+        ],
+        "maxRate": 120
+    },
+    {
+        "name": "Okta",
+        "type": "publication",
+        "link": "https://developer.okta.com/blog/",
+        "notes": "No public application, by invite only. Pays well."
+    },
+    {
+        "name": "Paperspace",
+        "type": "publication",
+        "link": "https://blog.paperspace.com/write-for-paperspace/",
+        "topics": [
+            "Data Science"
+        ],
+        "minRate": 200,
+        "maxRate": 300
+    },
+    {
+        "name": "PHP Architect",
+        "type": "publication",
+        "link": "https://www.phparch.com/editorial/write-for-us/",
+        "topics": [
+            "Back-End Development"
+        ],
+        "maxRate": 175
+    },
+    {
+        "name": "Postmark",
+        "type": "publication",
+        "link": "https://postmarkapp.com/write-for-us",
+        "topics": [
+            "Back-End Development"
+        ],
+        "minRate": 200,
+        "maxRate": 300
+    },
+    {
+        "name": "Real Python",
+        "type": "publication",
+        "link": "https://realpython.com/write-for-us/",
+        "topics": [
+            "Back-End Development",
+            "Programming",
+            "Soft Skills"
+        ],
+        "notes": "Site calls working with them a \"significant time commitment\" for a \"paid part-time position.\""
+    },
+    {
+        "name": "SitePoint",
+        "type": "publication",
+        "link": "https://www.sitepoint.com/write-for-us/",
+        "topics": [
+            "Front-End Development",
+            "No-Code Tools",
+            "Design"
+        ],
+        "minRate": 150,
+        "maxRate": 300,
+        "notes": "SitePoint is a well-established publication with different editors for different topics, with varying requirements. Large projects pay more."
+    },
+    {
+        "name": "Smashing Magazine",
+        "type": "publication",
+        "link": "https://www.smashingmagazine.com/write-for-us/",
+        "topics": [
+            "Front-End Development",
+            "Design"
+        ],
+        "maxRate": 200,
+        "notes": "Smashing pays $250 for articles after your first. They also have conference speaking and long-form content opporunities."
+    },
+    {
+        "name": "Software Engineering Daily",
+        "type": "publication",
+        "link": "https://softwareengineeringdaily.com/write/",
+        "contact": "write@softwareengineeringdaily.com"
+    },
+    {
+        "name": "TakeShape",
+        "type": "publication",
+        "link": "https://www.takeshape.io/jobs/contributing-writer/",
+        "topics": [
+            "Front-End Development",
+            "Interviews"
+        ],
+        "maxRate": 300
+    },
+    {
+        "name": "TechWell",
+        "type": "publication",
+        "link": "https://www.techwell.com/techwell-submission-guidelines",
+        "topics": [
+            "DevOps",
+            "Soft Skills"
+        ],
+        "maxRate": 200
+    },
+    {
+        "name": "TestDriven.io",
+        "type": "publication",
+        "link": "https://testdriven.io/join-testdriven/",
+        "topics": [
+            "Full-Stack Development"
+        ],
+        "minRate": 300,
+        "maxRate": 500,
+        "notes": "Pays $75 to $150 for updates and improvements to existing content."
+    },
+    {
+        "name": "WonderProxy",
+        "type": "publication",
+        "link": "https://wonderproxy.com/blog/looking-for-authors/",
+        "topics": [
+            "Testing"
+        ],
+        "minRate": 350,
+        "maxRate": 500
+    },
+    {
+        "name": "",
+        "type": "publication",
+        "link": "",
+        "maxRate":
+    },
+    {
+        "name": "",
+        "type": "publication",
+        "link": "",
+        "maxRate":
+    },
+    {
+        "name": "",
+        "type": "publication",
+        "link": "",
+        "maxRate":
+    },
+    {
+        "name": "",
+        "type": "publication",
+        "link": "",
+        "maxRate":
+    },
+    {
+        "name": "",
+        "type": "publication",
+        "link": "",
+        "maxRate":
+    },
+    {
+        "name": "",
+        "type": "publication",
+        "link": "",
+        "maxRate":
+    },
+    {
+        "name": "",
+        "type": "publication",
+        "link": "",
+        "maxRate":
+    },
+    {
+        "name": "",
+        "type": "publication",
+        "link": "",
+        "maxRate":
+    },
+    {
+        "name": "",
+        "type": "publication",
+        "link": "",
+        "maxRate":
     }
 ]
