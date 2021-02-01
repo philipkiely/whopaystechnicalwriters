@@ -23,7 +23,45 @@
         "type": "publisher",
         "link": "https://nostarch.com/writeforus",
         "contact": "editors@nostarch.com",
-        "royaltyRate": "15% or 10% with $8,000 advance"
+        "royaltyRate": "15% or 10% with $8,000 advance",
+        "notes": "No Starch Press is a longstanding independent publisher known for print quality and strong content."
+    },
+    {
+        "name": "O'Reilly Media",
+        "type": "publisher",
+        "link": "https://www.oreilly.com/work-with-us.html",
+        "contact": "workwithus@oreilly.com",
+        "notes": "O'Reilly Media is the largest publisher of programming content and offers a wide variety of opportunities."
+    },
+    {
+        "name": "Apress",
+        "type": "publisher",
+        "link": "https://www.apress.com/gp/write-for-us",
+        "contact": "editorial@apress.com",
+        "notes": "Apress specializes in Microsoft, Apple, and enterprise technologies."
+    },
+    {
+        "name": "Manning",
+        "type": "publisher",
+        "link": "https://www.manning.com/write-for-us",
+        "contact": "proposals@manning.com",
+        "royaltyRate": "10% with an advance, 25% on ebook sales",
+        "notes": "Manning is a longstanding independent publisher known for its MEAP process for publishing books as they're written."
+    },
+    {
+        "name": "\\newline",
+        "type": "publisher",
+        "link": "https://www.newline.co/write-with-us",
+        "royaltyRate": "50%",
+        "notes": "\\newline is a newer independent publisher focusing on full-stack tutorials and digital distribution."
+    },
+    {
+        "name": "The Pragmatic Bookshelf",
+        "type": "publisher",
+        "link": "https://pragprog.com/become-an-author/",
+        "contact": "proposals@pragprog.com",
+        "royaltyRate": "50%",
+        "notes": "Named for their most iconic title, this independent publisher produces books on both technical and soft skills."
     },
     {
         "name": "ContentLab",

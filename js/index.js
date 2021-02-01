@@ -1,7 +1,7 @@
 var Resources = {
 
     // customizable settings
-    cardsPerPage: 5,
+    cardsPerPage: 10,
 
     // state variables
     resourceData: [],
