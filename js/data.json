@@ -23,12 +23,14 @@
         "type": "publisher",
         "link": "https://nostarch.com/writeforus",
         "contact": "editors@nostarch.com",
-        "royaltyRate": "15%"
+        "royaltyRate": "15% or 10% with $8,000 advance"
     },
     {
         "name": "ContentLab",
         "type": "agency",
-        "link": "https://contentlab.io/write-for-contentlab/"
+        "link": "https://contentlab.io/write-for-contentlab/",
+        "maxRate": 500,
+        "notes": "Quoted rate is for articles. Also offers paid opporunities for outlining and content planning, plus higher fees for larger projects."
     },
     {
         "name": "Auth0",
@@ -183,7 +185,7 @@
         "name": "Okta",
         "type": "publication",
         "link": "https://developer.okta.com/blog/",
-        "notes": "No public application, by invite only. Pays well."
+        "notes": "No public application, by invite only through Toptal. Pays well."
     },
     {
         "name": "Paperspace",
@@ -297,57 +299,180 @@
         "maxRate": 500
     },
     {
-        "name": "",
+        "name": "Clubhouse",
         "type": "publication",
-        "link": "",
-        "maxRate":
+        "link": "https://clubhouse.io/clubhouse-write-earn-give-program",
+        "topics": [
+            "Programming",
+            "Soft Skills"
+        ],
+        "minRate": 350,
+        "maxRate": 600,
+        "notes": "Matches payments with donations to tech-focused charities or open-source projects."
     },
     {
-        "name": "",
+        "name": "Tutorialspoint",
         "type": "publication",
-        "link": "",
-        "maxRate":
+        "link": "https://www.tutorialspoint.com/about/tutorials_writing.htm",
+        "contact": "contact@tutorialspoint.com",
+        "notes": "Payment is dependent on tutorial length, complexity, and subject."
     },
     {
-        "name": "",
+        "name": "Envato Tuts+",
         "type": "publication",
-        "link": "",
-        "maxRate":
+        "link": "https://tutsplus.com/teach",
+        "topics": [
+            "Programming",
+            "Design"
+        ],
+        "notes": "Also buys video courses of 30 minutes or longer."
     },
     {
-        "name": "",
+        "name": "Twilio",
         "type": "publication",
-        "link": "",
-        "maxRate":
+        "link": "https://www.twilio.com/blog",
+        "topics": [
+            "Full-Stack Development",
+            "Infrastructure"
+        ],
+        "maxRate": 500,
+        "notes": "Seek out and contact the appropriate editor for the topic you want to write about. Use Twilio or Sendgrid technologies in sample applications."
     },
     {
-        "name": "",
+        "name": "Vonage",
         "type": "publication",
-        "link": "",
-        "maxRate":
+        "link": "https://developer.nexmo.com/spotlight#submit-your-idea",
+        "topics": [
+            "Full-Stack Development"
+        ],
+        "maxRate": 500,
+        "notes": "Posts should feature one or more Vonage products."
     },
     {
-        "name": "",
+        "name": "WPHUB",
         "type": "publication",
-        "link": "",
-        "maxRate":
+        "link": "https://www.wphub.com/write-for-us/",
+        "topics": [
+            "Wordpress"
+        ],
+        "minRate": 100,
+        "maxRate": 200
     },
     {
-        "name": "",
+        "name": "Zift",
         "type": "publication",
-        "link": "",
-        "maxRate":
+        "link": "https://wezift.com/write-for-zift/",
+        "topics": [
+            "Parenting and Technology"
+        ],
+        "maxRate": 100,
+        "contact": "editorial@wezift.com"
     },
     {
-        "name": "",
+        "name": "Soshace",
         "type": "publication",
-        "link": "",
-        "maxRate":
+        "link": "https://blog.soshace.com/write-for-us/",
+        "maxRate": 100
     },
     {
-        "name": "",
+        "name": "Hasura",
         "type": "publication",
-        "link": "",
-        "maxRate":
+        "link": "https://hasura.io/blog/the-hasura-technical-writer-program/",
+        "topics": [
+            "Back-End Development"
+        ],
+        "maxRate": 300,
+        "notes": "Tutorials must include the Hasura GraphQL engine."
+    },
+    {
+        "name": "Arctype",
+        "type": "publication",
+        "link": "https://blog.arctype.com/contribute/",
+        "topics": [
+            "Back-End Development",
+            "Data Science"
+        ],
+        "maxRate": 150,
+        "contact": "derek@arctype.com",
+        "notes": "May provide additional bonuses for well-performing posts."
+    },
+    {
+        "name": "Draft.dev",
+        "type": "agency",
+        "link": "https://draft.dev/#write",
+        "minRate": 300,
+        "maxRate": 500,
+        "notes": "Opporunities delivered by email every week or two to all writers."
+    },
+    {
+        "name": "Hit Subscribe",
+        "type": "agency",
+        "link": "https://www.hitsubscribe.com/apply-to-be-an-author/",
+        "minRate": 100,
+        "maxRate": 200
+    },
+    {
+        "name": "LoginRadius",
+        "type": "publication",
+        "link": "https://www.loginradius.com/blog/async/page/guest-blog",
+        "topics": [
+            "Full-Stack Development"
+        ],
+        "maxRate": 200
+    },
+    {
+        "name": "Neptune",
+        "type": "publication",
+        "link": "https://neptune.ai/write-for-us",
+        "contact": "guestwriters@neptune.ai",
+        "topics": [
+            "Data Science"
+        ],
+        "minRate": 200,
+        "maxRate": 500,
+        "notes": "Also pays $50-150 for non-technical blog posts."
+    },
+    {
+        "name": "Rancher",
+        "type": "publication",
+        "link": "https://rancher.com/writing-program/roles/writer/",
+        "topics": [
+            "DevOps",
+            "Infrastructure"
+        ],
+        "maxRate": 300
+    },
+    {
+        "name": "Section",
+        "type": "publication",
+        "link": "https://github.com/section-engineering-education/engineering-education",
+        "notes": "Section takes submissions specifically from university-level computer science students."
+    },
+    {
+        "name": "Tech Beacon",
+        "type": "publication",
+        "link": "https://techbeacon.com/aboutus",
+        "topics": [
+            "DevOps",
+            "Infrastructure"
+        ],
+        "maxRate": 400,
+        "notes": "The \"write for us\" page is currently behind an authentication barrier."
+    },
+    {
+        "name": "TypingDNA",
+        "type": "publication",
+        "link": "https://www.typingdna.com/guest-author-program#get-started",
+        "maxRate": 500
+    },
+    {
+        "name": "Vultr",
+        "type": "publication",
+        "link": "https://www.vultr.com/docs/vultr-docs-program-guidelines",
+        "topics": [
+            "Infrastructure"
+        ],
+        "minRate": 75,
+        "maxRate": 300
     }
 ]
