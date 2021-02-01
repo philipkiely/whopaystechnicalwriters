@@ -219,7 +219,14 @@ var Resources = {
 
             // add optional contact information
             if (el.contact) {
-                cardContent += `<a href="mailto:${el.contact}" class="email-link">${el.contact}</a>`
+                cardContent += `
+                <div class="d-flex align-items-start email-link">
+                <i class="bi bi-envelope"></i>
+                    <a href="mailto:${el.contact}" class="ml-5">
+                        ${el.contact}
+                    </a>
+                </div>
+                `
             }
     
             // add group of resource topics to the card
