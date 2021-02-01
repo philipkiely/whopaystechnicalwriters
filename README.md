@@ -75,7 +75,7 @@ Object Structure (Bold is required):
 * **type**: one of publication (they pay for articles), publisher (they make book deals), agency (they find technical content work on hourly or project basis)
 * **link**: a URL to find out more information
 * contact: an email address to submit pitches
-* topics: an array of topics covered, at most 3. Options are:
+* topics: an array of topics covered, at most 3. Try to stay standardized, but search is full-text. Good general options are:
   * Front-End Development
   * Back-End Development
   * Data Science
