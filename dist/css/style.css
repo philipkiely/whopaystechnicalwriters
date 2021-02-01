@@ -7,6 +7,7 @@
     --accent-color: #139F38;
     --accent-color-dark: #02651D;
     --off-white: #FFF0A7;
+    --red-3: #C32327;
 }
 
 body {
@@ -34,6 +35,11 @@ code {
 
 .text-accent {
     color: var(--accent-color);
+}
+
+.mb-3.required .form-label:after {
+   color: var(--red-3);
+   content: " *";
 }
 
 .btn-custom {
