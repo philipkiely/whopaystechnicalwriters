@@ -136,6 +136,7 @@ code {
 }
 
 .email-link a:hover {
+    color: var(--text-color);
     opacity: 1;
 }
 

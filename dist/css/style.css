@@ -126,3 +126,24 @@ code {
 #pagination li a {
     cursor: pointer;
 }
+
+.email-link, .email-link a {
+    text-decoration: none;
+    color: var(--text-color);
+    opacity: 0.8;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.email-link a:hover {
+    color: var(--text-color);
+    opacity: 1;
+}
+
+.type-badge {
+    font-size: 0.65em;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
