@@ -7,13 +7,6 @@
         "maxRate": 250
     },
     {
-        "name": "DigitalOcean",
-        "type": "publication",
-        "link": "https://www.digitalocean.com/community/pages/write-for-digitalocean",
-        "topics": ["Infrastructure"],
-        "maxRate": 300
-    },
-    {
         "name": "No Starch Press",
         "type": "publisher",
         "link": "https://nostarch.com/writeforus",
