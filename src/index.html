@@ -4,20 +4,25 @@
 <script src="/js/index.js"></script>
 {% endblock %}
 
-{% block content %}
-<!-- 
-<section class="w-100 p-0 bg-accent text-white" style="border-top: 16px solid var(--accent-color-dark)">
+{% block banner %}
+
+<section class="w-100 bg-accent text-white py-2" id="banner">
     <div class="container py-4 d-flex justify-content-between flex-wrap flex-md-nowrap align-items-start" >
-        <p class="fs-5 flex-fill col-md-8 ">            
+        <span class="flex-fill col-md-8">            
             A curated collection of active publishers, publications, and agencies that pay fair rates for high-quality technical content. 
-        </p>
+        </span>
         <div class="flex-fill">
             <button style="background: var(--accent-color-dark)" type="button" class="btn btn-custom float-end text-nowrap text-light" onclick="window.location.href='form.html'">
                 Suggest a resource
             </button>
         </div>
     </div>
-</section> -->
+</section>
+
+{% endblock %}
+
+
+{% block content %}
 
 <div class="col-lg-9 order-lg-1">
 
@@ -63,10 +68,12 @@
 
     <div class="my-4 mb-5">
         <div id="cards-container"></div>
-        <div id="no-results" class="d-none o-8 text-black-50 py-4 text-center">
-            <h5>
-                Oops, no results found... try a less restrictive search or filter.
-            </h5>
+        <div id="no-results" class="d-none d-flex w-100" id="no-results">
+            <img class="p-3" src="../img/no_results.svg" alt="No results found">
+            <div class="p-3">
+                <h5>Oops, no results found...</h5> 
+                <h6>Try a different search keyword or filter.</h6>
+            </div>
         </div>
         <nav aria-label="Page navigation" class="mt-4">
             <ul class="pagination justify-content-end" id="pagination">

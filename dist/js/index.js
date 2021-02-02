@@ -182,8 +182,11 @@ var Resources = {
             $cardBody.className = 'card-body';
 
             let resourceTitle = `
-                <h5 class="card-title w-100 d-flex justify-content-between mb-3">
-                    <a href="${el.link}" target="_blank">${el.name}</a>
+                <h5 class="card-title w-100 d-flex justify-content-between mb-0">
+                    <a href="${el.link}" target="_blank">
+                        ${el.name}
+                        <i class="bi bi-link card-link"></i>
+                    </a>
                     <span class="badge rounded-pill type-badge">
                         ${el.type}
                     </span>
@@ -215,7 +218,7 @@ var Resources = {
             if (rateInfo.length) {
                 let rawRateInfo = rateInfo
                 rateInfo = `
-                    <h6 class="card-category d-flex align-items-center ">
+                    <h6 class="card-category d-flex align-items-center">
                         <i class="bi bi-credit-card me-3"></i>
                         <span>${rawRateInfo}<span class="fw-normal"> for first-time authors</span></span>
                     </h6>
@@ -224,18 +227,18 @@ var Resources = {
     
             // add optional contact info
             let contactInfo = el.contact ? `
-                <h6 class="card-category d-flex align-items-center ">
+                <h6 class="card-category d-flex align-items-center">
                     <i class="bi bi-envelope me-3"></i>
                     <a href="mailto:${el.contact}" class="email-link">${el.contact}</a>
                 </h6>
             ` : ''
 
             let resourceNotes = el.notes ? `
-                <h6 class="card-category d-flex align-items-start lh-base">
+                <h6 class="card-category d-flex align-items-start pt-2">
                     <i class="bi bi-info-circle me-3"></i>
-                    <p class="fw-normal">
+                    <span class="fw-normal card-notes">
                         ${el.notes}
-                    </p>
+                    </span>
                 </h6>
             ` : ''
 
@@ -244,7 +247,7 @@ var Resources = {
             if (el.topics) {
                 el.topics.forEach(topic => {
                     resourceTopics += `
-                        <span class="card-topic" onclick="Resources.searchByTopic('${topic}')">
+                        <span class="card-topic rounded-pill" onclick="Resources.searchByTopic('${topic}')">
                             ${topic}
                         </span>
                     `
@@ -252,18 +255,26 @@ var Resources = {
             }
 
             // add all card content HTML to the card
-            $cardBody.innerHTML = `    
-                <div class="card-content border-bottom py-2">
-                    ${resourceTitle}
+            let cardContent = ''
+            cardContent += (rateInfo || contactInfo) ? `
+                <div class="card-content pb-1">  
                     ${rateInfo}
                     ${contactInfo}
                 </div>
-
-                <div class="card-details mt-3">
+            ` : ''
+            cardContent += (resourceNotes || resourceTopics) ? `
+                <div class="card-details mt-1 pt-1 border-top">
                     ${resourceNotes}
-                    ${resourceTopics}
+                    <div class="mt-3 d-flex justify-content-end flex-wrap">
+                        ${resourceTopics}
+                    </div>
                 </div>
-            `
+            ` : ''
+
+            cardContent = (cardContent.length) ? `<div class="mt-3"></div>${cardContent}` : ''
+            cardContent = resourceTitle + cardContent
+
+            $cardBody.innerHTML = cardContent
     
             // append card body to parent card div
             $cardItem.appendChild($cardBody)
@@ -312,11 +323,8 @@ var Resources = {
         // add event listener for pagination previous button
         this.$paginationPrevBtn.addEventListener("click", () => {
             if (this.activePageIndex > 0) {
-                this.$paginationPrevBtn.classList.add('disabled')
                 this.setPageIndex(this.activePageIndex - 1)
-            }
-            else {
-                this.$paginationPrevBtn.classList.add('disabled')
+                // window.scrollTo(0, 0);
             }
         });
 
@@ -324,6 +332,7 @@ var Resources = {
         this.$paginationNextBtn.addEventListener("click", () => { 
             if (this.activePageIndex < this.totalPages - 1) {
                 this.setPageIndex(this.activePageIndex + 1)
+                // window.scrollTo(0, 0);
             }
         });  
     },
