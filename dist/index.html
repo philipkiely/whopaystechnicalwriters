@@ -34,6 +34,24 @@
             <h4 class="mono fst-italic">Who Pays Technical Writers?</h4>
             <img src="img/graphic.svg" id="graphic" class="w-25" alt="illustration">
         </div>
+
+        
+
+<section class="w-100 bg-accent text-white py-2" id="banner">
+    <div class="container py-4 d-flex justify-content-between flex-wrap flex-md-nowrap align-items-start" >
+        <span class="flex-fill col-md-8">            
+            A curated collection of active publishers, publications, and agencies that pay fair rates for high-quality technical content. 
+        </span>
+        <div class="flex-fill">
+            <button style="background: var(--accent-color-dark)" type="button" class="btn btn-custom float-end text-nowrap text-light" onclick="window.location.href='form.html'">
+                Suggest a resource
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
     </header>
 
     <!--Shared Right Sidebar (Moves to Bottom on Mobile)-->
@@ -42,19 +60,6 @@
         <div class="row">
 
             
-<!-- 
-<section class="w-100 p-0 bg-accent text-white" style="border-top: 16px solid var(--accent-color-dark)">
-    <div class="container py-4 d-flex justify-content-between flex-wrap flex-md-nowrap align-items-start" >
-        <p class="fs-5 flex-fill col-md-8 ">            
-            A curated collection of active publishers, publications, and agencies that pay fair rates for high-quality technical content. 
-        </p>
-        <div class="flex-fill">
-            <button style="background: var(--accent-color-dark)" type="button" class="btn btn-custom float-end text-nowrap text-light" onclick="window.location.href='form.html'">
-                Suggest a resource
-            </button>
-        </div>
-    </div>
-</section> -->
 
 <div class="col-lg-9 order-lg-1">
 
@@ -100,10 +105,12 @@
 
     <div class="my-4 mb-5">
         <div id="cards-container"></div>
-        <div id="no-results" class="d-none o-8 text-black-50 py-4 text-center">
-            <h5>
-                Oops, no results found... try a less restrictive search or filter.
-            </h5>
+        <div id="no-results" class="d-none d-flex w-100" id="no-results">
+            <img class="p-3" src="../img/no_results.svg" alt="No results found">
+            <div class="p-3">
+                <h5>Oops, no results found...</h5> 
+                <h6>Try a different search keyword or filter.</h6>
+            </div>
         </div>
         <nav aria-label="Page navigation" class="mt-4">
             <ul class="pagination justify-content-end" id="pagination">
@@ -123,9 +130,9 @@
 
             <aside class="col-lg-3 order-lg-2 inline-flex pt-lg-0 pt-2 mt-lg-0 mt-2">
                 <hr class="d-block d-lg-none mx-auto" id="separator"></hr>
-                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="d-flex justify-content-between align-items-center mb-3">
                     <code>BROUGHT TO YOU BY</code>
-                </h4>
+                </h5>
                 <a href="https://philipkiely.com/wfsd/?utm_source=wptw"><img class="img-fluid" src="/img/wfsd_gumroad_thumbnail.png"></a>
                 <br>
                 <br>
@@ -144,10 +151,21 @@
 
     <!--Shared Footer-->
     <footer class="container pt-4 my-md-5 pt-md-5 border-top">
-        <p>Copyright &copy; 2020 &ndash; <span id="year">2021</span> <a href="https://pkandc.com/">Philip Kiely & Company</a></p>
-        <p>Open source on <a href="https://github.com/philipkiely/whopaystechnicalwriters/">GitHub</a> under the <a href="https://github.com/philipkiely/whopaystechnicalwriters/blob/main/LICENSE">MIT License</a></p>
-        <p>Concept and development by <a href="https://philipkiely.com/">Philip Kiely</a>. Design and front-end development by <a href="https://jeev.me" class="link" target="_blank">Jeev Prayaga</a>.</p>
-        <p>Inspired by, but not associated with, <a href="http://whopayswriters.com/#/results">Who Pays Writers</a>, and specifically created to host resouces disallowed by their <a href="http://whopayswriters.com/#/about">policies</a>.</p>
+        <div class="row g-4">
+            <div class="col-12 col-md d-flex">
+                <img class="me-4" src="../img/logo.svg" alt="" width="50" height="50">
+                <div>
+                    <small class="d-block mb-1 text-muted">Copyright &copy; 2020 &ndash; <span id="year">2021</span></small>
+                    <a href="https://pkandc.com/">Philip Kiely & Company</a>
+                </div>
+            </div>
+            <div class="col-12 col-md">
+                <p>Open source on <a href="https://github.com/philipkiely/whopaystechnicalwriters/">GitHub</a> under the <a href="https://github.com/philipkiely/whopaystechnicalwriters/blob/main/LICENSE">MIT License</a>.</p>
+                <p>Concept and development by <a href="https://philipkiely.com/">Philip Kiely</a>. Design and front-end development by <a href="https://jeev.me" class="link" target="_blank">Jeev Prayaga</a>.</p>
+                <p>Inspired by, but not associated with, <a href="http://whopayswriters.com/#/results">Who Pays Writers</a>, and specifically created to host resouces disallowed by their <a href="http://whopayswriters.com/#/about">policies</a>.</p>
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>
