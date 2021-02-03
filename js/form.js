@@ -29,7 +29,7 @@ function processForm(event) {
     }
     // Send Data
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "/.netlify/fns/form", true);
+    xhr.open("POST", "/.netlify/functions/form", true);
 
     xhr.setRequestHeader("Content-Type", "application/json");
 
