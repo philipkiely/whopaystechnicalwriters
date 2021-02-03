@@ -14,14 +14,23 @@ exports.handler = async (event, context) => {
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "https://api.sendgrid.com/v3/mail/send", true);
 
-    xhr.setRequestHeader("Authorization", "Bearer $SENDGRID_API_KEY");
+    xhr.setRequestHeader("Authorization", "Bearer " + process.env.SENDGRID_API_KEY);
 
     xhr.setRequestHeader("Content-Type", "application/json");
 
-    xhr.send(JSON.stringify(emailData));
+    xhr.onreadystatechange = function () {
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+            return {
+                statusCode: 200,
+                body: "Success"
+            };
+        } else {
+            return {
+                statusCode: 500,
+                body: "Sendgrid failed."
+            };
+        }
+    }
 
-    return {
-        statusCode: 200,
-        body: "Success"
-    };
+    xhr.send(JSON.stringify(emailData));
 };
