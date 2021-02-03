@@ -29,6 +29,7 @@ exports.handler = async (event, context) => {
         console.log(`statusCode: ${res.statusCode}`)
 
         res.on('data', d => {
+            console.log(d)
             return {
                 statusCode: 200,
                 body: "Success"
@@ -37,6 +38,7 @@ exports.handler = async (event, context) => {
     })
 
     req.on('error', error => {
+        console.log(error)
         return {
             statusCode: 500,
             body: "Sendgrid failed."
