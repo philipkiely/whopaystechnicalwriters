@@ -27,24 +27,11 @@ function processForm(event) {
         "rates": rates,
         "notes": notes
     }
-    // Send Data
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "/.netlify/functions/form", true);
 
-    xhr.setRequestHeader("Content-Type", "application/json");
+    var subj = encodeURIComponent("Who Pays Technical Writers Resource Suggestion")
+    var body = encodeURIComponent(JSON.stringify(formData))
 
-    xhr.onreadystatechange = function () {
-        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-            // Clear Form
-            document.getElementById("new-pub-form").reset();
-            // Alert Success
-            document.getElementById("form-failed").hidden = true
-            document.getElementById("form-succeeded").hidden = false
-        } else {
-            document.getElementById("form-failed").hidden = false
-        }
-    }
-    xhr.send(JSON.stringify(formData));
+    window.location.href = "mailto:philip@kiely.xyz?subject=" + subj + "&body=" + body;
 }
 
 var form = document.getElementById("new-pub-form");
