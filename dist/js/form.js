@@ -1,8 +1,3 @@
-function errorRequiredField(id, text) {
-    console.log("errorReq", id, text) // show message, highlight field, etc
-    document.getElementById("form-failed").hidden = false
-}
-
 function processForm(event) {
     event.preventDefault();
     // Gather Data
@@ -15,11 +10,11 @@ function processForm(event) {
     var notes = document.getElementById("notes").value;
     // Validate Required Fields (companyType is never empty)
     if (companyName == "") {
-        errorRequiredField("company-name", "Please enter a company name.")
+        document.getElementById("form-failed").hidden = false
         return
     }
     if (link == "") {
-        errorRequiredField("link", "Please enter a link to the company's \"write for us\" page.")
+        document.getElementById("form-failed").hidden = false
         return
     }
     // JSON Data
@@ -33,12 +28,23 @@ function processForm(event) {
         "notes": notes
     }
     // Send Data
-    console.log(formData)
-    // Clear Form
-    document.getElementById("new-pub-form").reset();
-    // Alert Success
-    document.getElementById("form-failed").hidden = true
-    document.getElementById("form-succeeded").hidden = false
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://httpbin.org/post", true);
+
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.onreadystatechange = function () {
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+            // Clear Form
+            document.getElementById("new-pub-form").reset();
+            // Alert Success
+            document.getElementById("form-failed").hidden = true
+            document.getElementById("form-succeeded").hidden = false
+        } else {
+            document.getElementById("form-failed").hidden = false
+        }
+    }
+    xhr.send(JSON.stringify(formData));
 }
 
 var form = document.getElementById("new-pub-form");
