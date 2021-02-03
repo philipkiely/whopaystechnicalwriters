@@ -23,13 +23,16 @@
 <meta name="twitter:title" content="Who Pays Technical Writers?">
 <meta name="twitter:description" content="A curated collection of active publishers, publications, and agencies that pay fair rates for high-quality technical content.">
 <meta name="twitter:image" content="/img/favicon_io/android-chrome-512x512.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 {% block head %}{% endblock %}
 </head>
 <body>
     <!--Shared Header-->
-    <header class="w-100 bg-off-white">  
-        <div class="container d-flex justify-content-between align-items-center py-4">
-            <h4 class="mono fst-italic">Who Pays Technical Writers?</h4>
+    <header class="w-100 bg-off-white ">  
+        <div class="container d-block d-md-flex justify-content-between align-items-center p-md-4 p-3 py-4">
+            <h4 class="mono fst-italic w-100 my-3 my-md-0">
+                Who Pays Technical Writers?
+            </h4>
             <img src="img/graphic.svg" id="graphic" class="w-25" alt="illustration">
         </div>
 
@@ -37,14 +40,13 @@
 
     </header>
 
-    <!--Shared Right Sidebar (Moves to Bottom on Mobile)-->
-
-    <section class="container py-4 pt-5">
+    <section class="container py-4 pt-md-5 pt-3">
         <div class="row">
 
             {% block content %}{% endblock %}
-            <aside class="col-lg-3 order-lg-2 inline-flex pt-lg-0 pt-2 mt-lg-0 mt-2">
-                <hr class="d-block d-lg-none mx-auto" id="separator"></hr>
+
+            <!--Shared Right Sidebar (Moves to Bottom on Mobile)-->
+            <aside class="col-lg-3 order-lg-2 inline-flex pt-lg-0 pt-4 mt-lg-0 mt-2 border-top border-lg-none">
                 <h5 class="d-flex justify-content-between align-items-center mb-3">
                     <code>BROUGHT TO YOU BY</code>
                 </h5>
