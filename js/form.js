@@ -19,7 +19,7 @@ function processForm(event) {
     }
     // JSON Data
     var formData = {
-        "company-name": companyName,
+        "companyName": companyName,
         "companyType": companyType,
         "link": link,
         "email": email,

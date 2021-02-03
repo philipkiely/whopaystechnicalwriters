@@ -16,7 +16,6 @@ exports.handler = async (event, context) => {
 
     const options = {
         hostname: 'api.sendgrid.com',
-        port: 443,
         path: '/v3/mail/send',
         method: 'POST',
         headers: {
