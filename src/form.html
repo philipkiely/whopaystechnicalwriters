@@ -1,9 +1,5 @@
 {% extends "base.html" %}
 
-{% block head %}
-<script src="/js/form.js"></script>
-{% endblock %}
-
 {% block content %}
 <div class="col-lg-9 order-lg-1 mb-5 py-2">
 
@@ -12,8 +8,15 @@
         <span>Add a Publication</span>
         <a class="link fs-6 mx-4 link-custom" href="/">Return home</a>
     </h3>
-    <form class="needs-validation" novalidate>
-
+    <div class="alert alert-success alert-dismissible fade show" role="alert" id="form-succeeded" hidden="true">
+        <p>Thank you for suggesting a resource! Your suggestion will be considered and may appear on the site within a few days.</p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert" id="form-failed" hidden="true">
+        <p>Looks like something went wrong, please check the form you attempted to submit and try again.</p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <form class="needs-validation" id="new-pub-form" novalidate>
         <div class="mb-3 required">
             <label for="company-name" class="form-label">Company Name</label>
             <input type="text" class="form-control" id="company-name" placeholder="CSS Tricks">
@@ -27,9 +30,9 @@
             </select>
             <div class="form-text" id="ct-description">
                 <ul>
-                    <li>"Publication" means a blog, magazine, or newsletter that buys articles.</li>
-                    <li>"Publisher" means they publish books and pay royalties.</li>
-                    <li>"Agency" means they find writers hourly or project work.</li>
+                    <li>"Publication" means a blog (including corporate blogs), magazine, or newsletter that buys articles.</li>
+                    <li>"Publisher" means a company that publishes books and pays royalties.</li>
+                    <li>"Agency" means a company that finds writers hourly or project work.</li>
                 </ul>
             </div>
         </div>
@@ -69,6 +72,6 @@
         </div>
         <button class="btn btn-custom btn-block" type="submit">Send</button>
     </form>
-
+    <script src="/js/form.js"></script>
 </div>
 {% endblock %}
