@@ -89,15 +89,15 @@ Object Structure (Bold is required):
 
 The json file itself does not need to be alphabetized (it may be though) but the data should render in alpha order on the website by default.
 
+The `fns` directory contains a lambda-style function in JavaScript that uses a node runtime and runs on Netlify Functions.
+
 ### Python
 
 The script in `/build` is written in Python. Setup and usage instructions are above.
 
-fns: TODO
-
 ### Netlify
 
-TODO
+The prod branch of this directory deploys to Netlify.
 
 ## About
 

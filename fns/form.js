@@ -10,7 +10,7 @@ exports.handler = async (event, context) => {
         "personalizations": [{ "to": [{ "email": "philip@kiely.xyz" }] }],
         "from": { "email": "philip@kiely.xyz" },
         "subject": "Who Pays Technical Writers Form Submission",
-        "content": [{ "type": "text/plain", "value": event.body }]
+        "content": [{ "type": "text/plain", "value": JSON.stringify(event.body) }]
                     });
 
 
