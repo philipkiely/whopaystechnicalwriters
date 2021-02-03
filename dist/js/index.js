@@ -183,11 +183,12 @@ var Resources = {
 
             let resourceTitle = `
                 <h5 class="card-title w-100 d-flex justify-content-between mb-0">
-                    <a href="${el.link}" target="_blank">
+                    <a href="${el.link}" target="_blank" class="stretched-link">
                         ${el.name}
                         <i class="bi bi-link card-link"></i>
                     </a>
-                    <span class="badge rounded-pill type-badge">
+                    <span class="rounded-pill card-type" onclick="Resources.filterByType('${el.type}')">
+                        <i class="bi bi-filter"></i>
                         ${el.type}
                     </span>
                 </h5>
@@ -468,6 +469,11 @@ var Resources = {
 
     searchByTopic(topic) {
         this.$searchInput.value = topic;
+        this.updateAll()
+    },
+
+    filterByType(type) {
+        this.$typeInput.value = type;
         this.updateAll()
     }
 
