@@ -208,6 +208,8 @@ var Resources = {
                     break;
             
                 case 'agency':
+                    rateInfo += el.minRate ? `$${el.minRate} &ndash; ` : ''
+                    rateInfo += el.maxRate ? `$${el.maxRate}` : ''
                     rateInfo += el.hourlyMinRate ? `$${el.hourlyMinRate}/hr &ndash;` : ''
                     rateInfo += el.hourlyMaxRate ? `$${el.hourlyMaxRate}/hr` : ''
                     break;
