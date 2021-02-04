@@ -426,9 +426,15 @@
         "name": "Draft.dev",
         "type": "agency",
         "link": "https://draft.dev/#write",
+        "contact": "karl@draft.dev",
+        "topics": [
+            "Full-Stack Development",
+            "Data Science",
+            "DevOps"
+        ],
         "minRate": 300,
         "maxRate": 500,
-        "notes": "Opportunities delivered by email every week or two to all writers."
+        "notes": "Available topics are sent out every week and writers can claim any they're a good fit for."
     },
     {
         "name": "Hit Subscribe",
