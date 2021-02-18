@@ -359,7 +359,8 @@
         "link": "https://www.twilio.com/blog",
         "topics": [
             "Full-Stack Development",
-            "Infrastructure"
+            "Infrastructure",
+            "APIs"
         ],
         "maxRate": 500,
         "notes": "Seek out and contact the appropriate editor for the topic you want to write about. Use Twilio or Sendgrid technologies in sample applications."
@@ -506,5 +507,25 @@
         ],
         "minRate": 75,
         "maxRate": 300
+    },
+    {
+        "name": "Agora",
+        "type": "publication",
+        "link": "https://www.agora.io/en/agora-content-contributor-program/",
+        "topics": [
+            "APIs"
+        ],
+        "maxRate": 250,
+        "notes": "Bonus swag and payment based on signups from your article."
+    },
+    {
+        "name": "DeepSource",
+        "type": "publication",
+        "link": "https://deepsource.io/tech-writer/",
+        "topics": [
+            "DevOps"
+        ],
+        "contact": "tech-writer@deepsource.io",
+        "maxRate": 150
     }
 ]
