@@ -55,8 +55,15 @@
         "name": "ContentLab",
         "type": "agency",
         "link": "https://contentlab.io/write-for-contentlab/",
-        "maxRate": 500,
-        "notes": "Quoted rate is for articles. Also offers paid opportunities for outlining and content planning, plus higher fees for larger projects."
+        "contact": "elisa@contentlab.io",
+        "topics": [
+            "Front-End Development",
+            "Back-End Development",
+            "Infrastructure"
+        ],
+        "minRate": 150,
+        "maxRate": 700,
+        "notes": "Quoted rate range is for articles, depending on length. Also offers paid opportunities for outlining and content planning, plus higher fees for larger projects."
     },
     {
         "name": "Auth0",
@@ -527,5 +534,29 @@
         ],
         "contact": "tech-writer@deepsource.io",
         "maxRate": 150
+    },
+    {
+        "name": "Adam the Automator",
+        "type": "publication",
+        "link": "https://adamtheautomator.com/friends",
+        "topics": [
+            "DevOps",
+            "Infrastructure"
+        ],
+        "minRate": 100,
+        "maxRate": 200
+    },
+    {
+        "name": "Wizard on Demand",
+        "type": "agency",
+        "link": "https://wizardondemand.com",
+        "topics": [
+            "Infrastructure",
+            "Full-Stack Development",
+            "Data Science"
+        ],
+        "contact": "workwithus@wizardondemand.com",
+        "hourlyMaxRate": 15,
+        "notes": "Connect and collaborate with other writers, get detailed feedback from our editors, and learn from our subject matter experts."
     }
 ]
