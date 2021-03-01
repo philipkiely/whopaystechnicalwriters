@@ -547,6 +547,16 @@
         "maxRate": 200
     },
     {
+        "name": "Sanity.io",
+        "type": "publication",
+        "link": "https://www.sanity.io/guest-authorship",
+        "topics": [
+            "Front-End Development"
+        ],
+        "maxRate": 250,
+        "notes": "Article topics should relate to the Sanity.io platform."
+    },
+    {
         "name": "Wizard on Demand",
         "type": "agency",
         "link": "https://wizardondemand.com",
