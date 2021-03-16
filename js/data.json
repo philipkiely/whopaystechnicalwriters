@@ -559,6 +559,16 @@
         "notes": "Article topics should relate to the Sanity.io platform."
     },
     {
+        "name": "ImageKit",
+        "type": "publication",
+        "link": "https://form.asana.com/?hash=4a457043221411a8d81971bc930a6a932add03c8eaeec167cf1fee81db871953&id=1166170812623393",
+        "topics": [
+            "Infrastructure"
+        ],
+        "maxRate": 300,
+        "notes": "Accepts articles on ImageKit technologies and web image optimization."
+    },
+    {
         "name": "Cube Dev",
         "type": "publication",
         "link": "https://www.notion.so/Cube-js-Guest-Authors-8ddd5046be9048d9869410b60d4a2b98",
