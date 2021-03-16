@@ -483,9 +483,11 @@
         "maxRate": 300
     },
     {
-        "name": "Section",
+        "name": "Section.io",
         "type": "publication",
         "link": "https://github.com/section-engineering-education/engineering-education",
+        "minRate": 50,
+        "maxRate": 150,
         "notes": "Section takes submissions specifically from university-level computer science students."
     },
     {
