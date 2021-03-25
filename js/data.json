@@ -104,8 +104,9 @@
             "DevOps",
             "Full-Stack Development"
         ],
+        "maxRate": 600,
         "contact": "info@devspotlight.com",
-        "notes": "Pays top-of-market rates based on experience. Requires proven technical expertise plus writing skills."
+        "notes": "Pay may far exceed $600 based on scope & experience. Requires proven technical expertise plus writing skills."
     },
     {
         "name": "Digital Ocean",
