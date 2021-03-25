@@ -98,7 +98,14 @@
     {
         "name": "Dev Spotlight",
         "type": "agency",
-        "link": "https://www.devspotlight.com/jobs/"
+        "link": "https://www.devspotlight.com/jobs/",
+        "topics": [
+            "Infrastructure",
+            "DevOps",
+            "Full-Stack Development"
+        ],
+        "contact": "info@devspotlight.com",
+        "notes": "Pays top-of-market rates based on experience. Requires proven technical expertise plus writing skills."
     },
     {
         "name": "Digital Ocean",
