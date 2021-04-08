@@ -17,18 +17,15 @@ That's it! You're all set up and ready to go.
 
 ## Development
 
-Who Pays Technical Writers is a static site that is generated from Jinja templates. It also relies on a Netlify function to forward submitted sites to Philip Kiely to review.
+Who Pays Technical Writers is a static site that is generated from Jinja templates. It also relies on a Netlify function to forward submitted sites to Philip Kiely to review. (The previous sentence is not yet true)
 
-To develop, open two terminal tabs in this directory.
+With the virtual environment active, run `python build.py --dev`. This will launch the live reload script and preview server and will load the page.
 
-* In the first, run `python build/build.py --dev` (leave it running)
-* In the second, run `sh build/build.sh` (again, leave it running)
+You can quit the server with control-c.
 
-You can quit these with control-c.
+If it did not automatically open, use a web browser to go to [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
-Open [http://127.0.0.1:8000](http://127.0.0.1:8000).
-
-Make changes. Every time you save, the build script will update the website, and you can see the changes by reloading the webpage.
+Make changes. Every time you save, the build script will update the website, and you can see the changes by reloading the webpage. Watch the terminal for server logs and any build script errors.
 
 ### Git
 
@@ -91,7 +88,7 @@ The json file itself does not need to be alphabetized (it may be though) but the
 
 ### Python
 
-The script in `/build` is written in Python. Setup and usage instructions are above.
+The script `build.py` is written in Python. Setup and usage instructions are above.
 
 ### Netlify
 
