@@ -29,7 +29,7 @@ Make changes. Every time you save, the build script will update the website, and
 
 ### Git
 
-The branch `main` is the unified development branch. The live site is served from `prod`. All pull requests should come from a branch with a descriptive name.
+The branch `main` is the unified branch. The live site is served from `main`. All pull requests should come from a branch with a descriptive name.
 
 All pull requests must be squashed into a single commit before rebasing on top of `main` and pushing. NEVER force-push `main`, if you're in a situation where that would be necessary that means you're trying to do something wrong.
 
@@ -92,7 +92,7 @@ The script `build.py` is written in Python. Setup and usage instructions are abo
 
 ### Netlify
 
-The prod branch of this directory deploys to Netlify.
+The `main` branch of this directory deploys to Netlify as configured by `netlify.toml`.
 
 ## About
 

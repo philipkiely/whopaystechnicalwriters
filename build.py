@@ -86,20 +86,13 @@ def build_site():
     jinja()
     static()
 
-def deploy_site():
-    os.system("git checkout prod")
-    os.system("git rebase main")
-    os.system("git push origin prod")
-    os.system("git checkout main")
-
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: `python build.py --dev` or `python build.py --prod`")
         exit
     elif sys.argv[1] == "--prod":
         build_site()
-        deploy_site()
-        print("WPTW Deployed")
+        print("WPTW Built")
     elif sys.argv[1] == "--dev":
         print("Initializing WPTW")
         src_watcher = Watcher(".", WPTWHandler())
