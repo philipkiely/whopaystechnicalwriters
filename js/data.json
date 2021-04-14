@@ -599,5 +599,29 @@
         "contact": "workwithus@wizardondemand.com",
         "hourlyMaxRate": 15,
         "notes": "Connect and collaborate with other writers, get detailed feedback from our editors, and learn from our subject matter experts."
+    },
+    {
+        "name": "NoteBook Share",
+        "type": "publication",
+        "link": "https://www.nbshare.io/new-post/",
+        "contact": "johnludhi@outlook.com",
+        "topics": [
+            "Data Science"
+        ],
+        "minRate": 100,
+        "maxRate": 150,
+        "notes": "Publishes Jupyter-style data science notebooks."
+    },
+    {
+        "name": "Adeva",
+        "type": "publication",
+        "link": "https://adevait.com/write-for-us",
+        "topics": [
+            "Infrastructure",
+            "DevOps",
+            "Soft Skills"
+        ],
+        "maxRate": 200,
+        "notes": "Looking for technical guides, thought leadership content, and resources for Engineering Managers."
     }
 ]
