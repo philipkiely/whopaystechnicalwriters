@@ -481,8 +481,26 @@ var Resources = {
 
 }
 
+var Marketing = {
+
+    //Ad Choices
+    //0 (do nothing/leave default), 1 (WPTW sticker), 2 (CEfIP)
+    //hide/un-hide in html
+
+    display: Math.floor(Math.random() * 3),
+
+    selectAd() {
+        if (this.display != 0) {
+            document.getElementById("js-marketing-sidebar-0").hidden = true
+            document.getElementById("js-marketing-sidebar-" + this.display).hidden = false
+        }
+    }
+
+}
+
 // on window load, run function to load/parse JSON file
 window.onload = () => {
+    Marketing.selectAd()
     Resources.loadJSON()
 }
 
