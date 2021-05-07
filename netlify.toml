@@ -15,5 +15,7 @@
   # Default build command.
   command = "python build.py --prod"
 
+  functions = "functions"
+
   # Configure with Environment Variables
   environment = { PYTHON_VERSION = "3.7" }

@@ -1,5 +1,9 @@
 function processForm(event) {
     event.preventDefault();
+    //reset UI
+    document.getElementById("form-failed").hidden = true
+    document.getElementById("function-failed").hidden = true
+    document.getElementById("function-worked").hidden = true
     // Gather Data
     var companyName = document.getElementById("company-name").value;
     var companyType = document.getElementById("company-type").value;
@@ -11,14 +15,17 @@ function processForm(event) {
     // Validate Required Fields (companyType is never empty)
     if (companyName == "") {
         document.getElementById("form-failed").hidden = false
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
         return
     }
     if (link == "") {
         document.getElementById("form-failed").hidden = false
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
         return
     }
     if (rates == "" || (companyType != "Publisher" && isNaN(parseInt(rates)))) {
         document.getElementById("form-failed").hidden = false
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
         return
     }
     // JSON Data
@@ -48,7 +55,21 @@ function processForm(event) {
         formData["notes"] = notes
     }
     //Send to the netlify function
-    console.log(formData)
+    fetch("/.netlify/functions/issue", {
+        method: "POST",
+        body: JSON.stringify(formData)
+    }).then(
+        response => response.json()
+    ).then(data => {
+        var url = data.url.replace("api.", "").replace("repos/", "")
+        document.getElementById("github-url").innerHTML = "<a href=\"" + url + "\">" + url + "</a>"
+        document.getElementById("function-worked").hidden = false
+        document.getElementById("new-pub-form").reset()
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }).catch((error) => {
+        document.getElementById("function-failed").hidden = false
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    });
 }
 
 var form = document.getElementById("new-pub-form");

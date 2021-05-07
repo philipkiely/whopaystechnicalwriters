@@ -9,8 +9,13 @@
         <a class="link fs-6 mx-4 link-custom" href="/">Return home</a>
     </h3>
     <p>You can also use this form to request an update to an existing resource.</p>
-    <div class="alert alert-success alert-dismissible fade show" role="alert" id="form-succeeded" hidden="true">
-        <p>Thank you for suggesting a resource! Your suggestion will be considered and may appear on the site within a few days.</p>
+    <div class="alert alert-success alert-dismissible fade show" role="alert" id="function-worked" hidden="true">
+        <p>Thank you for suggesting a resource! Your suggestion will be considered and should appear on the site within a day.</p>
+        <p>Update your suggestion or check its status on GitHub: <span id="github-url"></span></p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert" id="function-failed" hidden="true">
+        <p>Form submission failed, server error. Try again or send me an email at <a href="mailto:philip@kiely.xyz">philip@kiely.xyz</a> to let me know what's up.</p>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     <div class="alert alert-danger alert-dismissible fade show" role="alert" id="form-failed" hidden="true">
