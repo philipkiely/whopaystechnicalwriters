@@ -500,7 +500,7 @@ var Marketing = {
 
 // on window load, run function to load/parse JSON file
 window.onload = () => {
-    Marketing.selectAd()
+    //Marketing.selectAd()
     Resources.loadJSON()
 }
 
