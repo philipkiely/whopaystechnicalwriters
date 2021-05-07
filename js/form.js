@@ -17,21 +17,38 @@ function processForm(event) {
         document.getElementById("form-failed").hidden = false
         return
     }
+    if (rates == "" || (companyType != "Publisher" && isNaN(parseInt(rates)))) {
+        document.getElementById("form-failed").hidden = false
+        return
+    }
     // JSON Data
     var formData = {
-        "companyName": companyName,
-        "companyType": companyType,
+        "name": companyName,
+        "type": companyType.toLowerCase(),
         "link": link,
-        "email": email,
-        "topics": topics,
-        "rates": rates,
-        "notes": notes
     }
-
-    var subj = encodeURIComponent("Who Pays Technical Writers Resource Suggestion")
-    var body = encodeURIComponent(JSON.stringify(formData))
-
-    window.location.href = "mailto:philip@kiely.xyz?subject=" + subj + "&body=" + body;
+    if (email != "") {
+        formData["contact"] = email
+    }
+    if (topics != "") {
+        formData["topics"] = topics.split(",")
+    }
+    if (companyType == "Publisher") {
+        formData["royaltyRate"] = rates
+    } else {
+        var vals = rates.split("-")
+        if (vals.length == 1) {
+            formData["maxRate"] = parseInt(vals[0])
+        } else {
+            formData["minRate"] = parseInt(vals[0])
+            formData["maxRate"] = parseInt(vals[1])
+        }
+    }
+    if (notes != "") {
+        formData["notes"] = notes
+    }
+    //Send to the netlify function
+    console.log(formData)
 }
 
 var form = document.getElementById("new-pub-form");

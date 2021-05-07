@@ -14,7 +14,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     <div class="alert alert-danger alert-dismissible fade show" role="alert" id="form-failed" hidden="true">
-        <p>Company Name, Company Type, and Link are all required fields.</p>
+        <p>Company Name, Company Type, Link, and Rate are all required fields.</p>
+        <p>Rate must be a number or a range (number-number) unless it is a publisher.</p>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     <form class="needs-validation" id="new-pub-form" novalidate>
@@ -53,17 +54,17 @@
         </div>
         <div class="mb-3">
             <label for="topics" class="form-label">Topic(s)</label>
-            <input type="text" class="form-control" id="topics" placeholder="Front-End Development"
+            <input type="text" class="form-control" id="topics" placeholder="Front-End Development, Data Science"
                 aria-describedby="topics-description">
             <div class="form-text" id="email-description">General topics like Front-End Development, Back-End
                 Development, Data Science, Infrastructure, etc.</div>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 required">
             <label for="rates" class="form-label">Rate</label>
-            <input type="text" class="form-control" id="rates" placeholder="$250 per article"
+            <input type="text" class="form-control" id="rates" placeholder="250"
                 aria-describedby="topics-description">
             <div class="form-text" id="email-description">The rate, in <b>USD</b>, that the company offers <b>first-time
-                    writers</b>. This can be a per-article rate, hourly rate, or royalty structure. Ranges are ok!</div>
+                    writers</b>. This can be a per-article rate, hourly rate, or royalty structure. Ranges are ok! Format them as "100-200". For royalty structures, give a short description.</div>
         </div>
         <div class="mb-3">
             <label for="notes" class="form-label">Notes</label>

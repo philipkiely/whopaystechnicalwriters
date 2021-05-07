@@ -37,7 +37,7 @@ def static():
 
 def clean_dist():
     if os.path.exists("dist"):
-        os.system("rm dist/*")
+        os.system("rm -r dist/*")
     else:
         os.makedirs("dist")
 
