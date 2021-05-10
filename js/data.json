@@ -623,5 +623,16 @@
         ],
         "maxRate": 200,
         "notes": "Looking for technical guides, thought leadership content, and resources for Engineering Managers."
+    },
+    {
+        "name":"Editmode",
+        "type":"publication",
+        "link":"https://editmode.com",
+        "contact":"tony@editmode.com",
+        "topics":[
+            "APIs"
+        ],
+        "maxRate":150,
+        "notes":"Articles must implement some part of the Editmode API or client libraries in any programming language."
     }
 ]
