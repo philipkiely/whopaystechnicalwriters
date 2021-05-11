@@ -3,7 +3,6 @@ import signal
 import subprocess
 import sys
 import time
-import webbrowser
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
@@ -97,9 +96,7 @@ if __name__ == "__main__":
         print("Initializing WPTW")
         src_watcher = Watcher(".", WPTWHandler())
         build_site()
-        server_proc = subprocess.Popen(
-            ["python", "-m", "http.server", "--directory", "dist"])
-        webbrowser.open("http://127.0.0.1:8000")
+        server_proc = subprocess.Popen(["netlify", "dev"])
         src_watcher.run()
         if server_proc.pid:
             os.kill(server_proc.pid, signal.SIGTERM)
