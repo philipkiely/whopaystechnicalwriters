@@ -15,15 +15,17 @@ Develop Who Pays Technical Writers in N steps:
 
 That's it! You're all set up and ready to go.
 
+If you want to submit the form in development, you'll need a [GitHub Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) set as an environment variable `GITHUB_TOKEN`.
+
 ## Development
 
 Who Pays Technical Writers is a static site that is generated from Jinja templates. It also relies on a Netlify function to forward submitted sites to Philip Kiely to review. (The previous sentence is not yet true)
 
-With the virtual environment active, run `python build.py --dev`. This will launch the live reload script and preview server and will load the page.
+With the virtual environment active, run `python build.py --dev`. This will launch the live reload script and preview server (netlify dev) and will load the page.
 
 You can quit the server with control-c.
 
-If it did not automatically open, use a web browser to go to [http://127.0.0.1:8000](http://127.0.0.1:8000).
+If it did not automatically open, use a web browser to go to [http://127.0.0.1:8888](http://127.0.0.1:8888). But Netlify dev launches the page reliably. So if it doesn't pop up, there might be a bigger problem.
 
 Make changes. Every time you save, the build script will update the website, and you can see the changes by reloading the webpage. Watch the terminal for server logs and any build script errors.
 
@@ -35,7 +37,7 @@ All pull requests must be squashed into a single commit before rebasing on top o
 
 ### HTML
 
-Do not edit `index.html` or `form.html` in the main folder directly. Any such edits would be overwritten by the build script.
+Do not edit `index.html` or `form.html` in the `dist` folder directly. Any such edits would be overwritten by the build script.
 
 Instead, edit HTML in the `/src` folder. We use [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) as a templating language. Put everything shared in `base.html` and the minimum necessary for each page in the page's own HTML file.
 
@@ -51,7 +53,7 @@ We get Bootstrap by CDN.
 
 Any images go in `/img`.
 
-### JavaScript
+### JavaScript - Client
 
 We use vanilla JavaScript for a few basic operations:
 
@@ -85,6 +87,10 @@ Object Structure (Bold is required):
 * notes: A string of at most 140 characters.
 
 The json file itself does not need to be alphabetized (it may be though) but the data should render in alpha order on the website by default.
+
+### JavaScript - Functions
+
+The `functions` directory has a Netlify function in it, deployed with the default configuration.
 
 ### Python
 
