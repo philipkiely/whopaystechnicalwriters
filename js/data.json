@@ -634,5 +634,17 @@
         ],
         "maxRate":150,
         "notes":"Articles must implement some part of the Editmode API or client libraries in any programming language."
+    },
+    {
+        "name": "raywenderlich.com",
+        "type": "publication",
+        "link": "https://www.raywenderlich.com/11455688-write-for-us",
+        "contact": "annette@raywenderlich.com",
+        "topics": [
+            "Mobile Development",
+            "Back-End Development"
+        ],
+        "maxRate": "400",
+        "notes": "Focuses on Swift and Unity. Rigorous multi-stage editing process, strong community. Formats also include books, video courses, and more."
     }
 ]
