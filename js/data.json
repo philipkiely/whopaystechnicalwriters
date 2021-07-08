@@ -636,6 +636,17 @@
         "notes":"Articles must implement some part of the Editmode API or client libraries in any programming language."
     },
     {
+        "name": "Doppler",
+        "type": "publication",
+        "link": "https://www.notion.so/Doppler-Technical-Writer-Program-26049df1aaf54480b6736fe0bb6b7f1b",
+        "topics": [
+            "Security",
+            "DevOps"
+        ],
+        "maxRate": 500,
+        "notes": "Referral program: earn $250 for an intro after a writer publishes their first article."
+    },
+    {
         "name": "raywenderlich.com",
         "type": "publication",
         "link": "https://www.raywenderlich.com/11455688-write-for-us",
