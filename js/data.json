@@ -68,12 +68,12 @@
     {
         "name": "Auth0",
         "type": "publication",
-        "link": "https://docs.google.com/document/d/1oKF-lg6X46x5Q384XEjbLE_7twXYQ9PIp_KzdfA0HxE/",
+        "link": "https://auth0.com/apollo-program",
         "topics": [
             "Authentication"
         ],
-        "maxRate": 150,
-        "notes": "Articles must implement some part of the Auth0 spec in any programming language."
+        "maxRate": 450,
+        "notes": "Articles must implement some part of the Auth0 spec in any programming language, You get rewarded with swags when your article reaches certain amount of 3 or 5"
     },
     {
         "name": "CircleCI",
