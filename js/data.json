@@ -68,12 +68,12 @@
     {
         "name": "Auth0",
         "type": "publication",
-        "link": "https://docs.google.com/document/d/1oKF-lg6X46x5Q384XEjbLE_7twXYQ9PIp_KzdfA0HxE/",
+        "link": "https://auth0.com/apollo-program",
         "topics": [
             "Authentication"
         ],
-        "maxRate": 150,
-        "notes": "Articles must implement some part of the Auth0 spec in any programming language."
+        "maxRate": 450,
+        "notes": "Articles must implement some part of the Auth0 spec in any programming language. The program offers swag gifts to multi-time authors."
     },
     {
         "name": "CircleCI",
@@ -657,5 +657,15 @@
         ],
         "maxRate": "400",
         "notes": "Focuses on Swift and Unity. Rigorous multi-stage editing process, strong community. Formats also include books, video courses, and more."
+    },
+    {
+        "name": "CodeSubmit",
+        "type": "publication",
+        "link": "https://codesubmit.io/blog/",
+        "contact": "dom@codesubmit.io",
+        "topics": [
+            "Technical Interviews"
+        ],
+        "maxRate": 250
     }
 ]
