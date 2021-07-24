@@ -177,7 +177,11 @@ var Resources = {
             let $cardBody = document.createElement("div")
             
             // set data-name attribute (resource name) & Bootstrap classes
-            $cardItem.className = 'card my-2';
+            if (el.inactive) {
+                $cardItem.className = 'card my-2 inactive';
+            } else {
+                $cardItem.className = 'card my-2';
+            }
             $cardItem.setAttribute('data-name', el.name)
             $cardBody.className = 'card-body';
 

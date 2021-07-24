@@ -140,7 +140,8 @@
             "Data Science"
         ],
         "maxRate": 150,
-        "notes": "Also provides authors with a small amount of platform credit."
+        "notes": "Also provides authors with a small amount of platform credit.",
+        "inactive": true
     },
     {
         "name": "Fly",
@@ -349,7 +350,8 @@
         ],
         "minRate": 350,
         "maxRate": 600,
-        "notes": "Matches payments with donations to tech-focused charities or open-source projects."
+        "notes": "Matches payments with donations to tech-focused charities or open-source projects.",
+        "inactive": true
     },
     {
         "name": "Tutorialspoint",
