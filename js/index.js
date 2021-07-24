@@ -74,6 +74,13 @@ var Resources = {
         // initialize relevant data array as default JSON data
         this.relevantData = this.resourceData
 
+        // update search from query parameters
+        let params = new URLSearchParams(window.location.search)
+        search = params.get("search")
+        if (search != "") {
+            this.$searchInput.value = search
+        }
+
         // establish listeners for interactive DOM elements
         this.setListeners()
         
@@ -397,6 +404,17 @@ var Resources = {
         // set search field input value to search term
         this.$searchInput.value = val
         var search = val.toLowerCase();
+        let params = new URLSearchParams(window.location.search)
+        if (search != "") {
+            params.set('search', search)
+        } else {
+            params.delete('search')
+        }
+        window.history.replaceState(
+            window.history.state,
+            '',
+            `${location.pathname}?${params}`,
+        )
 
         if (search != '') {
 
