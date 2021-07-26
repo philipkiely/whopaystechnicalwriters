@@ -669,5 +669,15 @@
             "Technical Interviews"
         ],
         "maxRate": 250
+    },
+    {
+        "name": "Bejamas",
+        "type": "agency",
+        "link": "https://bejamas.io/paid-writing-program/",
+        "topics": [
+            "Front-End Development",
+            "JAMstack"
+        ],
+        "notes": "Payment varies by project scope"
     }
 ]
