@@ -679,5 +679,15 @@
             "JAMstack"
         ],
         "notes": "Payment varies by project scope"
+    },
+    {
+        "name": "GraphCMS",
+        "type": "publication",
+        "link": "https://graphcms.com/write-for-graphcms",
+        "topics": [
+            "Front-End Development",
+            "Back-End Development"
+        ],
+        "notes": "Payment varies by article. Pitches should include GraphCMS."
     }
 ]
