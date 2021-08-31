@@ -689,5 +689,25 @@
             "Back-End Development"
         ],
         "notes": "Payment varies by article. Pitches should include GraphCMS."
+    },
+    {
+        "name": "Topcoder Thrive",
+        "type": "publication",
+        "link": "https://www.topcoder.com/thrive/articles/Submitting%20a%20Thrive%20Article",
+        "topics": [
+            "Front-End Development",
+            "Back-End Development",
+            "Data Science"
+        ],
+        "maxRate": 75
+    },
+    {
+        "name": "Abstract API",
+        "type": "publication",
+        "link": "https://www.abstractapi.com/write-for-us",
+        "topics": [
+            "Back-End Development"
+        ],
+        "maxRate": 100
     }
 ]
