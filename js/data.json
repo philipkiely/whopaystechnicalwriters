@@ -125,12 +125,10 @@
         "type": "publication",
         "link": "https://fauna.com/blog/write-with-fauna",
         "topics": [
-            "Full-Stack Development",
-            "FaunaDB"
+            "Full-Stack Development"
         ],
-        "minRate": 200,
-        "maxRate": 500,
-        "notes": "Also provides Fauna swag to authors."
+        "maxRate": 350,
+        "notes": "Must use FaunaDB. Also provides Fauna swag to authors."
     },
     {
         "name": "FloydHub",
@@ -525,7 +523,7 @@
             "Infrastructure"
         ],
         "minRate": 75,
-        "maxRate": 300
+        "maxRate": 600
     },
     {
         "name": "Agora",
@@ -709,5 +707,26 @@
             "Back-End Development"
         ],
         "maxRate": 100
+    },
+    {
+        "name": "Magic Link",
+        "type": "publication",
+        "link": "https://magic-fortmatic.typeform.com/to/Wgzsocor",
+        "topics": [
+            "Back-End Development"
+        ],
+        "maxRate": 300,
+        "notes": "Must use magic.link auth API in articles."
+    },
+    {
+        "name": "Appsmith",
+        "type": "publication",
+        "link": "https://blog.appsmith.com/launching-the-appsmith-writers-program",
+        "topics": [
+            "Back-End Development"
+        ],
+        "minRate": 200,
+        "maxRate": 400,
+        "notes": "Must include Appsmith technologies in the tutorial."
     }
 ]
