@@ -728,5 +728,15 @@
         "minRate": 200,
         "maxRate": 400,
         "notes": "Must include Appsmith technologies in the tutorial."
+    },
+    {
+        "name": "QuickNode",
+        "type": "publication",
+        "link": "https://quicknode.notion.site/quicknode/QuickNode-Authorship-Program-d808a87ee50b48c9a16ed19b13e09115",
+        "topics": [
+            "Crypto"
+        ],
+        "maxRate": 350,
+        "notes": "Tutorials should cover building with one or more web3 technologies."
     }
 ]
