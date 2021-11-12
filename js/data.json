@@ -54,14 +54,14 @@
     {
         "name": "ContentLab",
         "type": "agency",
-        "link": "https://contentlab.io/write-for-contentlab/",
+        "link": "https://contentlab.io/writeforus/",
         "contact": "elisa@contentlab.io",
         "topics": [
             "Front-End Development",
             "Back-End Development",
             "Infrastructure"
         ],
-        "minRate": 150,
+        "minRate": 200,
         "maxRate": 700,
         "notes": "Quoted rate range is for articles, depending on length. Also offers paid opportunities for outlining and content planning, plus higher fees for larger projects."
     },
@@ -738,5 +738,26 @@
         ],
         "maxRate": 350,
         "notes": "Tutorials should cover building with one or more web3 technologies."
+    },
+    {
+        "name": "Okteto",
+        "type": "publication",
+        "link": "https://okteto.com/tech-writer/",
+        "contact": "writers@okteto.com",
+        "topics": [
+            "Kubernetes and Cloud-Native Applications. Application development and deployment with Okteto. Interesting ways to use Okteto."
+        ],
+        "maxRate": 200
+    },
+    {
+        "name": "100ms",
+        "type": "publication",
+        "link": "https://www.100ms.live/technical-writer-program",
+        "topics": [
+            "Back-End Development"
+        ],
+        "minRate": 200,
+        "maxRate": 500,
+        "notes": "Articles should use the 100ms SDK. Author may republish on their own site with canonical URL to 100ms after 1 month."
     }
 ]
