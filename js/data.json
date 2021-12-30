@@ -759,5 +759,16 @@
         "minRate": 200,
         "maxRate": 500,
         "notes": "Articles should use the 100ms SDK. Author may republish on their own site with canonical URL to 100ms after 1 month."
+    },
+    {
+        "name": "Warrant",
+        "type": "publication",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfOprFwulKdN5c8WKfpmj4u1t-MbEJ3LyQ708mvpwCBILiTaA/viewform",
+        "topics": [
+            "Back-End Development",
+            "Authentication"
+        ],
+        "maxRate": 100,
+        "notes": "Link is to Google form, see blog.warrant.dev for examples."
     }
 ]
