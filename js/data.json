@@ -655,7 +655,7 @@
             "Mobile Development",
             "Back-End Development"
         ],
-        "maxRate": "400",
+        "maxRate": 400,
         "notes": "Focuses on Swift and Unity. Rigorous multi-stage editing process, strong community. Formats also include books, video courses, and more."
     },
     {
@@ -706,7 +706,8 @@
         "topics": [
             "Back-End Development"
         ],
-        "maxRate": 100
+        "maxRate": 100,
+        "inactive": true
     },
     {
         "name": "Magic Link",
@@ -745,9 +746,10 @@
         "link": "https://okteto.com/tech-writer/",
         "contact": "writers@okteto.com",
         "topics": [
-            "Kubernetes and Cloud-Native Applications. Application development and deployment with Okteto. Interesting ways to use Okteto."
+            "Kubernetes"
         ],
-        "maxRate": 200
+        "maxRate": 200,
+        "notes": "Focus on Kubernetes and Cloud-Native Applications, or application development and deployment with Okteto."
     },
     {
         "name": "100ms",
@@ -770,5 +772,36 @@
         ],
         "maxRate": 100,
         "notes": "Link is to Google form, see blog.warrant.dev for examples."
+    },
+    {
+        "name": "SQL Shack",
+        "type": "publication",
+        "link": "https://www.sqlshack.com/about-us/",
+        "topics": [
+            "SQL"
+        ],
+        "maxRate": 200,
+        "notes": "Microsoft SQL Server only, 1250+ words plus code samples, 3 images per article."
+    },
+    {
+        "name": "Alan AI",
+        "type": "publication",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfLGZO7fDt4OGIWVjNYIStkXrog3teq19qmeFErujQOtoWfFA/viewform",
+        "topics": [
+            "Data Science"
+        ],
+        "minRate": 50,
+        "maxRate": 250,
+        "notes": "Aricles must relate to Alan AI platform."
+    },
+    {
+        "name": "Ambassador Labs",
+        "type": "publication",
+        "link": "https://www.getambassador.io/write-for-us/",
+        "topics": [
+            "Kubernetes",
+            "Open Source"
+        ],
+        "maxRate": 300
     }
 ]
