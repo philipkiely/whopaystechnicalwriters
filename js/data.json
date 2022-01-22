@@ -448,8 +448,8 @@
             "Data Science",
             "DevOps"
         ],
-        "minRate": 300,
-        "maxRate": 500,
+        "minRate": 315,
+        "maxRate": 578,
         "notes": "Available topics are sent out every week and writers can claim any they're a good fit for."
     },
     {
@@ -824,5 +824,35 @@
             "Full-Stack Development"
         ],
         "maxRate": 150
+    },
+    {
+        "name": "Bird Eats Bug",
+        "type": "publication",
+        "link": "https://birdeatsbug.com/jobs/technical-content-writer",
+        "topics": [
+            "No-Code Tools"
+        ],
+        "minRate": 100,
+        "maxRate": 300
+    },
+    {
+        "name": "Magalix",
+        "type": "publication",
+        "link": "https://www.magalix.com/the-sac-writers-club",
+        "topics": [
+            "Open Source",
+            "DevOps",
+            "Infrastructure"
+        ],
+        "maxRate": 200
+    },
+    {
+        "name": "OneSignal",
+        "type": "publication",
+        "link": "https://onesignal.com/guest-author-program",
+        "topics": [
+            "Mobile Development"
+        ],
+        "maxRate": 350
     }
 ]
