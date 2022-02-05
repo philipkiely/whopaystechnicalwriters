@@ -7,7 +7,6 @@
     "url": "git+https://github.com/philipkiely/whopaystechnicalwriters.git"
   },
   "dependencies": {
-    "@octokit/request": "^5.4.15",
-    "netlify-cli": "^8.15.0"
+    "@octokit/request": "^5.4.15"
   }
 }
