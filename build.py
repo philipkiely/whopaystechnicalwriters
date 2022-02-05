@@ -96,7 +96,7 @@ if __name__ == "__main__":
         print("Initializing WPTW")
         src_watcher = Watcher(".", WPTWHandler())
         build_site()
-        server_proc = subprocess.Popen(["netlify", "dev"])
+        server_proc = subprocess.Popen(["npx", "netlify", "dev"])
         src_watcher.run()
         if server_proc.pid:
             os.kill(server_proc.pid, signal.SIGTERM)
