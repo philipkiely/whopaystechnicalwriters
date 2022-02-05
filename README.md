@@ -21,6 +21,8 @@ If you want to submit the form in development, you'll need a [GitHub Token](http
 
 Who Pays Technical Writers is a static site that is generated from Jinja templates. It also relies on a Netlify function to forward submitted sites to Philip Kiely to review. (The previous sentence is not yet true)
 
+Activate your virtual environment with `workon wptw`.
+
 With the virtual environment active, run `python build.py --dev`. This will launch the live reload script and preview server (netlify dev) and will load the page.
 
 You can quit the server with control-c.

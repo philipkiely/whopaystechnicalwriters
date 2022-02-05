@@ -854,5 +854,17 @@
             "Mobile Development"
         ],
         "maxRate": 350
+    },
+    {  
+        "name": "Mattermost",
+        "type": "publication",
+        "link": "https://handbook.mattermost.com/contributors/contributors/ways-to-contribute/community-content-program",
+        "topics": [
+            "DevOps",
+            "Full-stack Development"
+        ],
+        "minRate": 250,
+        "maxRate": 350,
+        "notes": "The docs mention that exceptionally detailed content about prevalent technologies can earn up to $500."
     }
 ]
