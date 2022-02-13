@@ -927,6 +927,16 @@
         "minRate": 50,
         "maxRate": 150,
         "notes": "Enlear also offers opportunities for content strategy and editorial roles."
+    },
+    {
+        "name": "Figment",
+        "type": "publication",
+        "link": "https://www.notion.so/Contributing-to-Figment-Learn-d8ff9cdc32ca4b58838d81d07eab49bd",
+        "topics": [
+            "Crypto"
+        ],
+        "minRate": 100,
+        "maxRate": 1000,
+        "notes": "Payouts range from $100 for guides to $1000 for full-stack dApp tutorials."
     }
-    
 ]
