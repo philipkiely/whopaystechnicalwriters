@@ -818,6 +818,7 @@
     {
         "name": "webapp.io",
         "type": "publication",
+        "contact": "hello@webapp.io",
         "link": "https://webapp.io/technical-writer-program",
         "topics": [
             "Infrastructure",
@@ -866,5 +867,66 @@
         "minRate": 250,
         "maxRate": 350,
         "notes": "The docs mention that exceptionally detailed content about prevalent technologies can earn up to $500."
+    },
+    {
+        "name": "Colabra",
+        "type": "publication",
+        "link": "https://www.colabra.app/blog/",
+        "contact": "hello@colabra.app",
+        "topics": [
+            "Lab Management",
+            "Data Science"
+        ],
+        "minRate": 300,
+        "maxRate": 600,
+        "notes": "Lab science, not computer science."
+    },
+    {
+        "name": "CloudCannon",
+        "type": "publication",
+        "link": "https://cloudcannon.com/blog/",
+        "contact": "olivia@cloudcannon.com",
+        "topics": [
+            "Front-End Development",
+            "JAMstack"
+        ],
+        "maxRate": 300,
+        "notes": "Hiring for one-off pieces or continuous writing opportunities."
+    },
+    {
+        "name": "The Bot Forge",
+        "type": "publication",
+        "link": "https://www.thebotforge.io/guest-authors/",
+        "topics": [
+            "Data Science",
+            "Artificial Intelligence"
+        ],
+        "maxRate": 200,
+        "notes": "Focus on conversational AI"
+    },
+    {
+        "name": "Civo",
+        "type": "publication",
+        "link": "https://www.civo.com/write-for-us",
+        "topics": [
+            "Infrastructure",
+            "Kubernetes"
+        ],
+        "minRate": 300,
+        "maxRate": 500
+    },
+    {
+        "name": "Enlear",
+        "type": "publication",
+        "link": "https://www.enlear.com/",
+        "topics": [
+            "Full-Stack Development",
+            "Programming",
+            "Open Source"
+        ],
+        "minRate": 50,
+        "maxRate": 150,
+        "notes": "Enlear also offers opportunities for content strategy and editorial roles."
     }
+    
 ]
