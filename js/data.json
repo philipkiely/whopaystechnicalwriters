@@ -950,22 +950,14 @@
         "notes": "Microsoft SQL Server only."
     },
     {
-        "name": "MSSQL Tips",
-        "type": "publication",
-        "link": "https://www.mssqltips.com/contribute/",
-        "topics": [
-            "SQL"
-        ],
-        "maxRate": 100,
-        "notes": "Microsoft SQL Server and related technologies."
-    },
-    {
         "name": "CodingSight",
         "type": "publication",
         "link": "https://codingsight.com",
         "contact": "marketing@devart.com",
         "topics": [
-            "SQL"
+            "SQL",
+            "Back-End Development",
+            "Infrastructure"
         ],
         "minRate": 100,
         "maxRate": 250,
