@@ -938,5 +938,37 @@
         "minRate": 100,
         "maxRate": 1000,
         "notes": "Payouts range from $100 for guides to $1000 for full-stack dApp tutorials."
+    },
+    {
+        "name": "MSSQL Tips",
+        "type": "publication",
+        "link": "https://www.mssqltips.com/contribute/",
+        "topics": [
+            "SQL"
+        ],
+        "maxRate": 100,
+        "notes": "Microsoft SQL Server only."
+    },
+    {
+        "name": "MSSQL Tips",
+        "type": "publication",
+        "link": "https://www.mssqltips.com/contribute/",
+        "topics": [
+            "SQL"
+        ],
+        "maxRate": 100,
+        "notes": "Microsoft SQL Server and related technologies."
+    },
+    {
+        "name": "CodingSight",
+        "type": "publication",
+        "link": "https://codingsight.com",
+        "contact": "marketing@devart.com",
+        "topics": [
+            "SQL"
+        ],
+        "minRate": 100,
+        "maxRate": 250,
+        "notes": "Send proposals directly to the listed contact."
     }
 ]
