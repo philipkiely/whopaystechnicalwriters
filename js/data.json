@@ -962,5 +962,16 @@
         "minRate": 100,
         "maxRate": 250,
         "notes": "Send proposals directly to the listed contact."
+    },
+    {
+        "name": "Hashnode",
+        "type": "publication",
+        "link": "https://web3.hashnode.com/contribute",
+        "topics": [
+            "Crypto"
+        ],
+        "minRate": 150,
+        "maxRate": 400,
+        "notes": "Warning: asks for an unpaid prompted 300-word writing sample during the application."
     }
 ]
