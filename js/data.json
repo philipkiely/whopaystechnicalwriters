@@ -946,7 +946,7 @@
         "topics": [
             "SQL"
         ],
-        "maxRate": 100,
+        "maxRate": 160,
         "notes": "Microsoft SQL Server only."
     },
     {
