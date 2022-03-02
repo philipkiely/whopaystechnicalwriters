@@ -973,5 +973,16 @@
         "minRate": 150,
         "maxRate": 400,
         "notes": "Warning: asks for an unpaid prompted 300-word writing sample during the application."
+    },
+    {
+        "name": "Simple Talk",
+        "type": "publication",
+        "link": "https://www.red-gate.com/simple-talk/write-for-us/",
+        "topics": [
+            "SQL",
+            "Back-End Development",
+            "DevOps"
+        ],
+        "maxRate": 350
     }
 ]
