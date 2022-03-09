@@ -984,5 +984,15 @@
             "DevOps"
         ],
         "maxRate": 350
+    },
+    {
+        "name": "SigNoz",
+        "type": "publication",
+        "link": "https://signoz.io/technical-writer-program/",
+        "topics": [
+            "DevOps",
+            "Infrastructure"
+        ],
+        "maxRate": 150
     }
 ]
