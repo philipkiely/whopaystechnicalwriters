@@ -994,5 +994,17 @@
             "Infrastructure"
         ],
         "maxRate": 150
+    },
+    {
+        "name": "ButterCMS",
+        "type": "publication",
+        "link": "https://buttercms.com/blog/",
+        "contact": "jessica@buttercms.com",
+        "topics": [
+            "DevOps",
+            "Full-Stack Development"
+        ],
+        "minRate": 250,
+        "maxRate": 350
     }
 ]
