@@ -185,9 +185,9 @@ var Resources = {
             
             // set data-name attribute (resource name) & Bootstrap classes
             if (el.inactive) {
-                $cardItem.className = 'card my-2 inactive';
+                $cardItem.className = 'card card-dm my-2 inactive';
             } else {
-                $cardItem.className = 'card my-2';
+                $cardItem.className = 'card card-dm my-2';
             }
             $cardItem.setAttribute('data-name', el.name)
             $cardBody.className = 'card-body';
