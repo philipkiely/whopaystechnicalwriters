@@ -1006,5 +1006,42 @@
         ],
         "minRate": 250,
         "maxRate": 350
+    },
+    {
+        "name": "Medusa",
+        "type": "publication",
+        "link": "https://medusajs.notion.site/Write-for-us-74a2bf43b4ce43eeba200382f599321a",
+        "contact": "nick@medusajs.com",
+        "topics": [
+            "Back-End Development",
+            "Ecommerce",
+            "Open Source"
+        ],
+        "minRate": 100,
+        "maxRate": 200,
+        "notes": "Will help guide your writing and have our own internal technical writer assist you"
+    },
+    {
+        "name": "VisWiz.io",
+        "type": "publication",
+        "link": "https://blog.viswiz.io",
+        "contact": "blog@viswiz.io",
+        "topics": [
+            "Front-End Development",
+            "Back-End Development",
+            "Testing"
+        ],
+        "minRate": 200,
+        "maxRate": 300
+    },
+    {
+        "name": "CodeCov",
+        "type": "publication",
+        "link": "https://about.codecov.io/write-for-us/",
+        "topics": [
+            "DevOps",
+            "Testing"
+        ],
+        "maxRate": 500
     }
 ]
