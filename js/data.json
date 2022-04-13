@@ -371,14 +371,17 @@
     {
         "name": "Twilio",
         "type": "publication",
-        "link": "https://www.twilio.com/blog",
+        "link": "https://www.twilio.com/voices",
         "topics": [
+            "Front-End Development",
+            "Back-End Development",
             "Full-Stack Development",
-            "Infrastructure",
-            "APIs"
+            "Programming",
+            "APIs",
+            "Infrastructure"
         ],
         "maxRate": 500,
-        "notes": "Seek out and contact the appropriate editor for the topic you want to write about. Use Twilio or Sendgrid technologies in sample applications."
+        "notes": "Most tutorials involve one or more of Twilio's APIs."
     },
     {
         "name": "Vonage",
