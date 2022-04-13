@@ -373,10 +373,7 @@
         "type": "publication",
         "link": "https://www.twilio.com/voices",
         "topics": [
-            "Front-End Development",
-            "Back-End Development",
             "Full-Stack Development",
-            "Programming",
             "APIs",
             "Infrastructure"
         ],
