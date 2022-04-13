@@ -1043,5 +1043,18 @@
             "Testing"
         ],
         "maxRate": 500
+    },
+    {
+        "name": "Earthly",
+        "type": "publication",
+        "link": "https://earthly.dev/blog/write-for-us/",
+        "contact": "support@earthly.dev",
+        "topics": [
+            "Open Source",
+            "Back-End Development",
+            "Infrastructure"
+        ],
+        "maxRate": 350,
+        "notes": "Articles will be promoted on their Twitter account and posted to Hacker News."
     }
 ]
