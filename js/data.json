@@ -812,8 +812,8 @@
             "Infrastructure",
             "Open Source"
         ],
-        "maxRate": 600,
-        "notes": "Articles must feature Airbyte integrations. Additional 300-dollar bonus for each article with 1k views in its first month."
+        "maxRate": 900,
+        "notes": "Articles must feature Airbyte integrations."
     },
     {
         "name": "webapp.io",
