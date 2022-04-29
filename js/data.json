@@ -1057,5 +1057,15 @@
         ],
         "maxRate": 350,
         "notes": "Articles will be promoted on their Twitter account and posted to Hacker News."
+    },
+    {
+        "name": "Initial Commit",
+        "type": "publication",
+        "link": "https://initialcommit.com/write-for-us",
+        "topics": [
+            "Full-Stack Development",
+            "Programming"
+        ],
+        "maxRate": 62.50
     }
 ]
