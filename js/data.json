@@ -1067,5 +1067,27 @@
             "Programming"
         ],
         "maxRate": 62.50
+    },
+    {
+        "name": "Solace",
+        "type": "publication",
+        "link": "https://solace.com/scholars/",
+        "topics": [
+            "APIs"
+        ],
+        "maxRate": 300,
+        "notes": "Articles must feature Solace technologies."
+    },
+    {
+        "name": "Hedera",
+        "type": "publication",
+        "link": "https://github.com/hashgraph/hedera-heroes",
+        "contact": "da@hedera.com",
+        "topics": [
+            "Crypto",
+            "Security"
+        ],
+        "maxRate": 100,
+        "notes": "Articles must feature Hedera technologies."
     }
 ]
