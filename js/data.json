@@ -1012,7 +1012,7 @@
         "name": "Medusa",
         "type": "publication",
         "link": "https://medusajs.notion.site/Write-for-us-74a2bf43b4ce43eeba200382f599321a",
-        "contact": "nick@medusajs.com",
+        "contact": "shahed@medusajs.com",
         "topics": [
             "Back-End Development",
             "Ecommerce",
@@ -1089,5 +1089,17 @@
         ],
         "maxRate": 100,
         "notes": "Articles must feature Hedera technologies."
+    },
+    {
+        "name": "Content Turbine",
+        "type": "agency",
+        "link": "https://www.contentturbine.com",
+        "topics": [
+            "Data Science",
+            "Programming",
+            "Artificial Intelligence"
+        ],
+        "minRate": 250,
+        "maxRate": 300
     }
 ]
