@@ -830,7 +830,7 @@
     {
         "name": "Bird Eats Bug",
         "type": "publication",
-        "link": "https://birdeatsbug.com/jobs/technical-content-writer",
+        "link": "https://jobs.birdeatsbug.com/o/freelance-technical-content-writer-fmx/c/new",
         "topics": [
             "No-Code Tools"
         ],
@@ -1101,5 +1101,68 @@
         ],
         "minRate": 250,
         "maxRate": 300
+    },
+    {
+        "name": "Cohesive",
+        "type": "publication",
+        "link": "https://cohesiveso.notion.site/Cohesive-Writers-Program-114332379ec8444f8ca0ee774b805253",
+        "topics": [
+            "Infrastructure",
+            "Kubernetes"
+        ],
+        "minRate": 200,
+        "maxRate": 500
+    },
+    {
+        "name": "Webiny",
+        "type": "publication",
+        "link": "https://www.webiny.com/docs/write-with-webiny/write-with-webiny",
+        "topics": [
+            "Front-End Development"
+        ],
+        "maxRate": 300
+    },
+    {
+        "name": "RunX",
+        "type": "publication",
+        "link": "https://blog.runx.dev/announcing-runxs-technical-writer-program-ea3790f0a80",
+        "topics": [
+            "Infrastructure",
+            "DevOps"
+        ],
+        "minRate": 150,
+        "maxRate": 200,
+        "notes": "Seeking tutorials on Opta, pays an extra 100 dollars for Opta tutorials that hit 1000 views in 4 weeks."
+    },
+    {
+        "name": "Hevo",
+        "type": "publication",
+        "link": "https://community.hevodata.com/write-for-hevo",
+        "topics": [
+            "Data Science"
+        ],
+        "maxRate": 100
+    },
+    {
+        "name": "Applozic",
+        "type": "publication",
+        "link": "https://www.applozic.com/guest-writer",
+        "topics": [
+            "Mobile Development",
+            "Full-Stack Development"
+        ],
+        "maxRate": 100,
+        "notes": "Seeking tutorials on building applications with their Chat, Voice, and Video SDKs."
+    },
+    {
+        "name": "Codiga",
+        "type": "publication",
+        "link": "https://www.codiga.io/write-for-us/",
+        "topics": [
+            "Programming"
+        ],
+        "minRate": 100,
+        "maxRate": 150,
+        "notes": "Asks authors to publish content on the author's own site, which Codiga will then promote."
     }
 ]
