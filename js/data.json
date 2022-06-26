@@ -1164,5 +1164,28 @@
         "minRate": 100,
         "maxRate": 150,
         "notes": "Asks authors to publish content on the author's own site, which Codiga will then promote."
+    },
+    {
+        "name": "Kili technology",
+        "type": "publication",
+        "link": "https://github.com/kili-technology/kili-blogger-program",
+        "contact": "theo.dullin@kili-technology.com",
+        "topics": [
+            "Data Science",
+            "Machine Learning"
+        ],
+        "minRate": 100,
+        "maxRate": 200
+    },
+    {
+        "name": "AppSignal",
+        "type": "publication",
+        "link": "https://blog.appsignal.com/write-for-us",
+        "contact": "editorial@appsignal.com",
+        "topics": [
+            "Full-Stack Development"
+        ],
+        "maxRate": 500,
+        "notes": "Mid-level to senior content on Node.js, Elixir, and Ruby."
     }
 ]
