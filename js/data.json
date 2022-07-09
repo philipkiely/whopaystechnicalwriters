@@ -863,7 +863,7 @@
         "link": "https://handbook.mattermost.com/contributors/contributors/ways-to-contribute/community-content-program",
         "topics": [
             "DevOps",
-            "Full-stack Development"
+            "Full-Stack Development"
         ],
         "minRate": 250,
         "maxRate": 350,
@@ -1187,5 +1187,15 @@
         ],
         "maxRate": 500,
         "notes": "Mid-level to senior content on Node.js, Elixir, and Ruby."
+    },
+    {
+        "name": "Sweetcode",
+        "type": "publication",
+        "link": "https://sweetcode.io/join-community/",
+        "topics": [
+            "Full-Stack Development",
+            "DevOps"
+        ],
+        "maxRate": 150
     }
 ]
