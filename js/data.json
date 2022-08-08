@@ -1185,7 +1185,7 @@
         "topics": [
             "Full-Stack Development"
         ],
-        "maxRate": 500,
+        "maxRate": 300,
         "notes": "Mid-level to senior content on Node.js, Elixir, and Ruby."
     },
     {
