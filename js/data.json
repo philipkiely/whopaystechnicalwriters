@@ -94,7 +94,8 @@
             "Back-End Development",
             "CouchDB"
         ],
-        "maxRate": 200
+        "maxRate": 200,
+        "inactive": true
     },
     {
         "name": "Dev Spotlight",
@@ -179,7 +180,8 @@
             "Infrastructure"
         ],
         "maxRate": 200,
-        "contact": "Authors@cloud.ionos.com"
+        "contact": "Authors@cloud.ionos.com",
+        "inactive": true
     },
     {
         "name": "Linode",
@@ -221,12 +223,6 @@
             "Consumer Tech"
         ],
         "maxRate": 120
-    },
-    {
-        "name": "Okta",
-        "type": "publication",
-        "link": "https://developer.okta.com/blog/",
-        "notes": "No public application, by invite only through Toptal. Pays well."
     },
     {
         "name": "Paperspace",
@@ -394,7 +390,7 @@
     {
         "name": "WPHUB",
         "type": "publication",
-        "link": "https://www.wphub.com/write-for-us/",
+        "link": "https://wphub.com/about-us/#Become_a_Guest_Author",
         "topics": [
             "Wordpress"
         ],
@@ -414,7 +410,7 @@
     {
         "name": "Soshace",
         "type": "publication",
-        "link": "https://blog.soshace.com/write-for-us/",
+        "link": "https://soshace.com/write-for-us/",
         "maxRate": 100
     },
     {
@@ -458,7 +454,7 @@
         "type": "agency",
         "link": "https://www.hitsubscribe.com/apply-to-be-an-author/",
         "minRate": 100,
-        "maxRate": 200
+        "maxRate": 400
     },
     {
         "name": "LoginRadius",
@@ -467,7 +463,8 @@
         "topics": [
             "Full-Stack Development"
         ],
-        "maxRate": 200
+        "maxRate": 200,
+        "inactive": true
     },
     {
         "name": "Neptune",
@@ -482,9 +479,9 @@
         "notes": "Also pays $50-150 for non-technical blog posts."
     },
     {
-        "name": "Rancher",
+        "name": "SUSE Writers Network (SUSE Rancher)",
         "type": "publication",
-        "link": "https://rancher.com/writing-program/roles/writer/",
+        "link": "https://www.suse.com/writing-program/",
         "topics": [
             "DevOps",
             "Infrastructure"
@@ -523,7 +520,7 @@
         "topics": [
             "Infrastructure"
         ],
-        "minRate": 75,
+        "minRate": 150,
         "maxRate": 600
     },
     {
@@ -555,7 +552,8 @@
             "Infrastructure"
         ],
         "minRate": 100,
-        "maxRate": 200
+        "maxRate": 200,
+        "inactive": true
     },
     {
         "name": "Sanity.io",
@@ -570,7 +568,7 @@
     {
         "name": "ImageKit",
         "type": "publication",
-        "link": "https://form.asana.com/?hash=4a457043221411a8d81971bc930a6a932add03c8eaeec167cf1fee81db871953&id=1166170812623393",
+        "link": "https://imagekit.io/blog/",
         "topics": [
             "Infrastructure"
         ],
@@ -639,7 +637,8 @@
     {
         "name": "Doppler",
         "type": "publication",
-        "link": "https://www.notion.so/Doppler-Technical-Writer-Program-26049df1aaf54480b6736fe0bb6b7f1b",
+        "link": "doppler.com",
+        "contact": "support@doppler.com",
         "topics": [
             "Security",
             "DevOps"
@@ -761,18 +760,19 @@
         ],
         "minRate": 200,
         "maxRate": 500,
-        "notes": "Articles should use the 100ms SDK. Author may republish on their own site with canonical URL to 100ms after 1 month."
+        "notes": "Articles should use the 100ms SDK. Author may republish on their own site with canonical URL to 100ms after 1 month.",
+        "inactive": true
     },
     {
         "name": "Warrant",
         "type": "publication",
-        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfOprFwulKdN5c8WKfpmj4u1t-MbEJ3LyQ708mvpwCBILiTaA/viewform",
+        "link": "https://blog.warrant.dev",
+        "contact": "hello@warrant.dev",
         "topics": [
             "Back-End Development",
             "Authentication"
         ],
-        "maxRate": 100,
-        "notes": "Link is to Google form, see blog.warrant.dev for examples."
+        "maxRate": 100
     },
     {
         "name": "SQL Shack",
@@ -820,7 +820,7 @@
         "name": "webapp.io",
         "type": "publication",
         "contact": "hello@webapp.io",
-        "link": "https://webapp.io/technical-writer-program",
+        "link": "https://webapp.io/",
         "topics": [
             "Infrastructure",
             "Full-Stack Development"
@@ -835,7 +835,8 @@
             "No-Code Tools"
         ],
         "minRate": 100,
-        "maxRate": 300
+        "maxRate": 300,
+        "inactive": true
     },
     {
         "name": "Magalix",
@@ -918,7 +919,7 @@
     },
     {
         "name": "Enlear",
-        "type": "publication",
+        "type": "agency",
         "link": "https://www.enlear.com/",
         "topics": [
             "Full-Stack Development",
@@ -967,7 +968,7 @@
     {
         "name": "Hashnode",
         "type": "publication",
-        "link": "https://web3.hashnode.com/contribute",
+        "link": "https://web3.hashnode.com/contribute-to-the-web3-blog",
         "topics": [
             "Crypto"
         ],
@@ -1088,7 +1089,8 @@
             "Security"
         ],
         "maxRate": 100,
-        "notes": "Articles must feature Hedera technologies."
+        "notes": "Articles must feature Hedera technologies.",
+        "inactive": true
     },
     {
         "name": "Content Turbine",
@@ -1152,7 +1154,8 @@
             "Full-Stack Development"
         ],
         "maxRate": 100,
-        "notes": "Seeking tutorials on building applications with their Chat, Voice, and Video SDKs."
+        "notes": "Seeking tutorials on building applications with their Chat, Voice, and Video SDKs.",
+        "inactive": true
     },
     {
         "name": "Codiga",
