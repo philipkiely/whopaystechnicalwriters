@@ -87,17 +87,6 @@
         "notes": "Also provides physical CircleCI swag with your first post."
     },
     {
-        "name": "Couchbase",
-        "type": "publication",
-        "link": "https://www.couchbase.com/community/community-writers-program",
-        "topics": [
-            "Back-End Development",
-            "CouchDB"
-        ],
-        "maxRate": 200,
-        "inactive": true
-    },
-    {
         "name": "Dev Spotlight",
         "type": "agency",
         "link": "https://www.devspotlight.com/jobs/",
@@ -133,17 +122,6 @@
         "notes": "Must use FaunaDB. Also provides Fauna swag to authors."
     },
     {
-        "name": "FloydHub",
-        "type": "publication",
-        "link": "https://blog.floydhub.com/write-for-floydhub/",
-        "topics": [
-            "Data Science"
-        ],
-        "maxRate": 150,
-        "notes": "Also provides authors with a small amount of platform credit.",
-        "inactive": true
-    },
-    {
         "name": "Fly",
         "type": "publication",
         "link": "https://github.com/superfly/fly#write-for-fly",
@@ -171,17 +149,6 @@
         ],
         "maxRate": 100,
         "notes": "Also donates to tech-focused charities for articles."
-    },
-    {
-        "name": "IONOS",
-        "type": "publication",
-        "link": "https://devops.ionos.com/tutorials/get-paid-to-write/",
-        "topics": [
-            "Infrastructure"
-        ],
-        "maxRate": 200,
-        "contact": "Authors@cloud.ionos.com",
-        "inactive": true
     },
     {
         "name": "Linode",
@@ -336,19 +303,6 @@
         "maxRate": 500
     },
     {
-        "name": "Clubhouse",
-        "type": "publication",
-        "link": "https://clubhouse.io/clubhouse-write-earn-give-program",
-        "topics": [
-            "Programming",
-            "Soft Skills"
-        ],
-        "minRate": 350,
-        "maxRate": 600,
-        "notes": "Matches payments with donations to tech-focused charities or open-source projects.",
-        "inactive": true
-    },
-    {
         "name": "Tutorialspoint",
         "type": "publication",
         "link": "https://www.tutorialspoint.com/about/tutorials_writing.htm",
@@ -457,16 +411,6 @@
         "maxRate": 400
     },
     {
-        "name": "LoginRadius",
-        "type": "publication",
-        "link": "https://www.loginradius.com/blog/async/page/guest-blog",
-        "topics": [
-            "Full-Stack Development"
-        ],
-        "maxRate": 200,
-        "inactive": true
-    },
-    {
         "name": "Neptune",
         "type": "publication",
         "link": "https://neptune.ai/write-for-us",
@@ -542,18 +486,6 @@
         ],
         "contact": "tech-writer@deepsource.io",
         "maxRate": 150
-    },
-    {
-        "name": "Adam the Automator",
-        "type": "publication",
-        "link": "https://adamtheautomator.com/friends",
-        "topics": [
-            "DevOps",
-            "Infrastructure"
-        ],
-        "minRate": 100,
-        "maxRate": 200,
-        "inactive": true
     },
     {
         "name": "Sanity.io",
@@ -700,16 +632,6 @@
         "maxRate": 75
     },
     {
-        "name": "Abstract API",
-        "type": "publication",
-        "link": "https://www.abstractapi.com/write-for-us",
-        "topics": [
-            "Back-End Development"
-        ],
-        "maxRate": 100,
-        "inactive": true
-    },
-    {
         "name": "Magic Link",
         "type": "publication",
         "link": "https://magic-fortmatic.typeform.com/to/Wgzsocor",
@@ -750,18 +672,6 @@
         ],
         "maxRate": 200,
         "notes": "Focus on Kubernetes and Cloud-Native Applications, or application development and deployment with Okteto."
-    },
-    {
-        "name": "100ms",
-        "type": "publication",
-        "link": "https://www.100ms.live/technical-writer-program",
-        "topics": [
-            "Back-End Development"
-        ],
-        "minRate": 200,
-        "maxRate": 500,
-        "notes": "Articles should use the 100ms SDK. Author may republish on their own site with canonical URL to 100ms after 1 month.",
-        "inactive": true
     },
     {
         "name": "Warrant",
@@ -826,17 +736,6 @@
             "Full-Stack Development"
         ],
         "maxRate": 150
-    },
-    {
-        "name": "Bird Eats Bug",
-        "type": "publication",
-        "link": "https://jobs.birdeatsbug.com/o/freelance-technical-content-writer-fmx/c/new",
-        "topics": [
-            "No-Code Tools"
-        ],
-        "minRate": 100,
-        "maxRate": 300,
-        "inactive": true
     },
     {
         "name": "Magalix",
@@ -1080,19 +979,6 @@
         "notes": "Articles must feature Solace technologies."
     },
     {
-        "name": "Hedera",
-        "type": "publication",
-        "link": "https://github.com/hashgraph/hedera-heroes",
-        "contact": "da@hedera.com",
-        "topics": [
-            "Crypto",
-            "Security"
-        ],
-        "maxRate": 100,
-        "notes": "Articles must feature Hedera technologies.",
-        "inactive": true
-    },
-    {
         "name": "Content Turbine",
         "type": "agency",
         "link": "https://www.contentturbine.com/freelance",
@@ -1144,18 +1030,6 @@
             "Data Science"
         ],
         "maxRate": 100
-    },
-    {
-        "name": "Applozic",
-        "type": "publication",
-        "link": "https://www.applozic.com/guest-writer",
-        "topics": [
-            "Mobile Development",
-            "Full-Stack Development"
-        ],
-        "maxRate": 100,
-        "notes": "Seeking tutorials on building applications with their Chat, Voice, and Video SDKs.",
-        "inactive": true
     },
     {
         "name": "Codiga",

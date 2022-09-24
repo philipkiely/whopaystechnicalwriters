@@ -194,7 +194,7 @@ var Resources = {
 
             let resourceTitle = `
                 <h5 class="card-title w-100 d-flex justify-content-between mb-0">
-                    <a href="${el.link}" target="_blank" class="stretched-link">
+                    <a href="${el.link}?utm_source=referral&utm_medium=aggregator&utm_campaign=whopaystechnicalwriters.com" target="_blank" class="stretched-link">
                         ${el.name}
                         <i class="bi bi-link card-link"></i>
                     </a>

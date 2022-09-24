@@ -1,0 +1,128 @@
+[
+    {
+        "name": "Applozic",
+        "type": "publication",
+        "link": "https://www.applozic.com/guest-writer",
+        "topics": [
+            "Mobile Development",
+            "Full-Stack Development"
+        ],
+        "maxRate": 100,
+        "notes": "Seeking tutorials on building applications with their Chat, Voice, and Video SDKs.",
+        "inactive": true
+    },
+    {
+        "name": "Couchbase",
+        "type": "publication",
+        "link": "https://www.couchbase.com/community/community-writers-program",
+        "topics": [
+            "Back-End Development",
+            "CouchDB"
+        ],
+        "maxRate": 200,
+        "inactive": true
+    },
+    {
+        "name": "FloydHub",
+        "type": "publication",
+        "link": "https://blog.floydhub.com/write-for-floydhub/",
+        "topics": [
+            "Data Science"
+        ],
+        "maxRate": 150,
+        "notes": "Also provides authors with a small amount of platform credit.",
+        "inactive": true
+    },
+    {
+        "name": "IONOS",
+        "type": "publication",
+        "link": "https://devops.ionos.com/tutorials/get-paid-to-write/",
+        "topics": [
+            "Infrastructure"
+        ],
+        "maxRate": 200,
+        "contact": "Authors@cloud.ionos.com",
+        "inactive": true
+    },
+    {
+        "name": "Clubhouse",
+        "type": "publication",
+        "link": "https://clubhouse.io/clubhouse-write-earn-give-program",
+        "topics": [
+            "Programming",
+            "Soft Skills"
+        ],
+        "minRate": 350,
+        "maxRate": 600,
+        "notes": "Matches payments with donations to tech-focused charities or open-source projects.",
+        "inactive": true
+    },
+    {
+        "name": "LoginRadius",
+        "type": "publication",
+        "link": "https://www.loginradius.com/blog/async/page/guest-blog",
+        "topics": [
+            "Full-Stack Development"
+        ],
+        "maxRate": 200,
+        "inactive": true
+    },
+    {
+        "name": "Adam the Automator",
+        "type": "publication",
+        "link": "https://adamtheautomator.com/friends",
+        "topics": [
+            "DevOps",
+            "Infrastructure"
+        ],
+        "minRate": 100,
+        "maxRate": 200,
+        "inactive": true
+    },
+    {
+        "name": "Abstract API",
+        "type": "publication",
+        "link": "https://www.abstractapi.com/write-for-us",
+        "topics": [
+            "Back-End Development"
+        ],
+        "maxRate": 100,
+        "inactive": true
+    },
+    {
+        "name": "100ms",
+        "type": "publication",
+        "link": "https://www.100ms.live/technical-writer-program",
+        "topics": [
+            "Back-End Development"
+        ],
+        "minRate": 200,
+        "maxRate": 500,
+        "notes": "Articles should use the 100ms SDK. Author may republish on their own site with canonical URL to 100ms after 1 month.",
+        "inactive": true
+    },
+    {
+        "name": "Bird Eats Bug",
+        "type": "publication",
+        "link": "https://jobs.birdeatsbug.com/o/freelance-technical-content-writer-fmx/c/new",
+        "topics": [
+            "No-Code Tools"
+        ],
+        "minRate": 100,
+        "maxRate": 300,
+        "inactive": true
+    },
+    {
+        "name": "Hedera",
+        "type": "publication",
+        "link": "https://github.com/hashgraph/hedera-heroes",
+        "contact": "da@hedera.com",
+        "topics": [
+            "Crypto",
+            "Security"
+        ],
+        "maxRate": 100,
+        "notes": "Articles must feature Hedera technologies.",
+        "inactive": true
+    }
+]
