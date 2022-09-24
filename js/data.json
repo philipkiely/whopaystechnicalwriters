@@ -611,14 +611,14 @@
         "notes": "Payment varies by project scope"
     },
     {
-        "name": "GraphCMS",
+        "name": "Hygraph (formerly GraphCMS)",
         "type": "publication",
-        "link": "https://graphcms.com/write-for-graphcms",
+        "link": "https://hygraph.com/write-for-hygraph",
         "topics": [
             "Front-End Development",
             "Back-End Development"
         ],
-        "notes": "Payment varies by article. Pitches should include GraphCMS."
+        "notes": "Payment varies by article. Pitches should include Hygraph."
     },
     {
         "name": "Topcoder Thrive",
@@ -1074,5 +1074,65 @@
             "DevOps"
         ],
         "maxRate": 150
+    },
+    {
+        "name": "Syntropy",
+        "type": "publication",
+        "link": "https://www.syntropystack.com/writers",
+        "topics": [
+            "Crypto",
+            "DevOps"
+        ],
+        "minRate": 250,
+        "maxRate": 650
+    },
+    {
+        "name": "Argot",
+        "type": "agency",
+        "link": "https://argot.dev/writers",
+        "contact": "writers@argot.dev",
+        "topics": [
+            "Front-End Development",
+            "Back-End Development",
+            "Data Science",
+            "DevOps"
+        ],
+        "maxRate": 600
+    },
+    {
+        "name": "CodeSee",
+        "type": "publication",
+        "link": "https://learn.codesee.io/guest-author-program/",
+        "contact": "josh@codesee.io",
+        "topics": [
+            "Programming"
+        ],
+        "maxRate": 500,
+        "notes": "Looking for content on CodeSee tools, technical reviews, and code quality"
+    },
+    {
+        "name": "memphis.dev",
+        "type": "publication",
+        "link": "https://forms.gle/EJvfgLGivUzFMfcY9",
+        "contact": "team@memphis.dev",
+        "topics": [
+            "Back-End Development",
+            "Full-Stack Development"
+        ],
+        "minRate": 500,
+        "maxRate": 800,
+        "notes": "Write in-depth pieces relevant to memphis.dev in Go"
+    },
+    {
+        "name": "neverinstall",
+        "type": "publication",
+        "link": "https://blog.neverinstall.com/neverinstall-technical-writer-program",
+        "topics": [
+            "Back-End Development",
+            "DevOps"
+        ],
+        "minRate": 100,
+        "maxRate": 250,
+        "notes": "neverinstall offers a way to stream apps to browser and seeks relevant technical content"
     }
 ]
