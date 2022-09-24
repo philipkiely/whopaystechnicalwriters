@@ -18,4 +18,4 @@
   functions = "functions"
 
   # Configure with Environment Variables
-  environment = { PYTHON_VERSION = "3.7" }
+  environment = { PYTHON_VERSION = "3.8" }
