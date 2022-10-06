@@ -996,7 +996,8 @@
         "topics": [
             "Front-End Development"
         ],
-        "maxRate": 300
+        "maxRate": 200,
+        "notes": "Webiny is an open source serverless CMS."
     },
     {
         "name": "RunX",
