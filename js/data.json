@@ -1123,5 +1123,30 @@
         "minRate": 100,
         "maxRate": 250,
         "notes": "neverinstall offers a way to stream apps to browser and seeks relevant technical content"
+    },
+    {
+        "name": "TransactionLink",
+        "type": "publication",
+        "link": "https://transactionlink.io",
+        "contact": "hello@transactionlink.io",
+        "topics": [
+            "Back-End Development",
+            "DevOps",
+            "Infrastructure"
+        ],
+        "minRate": 300,
+        "maxRate": 500
+    },
+    {
+        "name": "NimbleBox.ai",
+        "type": "publication",
+        "link": "https://nimblebox.ai/technical-writer-program",
+        "contact": "rugman@nimblebox.ai",
+        "topics": [
+            "Machine Learning",
+            "Data Science",
+            "MLOps"
+        ],
+        "maxRate": "50"
     }
 ]
