@@ -1149,18 +1149,6 @@
         "maxRate": 100
     },
     {
-        "name": "Technical Conversion Copy Club",
-        "type": "agency",
-        "link": "https://www.technicalconversioncopyclub.com/",
-        "contact": "piero@techcopyteam.com",
-        "topics": [
-            "Full-Stack Development",
-            "DevOps",
-            "Data Science"
-        ],
-        "maxRate": 300
-    },
-    {
         "name": "Nyckel",
         "type": "publication",
         "link": "https://www.nyckel.com/blog/",
@@ -1191,5 +1179,15 @@
             "Front-End Development"
         ],
         "maxRate": 250
+    },
+    {
+        "name": "Storyblok",
+        "type": "publication",
+        "link": "https://www.storyblok.com/tp/guest-writing-terms",
+        "topics": [
+            "Front-End Development",
+            "Infrastructure"
+        ],
+        "maxRate": 200
     }
 ]

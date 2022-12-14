@@ -137,5 +137,17 @@
         "maxRate": 500,
         "notes": "Referral program: earn $250 for an intro after a writer publishes their first article.",
         "inactive": true
-    }
+    },
+    {
+        "name": "Technical Conversion Copy Club",
+        "type": "agency",
+        "link": "https://www.technicalconversioncopyclub.com/",
+        "contact": "piero@techcopyteam.com",
+        "topics": [
+            "Full-Stack Development",
+            "DevOps",
+            "Data Science"
+        ],
+        "maxRate": 300
+    },
 ]
