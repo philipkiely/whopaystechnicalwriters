@@ -4,8 +4,7 @@
         "type": "publication",
         "link": "https://css-tricks.com/guest-writing-for-css-tricks/",
         "topics": ["Front-End Development"],
-        "minRate": 300,
-        "maxRate": 400
+        "maxRate": 300
     },
     {
         "name": "No Starch Press",
@@ -1147,6 +1146,50 @@
             "Data Science",
             "MLOps"
         ],
-        "maxRate": "50"
+        "maxRate": 100
+    },
+    {
+        "name": "Technical Conversion Copy Club",
+        "type": "agency",
+        "link": "https://www.technicalconversioncopyclub.com/",
+        "contact": "piero@techcopyteam.com",
+        "topics": [
+            "Full-Stack Development",
+            "DevOps",
+            "Data Science"
+        ],
+        "maxRate": 300
+    },
+    {
+        "name": "Nyckel",
+        "type": "publication",
+        "link": "https://www.nyckel.com/blog/",
+        "contact": "writers@nyckel.com",
+        "topics": [
+            "Machine Learning",
+            "Data Science"
+        ],
+        "maxRate": 400,
+        "notes": "Looking for thought leadership content, interesting ML-driven sample apps and built with Nyckel, and integrations. "
+    },
+    {
+        "name": "Ant Media",
+        "type": "publication",
+        "link": "https://antmedia.io/write-for-us-looking-for-technical-authors/",
+        "topics": [
+            "Infrastructure",
+            "APIs"
+        ],
+        "minRate": 50,
+        "maxRate": 150
+    },
+    {
+        "name": "Open Relay",
+        "type": "publication",
+        "link": "https://medium.com/stackanatomy/write-for-us-ad11489bd7c3",
+        "topics": [
+            "Front-End Development"
+        ],
+        "maxRate": 250
     }
 ]
