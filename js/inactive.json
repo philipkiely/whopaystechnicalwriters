@@ -150,4 +150,15 @@
         ],
         "maxRate": 300
     },
+    {
+        "name": "Cube Dev",
+        "type": "publication",
+        "link": "https://www.notion.so/Cube-js-Guest-Authors-8ddd5046be9048d9869410b60d4a2b98",
+        "contact": "igor@cube.dev",
+        "topics": [
+            "Data Science"
+        ],
+        "maxRate": 300,
+        "notes": "Provides a list of suggested topics."
+    }
 ]
