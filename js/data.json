@@ -1178,5 +1178,17 @@
             "Infrastructure"
         ],
         "maxRate": 200
+    },
+    {
+        "name": "Dolby.io",
+        "type": "publication",
+        "link": "https://go.dolby.io/community-writing",
+        "topics": [
+            "Full-Stack Development",
+            "APIs"
+        ],
+        "minRate": 100,
+        "maxRate": 500,
+        "notes": "Articles must use one or more Dolby.io technologies."
     }
 ]
