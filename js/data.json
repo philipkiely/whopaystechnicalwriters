@@ -1190,5 +1190,47 @@
         "minRate": 100,
         "maxRate": 500,
         "notes": "Articles must use one or more Dolby.io technologies."
+    },
+    {
+        "name": "Semaphore",
+        "type": "publication",
+        "link": "https://semaphoreci.com/resources/write-with-us",
+        "topics": [
+            "Open Source",
+            "Infrastructure"
+        ],
+        "minRate": 400,
+        "maxRate": 500
+    },
+    {
+        "name": "Strapi",
+        "type": "publication",
+        "link": "https://strapi.io/write-for-the-community",
+        "topics": [
+            "Full-Stack Development"
+        ],
+        "minRate": 100,
+        "maxRate": 350
+    },
+    {
+        "name": "Cube,js",
+        "type": "publication",
+        "link": "https://www.notion.so/Cube-js-Guest-Authors-8ddd5046be9048d9869410b60d4a2b98",
+        "contact": "igor@cube.dev",
+        "topics": [
+            "Data Science",
+            "Analytics"
+        ],
+        "maxRate": 300
+    },
+    {
+        "name": "Invertase",
+        "type": "publication",
+        "link": "https://invertase.io/authors-program",
+        "topics": [
+            "Mobile Development",
+            "Full-Stack Development"
+        ],
+        "maxRate": 250
     }
 ]
