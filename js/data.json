@@ -327,7 +327,8 @@
             "APIs",
             "Infrastructure"
         ],
-        "maxRate": 500,
+        "minRate": 500,
+        "maxRate": 650,
         "notes": "Most tutorials involve one or more of Twilio's APIs."
     },
     {
