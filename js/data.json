@@ -1233,5 +1233,29 @@
             "Full-Stack Development"
         ],
         "maxRate": 250
+    },
+    {
+        "name": "Turnkey Labs",
+        "type": "publication",
+        "link": "https://turnkey-labs.com/tech-trends/",
+        "contact": "alex.p@turnkey-labs.com",
+        "topics": [
+            "Full-Stack Development"
+        ],
+        "minRate": 100,
+        "maxRate": 200
+    },
+    {
+        "name": "NXNE",
+        "type": "agency",
+        "link": "https://nxne.media",
+        "contact": "editorial@nxne.media",
+        "topics": [
+            "Full-Stack Development",
+            "Infrastructure",
+            "Data Science"
+        ],
+        "minRate": 50,
+        "maxRate": 600
     }
 ]
