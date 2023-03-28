@@ -1257,5 +1257,15 @@
         ],
         "minRate": 50,
         "maxRate": 600
+    },
+    {
+        "name": "LambdaTest",
+        "type": "publication",
+        "link": "https://www.lambdatest.com/lambdatest-write-for-us",
+        "topics": [
+            "DevOps",
+            "Testing"
+        ],
+        "maxRate": 200
     }
 ]
