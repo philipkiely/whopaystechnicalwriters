@@ -2,83 +2,9 @@
 
 {% block content %}
 <div class="col-xl-9 col-lg-8 order-lg-1 mb-5 py-2">
-
-
     <h3 class="d-flex justify-content-between align-items-center mb-3">
-        <span>Suggest a Resource</span>
+        <span>Temporarily closed to due to spam</span>
         <a class="link fs-6 mx-4 link-custom" href="/">Return home</a>
     </h3>
-    <p>You can also use this form to request an update to an existing resource.</p>
-    <div class="alert alert-success alert-dismissible fade show" role="alert" id="function-worked" hidden="true">
-        <p>Thank you for suggesting a resource! Your suggestion will be considered and should appear on the site within a day.</p>
-        <p>Update your suggestion or check its status on GitHub: <span id="github-url"></span></p>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-    <div class="alert alert-danger alert-dismissible fade show" role="alert" id="function-failed" hidden="true">
-        <p>Form submission failed, server error. Try again or send me an email at <a href="mailto:philip@kiely.xyz">philip@kiely.xyz</a> to let me know what's up.</p>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-    <div class="alert alert-danger alert-dismissible fade show" role="alert" id="form-failed" hidden="true">
-        <p>Company Name, Company Type, Link, and Rate are all required fields.</p>
-        <p>Rate must be a number or a range (number-number) unless it is a publisher.</p>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-    <form class="needs-validation" id="new-pub-form" novalidate>
-        <div class="mb-3 required">
-            <label for="company-name" class="form-label">Company Name</label>
-            <input type="text" class="form-control form-control-dkmode" id="company-name" placeholder="CSS Tricks">
-        </div>
-        <div class="mb-3 required">
-            <label for="company-type" class="form-label">Company Type</label>
-            <select class="form-select form-control-dkmode" id="company-type" aria-label="Company Type" aria-describedby="ct-description">
-                <option selected value="Publication">Publication</option>
-                <option value="Publisher">Publisher</option>
-                <option value="Agency">Agency</option>
-            </select>
-            <div class="form-text" id="ct-description">
-                <ul>
-                    <li>"Publication" means a blog (including corporate blogs), magazine, or newsletter that buys articles.</li>
-                    <li>"Publisher" means a company that publishes books and pays royalties.</li>
-                    <li>"Agency" means a company that finds writers hourly or project work.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="mb-3 required">
-            <label for="link" class="form-label">Link</label>
-            <input type="text" class="form-control form-control-dkmode" id="link" placeholder="https://css-tricks.com/guest-posting/"
-                aria-describedby="link-description">
-            <div class="form-text" id="link-description">If possible, link directly to the company's "write for us" or
-                "guest post" page. Otherwise, link to the publication's main page.</div>
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Editor's Email</label>
-            <input type="email" class="form-control form-control-dkmode" id="email" placeholder="team@css-tricks.com"
-                aria-describedby="email-description">
-            <div class="form-text" id="email-description">If the editor has a <b>public</b> email address that they
-                <b>invite prospective authors to contact them at</b>, enter it here.</div>
-        </div>
-        <div class="mb-3">
-            <label for="topics" class="form-label">Topic(s)</label>
-            <input type="text" class="form-control form-control-dkmode" id="topics" placeholder="Front-End Development, Data Science"
-                aria-describedby="topics-description">
-            <div class="form-text" id="email-description">General topics like Front-End Development, Back-End
-                Development, Data Science, Infrastructure, etc.</div>
-        </div>
-        <div class="mb-3 required">
-            <label for="rates" class="form-label">Rate</label>
-            <input type="text" class="form-control form-control-dkmode" id="rates" placeholder="250"
-                aria-describedby="topics-description">
-            <div class="form-text" id="email-description">The rate, in <b>USD</b>, that the company offers <b>first-time
-                    writers</b>. This can be a per-article rate, hourly rate, or royalty structure. Ranges are ok! Format them as "100-200". For royalty structures, give a short description.</div>
-        </div>
-        <div class="mb-3">
-            <label for="notes" class="form-label">Notes</label>
-            <input type="text" class="form-control form-control-dkmode" id="notes" placeholder="Editors give great feedback!"
-                aria-describedby="notes-description">
-            <div class="form-text" id="notes-description">Any other information you know about the publication.</div>
-        </div>
-        <button class="btn btn-custom btn-block" type="submit">Send</button>
-    </form>
-    <script src="/js/form.js"></script>
 </div>
 {% endblock %}
