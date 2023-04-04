@@ -15,7 +15,6 @@ Develop Who Pays Technical Writers in N steps:
 
 That's it! You're all set up and ready to go.
 
-If you want to submit the form in development, you'll need a [GitHub Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) set as an environment variable `GITHUB_TOKEN`.
 
 ## Development
 
