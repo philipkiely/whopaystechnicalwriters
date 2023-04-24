@@ -1267,5 +1267,71 @@
             "Testing"
         ],
         "maxRate": 200
+    },
+    {
+        "name": "Giskard",
+        "type": "publication",
+        "link": "https://www.giskard.ai/write-for-the-community",
+        "topics": [
+            "Artificial Intelligence"
+        ],
+        "minRate": 100,
+        "maxRate": 400
+    },
+    {
+        "name": "LakeFS",
+        "type": "publication",
+        "link": "https://info.lakefs.io/writer-program",
+        "topics": [
+            "Back-End Development",
+            "DevOps"
+        ],
+        "maxRate": 350,
+        "notes": "Articles must feature LakeFS tools."
+    },
+    {
+        "name": "Software Testing Help",
+        "type": "publication",
+        "link": "https://www.softwaretestinghelp.com/opportunity-freelance-qa-testers/",
+        "contact": "info@softwaretestinghelp.com",
+        "topics": [
+            "Testing"
+        ],
+        "minRate": 200,
+        "maxRate": 600
+    },
+    {
+        "name": "Plural",
+        "type": "publication",
+        "link": "https://www.plural.sh/blog/plurals-content-contribution-program/",
+        "topics": [
+            "Infrastructure",
+            "DevOps"
+        ],
+        "maxRate": 300,
+        "notes": "Looking for tutorial and guides using Plural"
+    },
+    {
+        "name": "Code Maze",
+        "type": "publication",
+        "link": "https://code-maze.com/write-for-codemaze/",
+        "contact": "content@code-maze.com",
+        "topics": [
+            "Back-End Development"
+        ],
+        "minRate": 82,
+        "maxRate": 135,
+        "notes": "C#/.NET and related topics only"
+    },
+    {
+        "name": "Dyte",
+        "type": "publication",
+        "link": "https://dyte.io/blog/",
+        "contact": "gtm-team@dyte.io",
+        "topics": [
+            "APIs"
+        ],
+        "maxRate": 200,
+        "notes": "Articles must use Dyte tools"
     }
 ]
