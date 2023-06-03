@@ -67,7 +67,14 @@
                         <code id="support">GET MONTHLY UPDATES</code>
                     </h5>
                         <form class="input-group mb-3" action="https://writedotdev.lemonsqueezy.com/email-subscribe/external" method="post">
-                            <input type="email" class="form-control" placeholder="techwriter@example.com" aria-label="Your email"
+                            <input
+                                name="email"
+                                type="email"
+                                autoComplete="email"
+                                required
+                                class="form-control"
+                                placeholder="techwriter@example.com"
+                                aria-label="Your email"
                                 aria-describedby="subscribe-button">
                             <button
                                 type="submit"
