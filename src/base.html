@@ -37,10 +37,6 @@
 <meta name="twitter:description" content="A curated collection of active publishers, publications, and agencies that pay fair rates for high-quality technical content.">
 <meta name="twitter:image" content="https://whopaystechnicalwriters.com/img/favicon_io/android-chrome-512x512.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-    data-id="philipkiely" data-description="Support me on Buy me a coffee!"
-    data-message="Thank you for supporting whopaystechnicalwriters.com! " data-color="#FF5F5F" data-position="Right"
-    data-x_margin="18" data-y_margin="18"></script>
 {% block head %}{% endblock %}
 </head>
 <body>
@@ -68,54 +64,38 @@
                 <!--Default - WfSD-->
                 <div id="js-marketing-sidebar-0">
                     <h5 class="d-flex justify-content-between align-items-center mb-3">
-                        <code id="support">SUPPORT THIS SITE</code> 
+                        <code id="support">GET MONTHLY UPDATES</code>
                     </h5>
-                    <a onclick="document.getElementById('bmc-wbtn').click()" href="#"><img
-                            src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee"
-                            style="height: 60px !important;width: 217px !important;"></a>
-                    <br>
-                    <br>
+                        <form class="input-group mb-3" action="https://writedotdev.lemonsqueezy.com/email-subscribe/external" method="post">
+                            <input type="email" class="form-control" placeholder="techwriter@example.com" aria-label="Your email"
+                                aria-describedby="subscribe-button">
+                            <button class="btn btn-custom btn-custom-dark text-nowrap text-light" type="button" id="subscribe-button">Subscribe</button>
+                        </form>
                     <p>
-                        Hi, I'm <a href="https://philipkiely.com">Philip</a>. I built this site to connect writers with publishing opportunities. If it helped you get a great gig or find an awesome writer, I'd appreciate a few dollars toward hosting costs.
+                        Subscribe to get new and featured opportunities delivered monthly to your inbox.
                     </p>
+                    <h5 class="d-flex justify-content-between align-items-center mb-3">
+                        <code id="support">BROUGHT TO YOU BY</code>
+                    </h5>
                     <a href="https://philipkiely.com/wfsd/?utm_source=wptw" target="_blank"><img class="img-fluid"
                             src="/img/wfsd_gumroad_thumbnail.png"></a>
                     <br>
                     <br>
                     <p>
-                        I wrote <a href="https://philipkiely.com/wfsd/?utm_source=wptw" target="_blank">Writing for Software Developers</a>
-                        to teach developers how to craft and publish technical content. The book includes
-                        advice on writing style, editing, and monetization &mdash; all based on my personal experience writing for top tech
-                        publications plus interviews with 11 successful writers. <a
-                            href="https://philipkiely.com/wfsd/?utm_source=wptw" target="_blank">Click here to get the book</a> and support this site!
+                        <a href="https://philipkiely.com/wfsd/?utm_source=wptw" target="_blank">Writing for Software Developers</a>
+                        teaches developers how to craft and publish technical content. The book includes
+                        advice on writing style, editing, and monetization based on both my personal experience writing for top tech
+                        publications and interviews with 11 successful writers. <a href="https://philipkiely.com/wfsd/?utm_source=wptw"
+                            target="_blank">Click here to get the book</a> and support this site!
                     </p>
-                </div>
-                <!--CEfIP-->
-                <div id="js-marketing-sidebar-1" hidden>
                     <h5 class="d-flex justify-content-between align-items-center mb-3">
-                        <code>BROUGHT TO YOU BY</code>
+                        <code id="support">SUPPORT THIS SITE</code> 
                     </h5>
-                    <a href="https://philipkiely.com/cefip/?utm_source=wptw target="_blank""><img class="img-fluid"
-                            src="/img/cefip_gumroad_thumbnail.png"></a>
-                    <br>
-                    <br>
                     <p>
-                        Hi, I'm Philip. I wrote <a href="https://philipkiely.com/cefip/?utm_source=wptw" target="_blank">Cold Email for Interesting People</a>
-                        to share everything I know about crafting effective cold email. Cold email is an invaluable skill for many pursuits &mdash; including pitching to publications on this site!
-                        <a href="https://philipkiely.com/cefip/?utm_source=wptw" target="_blank">Click here to get the course</a> and support this site!
+                        Hi, I'm <a href="https://philipkiely.com">Philip</a>. I built this site to connect writers with paid opportunities. If it helped you get a great gig, I'd appreciate <a href="https://www.buymeacoffee.com/philipkiely">a few dollars toward hosting costs</a>.
                     </p>
-                </div>
-                <!--Stickers!!-->
-                <div id="js-marketing-sidebar-2" hidden>
-                    <h5 class="d-flex justify-content-between align-items-center mb-3">
-                        <code>SHOW YOUR SUPPORT</code>
-                    </h5>
-                    <a href="https://www.redbubble.com/i/sticker/Who-Pays-Technical-Writers-by-pkandc/77242176.EJUG5" target="_blank"><img class="img-fluid"
-                            src="/img/wptw_sticker.png"></a>
-                    <br>
-                    <br>
                     <p>
-                        As a developer, I show my support for companies I believe in where it matters: my laptop. Support Who Pays Technical Writers with a <a href="https://www.redbubble.com/i/sticker/Who-Pays-Technical-Writers-by-pkandc/77242176.EJUG5" target="_blank">lovely hexagonal laptop sticker</a> and check out the rest of the <a href="https://pkandc.redbubble.com">PK&C merch line</a>.
+                        If you're from a company that is hiring or building for tech writers, see <a href="/sponsor">sponsorship packages</a>.
                     </p>
                 </div>
             </aside>
@@ -145,6 +125,8 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        document.getElementById('bmc-wbtn').hidden = true;
+    </script>
 </body>
 </html>

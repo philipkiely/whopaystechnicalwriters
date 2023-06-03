@@ -26,6 +26,7 @@ def jinja():
     )
     render_page(env, "index.html")
     render_page(env, "404.html")
+    render_page(env, "sponsor.html")
     print("Jinja Built")
 
 def static():
