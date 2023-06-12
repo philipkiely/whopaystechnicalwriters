@@ -1,52 +1,53 @@
 [
     {
         "name": "Applozic",
-        "type": "publication",
+        "status": "red",
+        "type": "program",
         "link": "https://www.applozic.com/guest-writer",
         "topics": [
             "Mobile Development",
             "Full-Stack Development"
         ],
         "maxRate": 100,
-        "notes": "Seeking tutorials on building applications with their Chat, Voice, and Video SDKs.",
-        "inactive": true
+        "notes": "Seeking tutorials on building applications with their Chat, Voice, and Video SDKs."
     },
     {
         "name": "Couchbase",
-        "type": "publication",
+        "status": "red",
+        "type": "program",
         "link": "https://www.couchbase.com/community/community-writers-program",
         "topics": [
             "Back-End Development",
             "CouchDB"
         ],
-        "maxRate": 200,
-        "inactive": true
+        "maxRate": 200
     },
     {
         "name": "FloydHub",
-        "type": "publication",
+        "status": "red",
+        "type": "program",
         "link": "https://blog.floydhub.com/write-for-floydhub/",
         "topics": [
             "Data Science"
         ],
         "maxRate": 150,
-        "notes": "Also provides authors with a small amount of platform credit.",
-        "inactive": true
+        "notes": "Also provides authors with a small amount of platform credit."
     },
     {
         "name": "IONOS",
-        "type": "publication",
+        "status": "red",
+        "type": "program",
         "link": "https://devops.ionos.com/tutorials/get-paid-to-write/",
         "topics": [
             "Infrastructure"
         ],
         "maxRate": 200,
-        "contact": "Authors@cloud.ionos.com",
-        "inactive": true
+        "contact": "Authors@cloud.ionos.com"
     },
     {
         "name": "Clubhouse",
-        "type": "publication",
+        "status": "red",
+        "type": "program",
         "link": "https://clubhouse.io/clubhouse-write-earn-give-program",
         "topics": [
             "Programming",
@@ -54,21 +55,21 @@
         ],
         "minRate": 350,
         "maxRate": 600,
-        "notes": "Matches payments with donations to tech-focused charities or open-source projects.",
-        "inactive": true
+        "notes": "Matches payments with donations to tech-focused charities or open-source projects."
     },
     {
         "name": "LoginRadius",
-        "type": "publication",
+        "status": "red",
+        "type": "program",
         "link": "https://www.loginradius.com/blog/async/page/guest-blog",
         "topics": [
             "Full-Stack Development"
         ],
-        "maxRate": 200,
-        "inactive": true
+        "maxRate": 200
     },
     {
         "name": "Adam the Automator",
+        "status": "red",
         "type": "publication",
         "link": "https://adamtheautomator.com/friends",
         "topics": [
@@ -76,45 +77,45 @@
             "Infrastructure"
         ],
         "minRate": 100,
-        "maxRate": 200,
-        "inactive": true
+        "maxRate": 200
     },
     {
         "name": "Abstract API",
-        "type": "publication",
+        "status": "red",
+        "type": "program",
         "link": "https://www.abstractapi.com/write-for-us",
         "topics": [
             "Back-End Development"
         ],
-        "maxRate": 100,
-        "inactive": true
+        "maxRate": 100
     },
     {
         "name": "100ms",
-        "type": "publication",
+        "status": "red",
+        "type": "program",
         "link": "https://www.100ms.live/technical-writer-program",
         "topics": [
             "Back-End Development"
         ],
         "minRate": 200,
         "maxRate": 500,
-        "notes": "Articles should use the 100ms SDK. Author may republish on their own site with canonical URL to 100ms after 1 month.",
-        "inactive": true
+        "notes": "Articles should use the 100ms SDK. Author may republish on their own site with canonical URL to 100ms after 1 month."
     },
     {
         "name": "Bird Eats Bug",
-        "type": "publication",
+        "status": "red",
+        "type": "program",
         "link": "https://jobs.birdeatsbug.com/o/freelance-technical-content-writer-fmx/c/new",
         "topics": [
             "No-Code Tools"
         ],
         "minRate": 100,
-        "maxRate": 300,
-        "inactive": true
+        "maxRate": 300
     },
     {
         "name": "Hedera",
-        "type": "publication",
+        "status": "red",
+        "type": "program",
         "link": "https://github.com/hashgraph/hedera-heroes",
         "contact": "da@hedera.com",
         "topics": [
@@ -122,12 +123,12 @@
             "Security"
         ],
         "maxRate": 100,
-        "notes": "Articles must feature Hedera technologies.",
-        "inactive": true
+        "notes": "Articles must feature Hedera technologies."
     },
     {
         "name": "Doppler",
-        "type": "publication",
+        "status": "red",
+        "type": "program",
         "link": "doppler.com",
         "contact": "support@doppler.com",
         "topics": [
@@ -135,11 +136,11 @@
             "DevOps"
         ],
         "maxRate": 500,
-        "notes": "Referral program: earn $250 for an intro after a writer publishes their first article.",
-        "inactive": true
+        "notes": "Referral program: earn $250 for an intro after a writer publishes their first article."
     },
     {
         "name": "Technical Conversion Copy Club",
+        "status": "red",
         "type": "agency",
         "link": "https://www.technicalconversioncopyclub.com/",
         "contact": "piero@techcopyteam.com",
@@ -152,7 +153,8 @@
     },
     {
         "name": "Cube Dev",
-        "type": "publication",
+        "status": "red",
+        "type": "program",
         "link": "https://www.notion.so/Cube-js-Guest-Authors-8ddd5046be9048d9869410b60d4a2b98",
         "contact": "igor@cube.dev",
         "topics": [
@@ -160,5 +162,151 @@
         ],
         "maxRate": 300,
         "notes": "Provides a list of suggested topics."
+    },
+    {
+        "name": "Magalix",
+        "status": "green",
+        "type": "program",
+        "link": "https://www.magalix.com/the-sac-writers-club",
+        "topics": [
+            "Open Source",
+            "DevOps",
+            "Infrastructure"
+        ],
+        "maxRate": 200
+    },
+    {
+        "name": "SUSE Writers Network (SUSE Rancher)",
+        "status": "red",
+        "type": "publication",
+        "link": "https://www.suse.com/writing-program/",
+        "topics": [
+            "DevOps",
+            "Infrastructure"
+        ],
+        "maxRate": 300
+    },
+    {
+        "name": "Tech Beacon",
+        "status": "red",
+        "type": "publication",
+        "link": "https://techbeacon.com/aboutus",
+        "topics": [
+            "DevOps",
+            "Infrastructure"
+        ],
+        "maxRate": 400,
+        "notes": "The \"write for us\" page is currently behind an authentication barrier."
+    },
+    {
+        "name": "TypingDNA",
+        "status": "red",
+        "type": "program",
+        "link": "https://www.typingdna.com/guest-author-program#get-started",
+        "maxRate": 500
+    },
+    {
+        "name": "DeepSource",
+        "status": "red",
+        "type": "program",
+        "link": "https://deepsource.io/tech-writer/",
+        "topics": [
+            "DevOps"
+        ],
+        "contact": "tech-writer@deepsource.io",
+        "maxRate": 150
+    },
+    {
+        "name": "Okteto",
+        "status": "red",
+        "type": "program",
+        "link": "https://okteto.com/tech-writer/",
+        "contact": "writers@okteto.com",
+        "topics": [
+            "Kubernetes"
+        ],
+        "maxRate": 200,
+        "notes": "Focus on Kubernetes and Cloud-Native Applications, or application development and deployment with Okteto."
+    },
+    {
+        "name": "Figment",
+        "status": "red",
+        "type": "program",
+        "link": "https://www.notion.so/Contributing-to-Figment-Learn-d8ff9cdc32ca4b58838d81d07eab49bd",
+        "topics": [
+            "Crypto"
+        ],
+        "minRate": 100,
+        "maxRate": 1000,
+        "notes": "Payouts range from $100 for guides to $1000 for full-stack dApp tutorials."
+    },
+    {
+        "name": "CodeCov",
+        "status": "red",
+        "type": "program",
+        "link": "https://about.codecov.io/write-for-us/",
+        "topics": [
+            "DevOps",
+            "Testing"
+        ],
+        "maxRate": 500
+    },
+    {
+        "name": "Cohesive",
+        "status": "red",
+        "type": "publication",
+        "link": "https://cohesiveso.notion.site/Cohesive-Writers-Program-114332379ec8444f8ca0ee774b805253",
+        "topics": [
+            "Infrastructure",
+            "Kubernetes"
+        ],
+        "minRate": 200,
+        "maxRate": 500
+    },
+    {
+        "name": "Hevo",
+        "status": "red",
+        "type": "program",
+        "link": "https://community.hevodata.com/write-for-hevo",
+        "topics": [
+            "Data Science"
+        ],
+        "maxRate": 100
+    },
+    {
+        "name": "Codiga",
+        "status": "red",
+        "type": "program",
+        "link": "https://www.codiga.io/write-for-us/",
+        "topics": [
+            "Programming"
+        ],
+        "minRate": 100,
+        "maxRate": 150,
+        "notes": "Asks authors to publish content on the author's own site, which Codiga will then promote."
+    },
+    {
+        "name": "Syntropy",
+        "status": "red",
+        "type": "program",
+        "link": "https://www.syntropystack.com/writers",
+        "topics": [
+            "Crypto",
+            "DevOps"
+        ],
+        "minRate": 250,
+        "maxRate": 650
+    },
+    {
+        "name": "Cube.js",
+        "status": "red",
+        "type": "program",
+        "link": "https://www.notion.so/Cube-js-Guest-Authors-8ddd5046be9048d9869410b60d4a2b98",
+        "contact": "igor@cube.dev",
+        "topics": [
+            "Data Science",
+            "Analytics"
+        ],
+        "maxRate": 300
     }
 ]

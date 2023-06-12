@@ -1,6 +1,7 @@
 [
     {
         "name": "CSS Tricks",
+        "status": "yellow",
         "type": "publication",
         "link": "https://css-tricks.com/guest-writing-for-css-tricks/",
         "topics": ["Front-End Development"],
@@ -8,6 +9,7 @@
     },
     {
         "name": "No Starch Press",
+        "status": "green",
         "type": "publisher",
         "link": "https://nostarch.com/writeforus",
         "contact": "editors@nostarch.com",
@@ -16,6 +18,7 @@
     },
     {
         "name": "O'Reilly Media",
+        "status": "green",
         "type": "publisher",
         "link": "https://www.oreilly.com/work-with-us.html",
         "contact": "workwithus@oreilly.com",
@@ -23,6 +26,7 @@
     },
     {
         "name": "Apress",
+        "status": "green",
         "type": "publisher",
         "link": "https://www.apress.com/gp/write-for-us",
         "contact": "editorial@apress.com",
@@ -30,6 +34,7 @@
     },
     {
         "name": "Manning",
+        "status": "green",
         "type": "publisher",
         "link": "https://www.manning.com/write-for-us",
         "contact": "proposals@manning.com",
@@ -38,6 +43,7 @@
     },
     {
         "name": "\\newline",
+        "status": "green",
         "type": "publisher",
         "link": "https://www.newline.co/write-with-us",
         "royaltyRate": "50%",
@@ -45,6 +51,7 @@
     },
     {
         "name": "The Pragmatic Bookshelf",
+        "status": "green",
         "type": "publisher",
         "link": "https://pragprog.com/become-an-author/",
         "contact": "proposals@pragprog.com",
@@ -53,6 +60,7 @@
     },
     {
         "name": "ContentLab",
+        "status": "green",
         "type": "agency",
         "link": "https://contentlab.io/writeforus/",
         "contact": "elisa@contentlab.io",
@@ -67,7 +75,8 @@
     },
     {
         "name": "Auth0",
-        "type": "publication",
+        "status": "yellow",
+        "type": "program",
         "link": "https://auth0.com/apollo-program",
         "topics": [
             "Authentication"
@@ -77,7 +86,8 @@
     },
     {
         "name": "CircleCI",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://circleci.com/blog/guest-writer-program/",
         "topics": [
             "Infrastructure"
@@ -87,6 +97,7 @@
     },
     {
         "name": "Dev Spotlight",
+        "status": "green",
         "type": "agency",
         "link": "https://www.devspotlight.com/jobs/",
         "topics": [
@@ -100,7 +111,8 @@
     },
     {
         "name": "Digital Ocean",
-        "type": "publication",
+        "status": "yellow",
+        "type": "program",
         "link": "https://www.digitalocean.com/community/pages/write-for-digitalocean",
         "topics": [
             "Infrastructure",
@@ -112,17 +124,20 @@
     },
     {
         "name": "Fauna",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://fauna.com/blog/write-with-fauna",
         "topics": [
             "Full-Stack Development"
         ],
-        "maxRate": 350,
+        "minRate": 150,
+        "maxRate": 500,
         "notes": "Must use FaunaDB. Also provides Fauna swag to authors."
     },
     {
         "name": "Fly",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://github.com/superfly/fly#write-for-fly",
         "topics": [
             "Infrastructure"
@@ -131,7 +146,8 @@
     },
     {
         "name": "Honeybadger",
-        "type": "publication",
+        "status": "yellow",
+        "type": "program",
         "link": "https://www.honeybadger.io/blog/write-for-us/",
         "maxRate": 500,
         "topics": [
@@ -141,7 +157,8 @@
     },
     {
         "name": "Infantica",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://infatica.io/contribute/",
         "topics": [
             "Web Scraping"
@@ -151,7 +168,8 @@
     },
     {
         "name": "Linode",
-        "type": "publication",
+        "status": "yellow",
+        "type": "program",
         "link": "https://www.linode.com/lp/write-for-linode/",
         "topics": [
             "Infrastructure",
@@ -162,7 +180,8 @@
     },
     {
         "name": "LogRocket",
-        "type": "publication",
+        "status": "yellow",
+        "type": "program",
         "link": "https://blog.logrocket.com/become-a-logrocket-guest-author-7d970eb673f9/",
         "topics": [
             "Front-End Development"
@@ -172,6 +191,7 @@
     },
     {
         "name": "LWN",
+        "status": "green",
         "type": "publication",
         "link": "https://lwn.net/op/AuthorGuide.lwn",
         "maxRate": 300,
@@ -183,6 +203,7 @@
     },
     {
         "name": "Make Use Of",
+        "status": "green",
         "type": "publication",
         "link": "https://www.makeuseof.com/contributor/",
         "topics": [
@@ -192,7 +213,8 @@
     },
     {
         "name": "Paperspace",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://blog.paperspace.com/write-for-paperspace/",
         "topics": [
             "Data Science"
@@ -202,6 +224,7 @@
     },
     {
         "name": "PHP Architect",
+        "status": "green",
         "type": "publication",
         "link": "https://www.phparch.com/editorial/write-for-us/",
         "topics": [
@@ -211,7 +234,8 @@
     },
     {
         "name": "Postmark",
-        "type": "publication",
+        "status": "yellow",
+        "type": "program",
         "link": "https://postmarkapp.com/write-for-us",
         "topics": [
             "Back-End Development"
@@ -221,6 +245,7 @@
     },
     {
         "name": "Real Python",
+        "status": "green",
         "type": "publication",
         "link": "https://realpython.com/write-for-us/",
         "topics": [
@@ -232,6 +257,7 @@
     },
     {
         "name": "SitePoint",
+        "status": "green",
         "type": "publication",
         "link": "https://www.sitepoint.com/write-for-us/",
         "topics": [
@@ -245,6 +271,7 @@
     },
     {
         "name": "Smashing Magazine",
+        "status": "green",
         "type": "publication",
         "link": "https://www.smashingmagazine.com/write-for-us/",
         "topics": [
@@ -256,13 +283,15 @@
     },
     {
         "name": "Software Engineering Daily",
+        "status": "green",
         "type": "publication",
         "link": "https://softwareengineeringdaily.com/write/",
         "contact": "write@softwareengineeringdaily.com"
     },
     {
         "name": "TakeShape",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://www.takeshape.io/jobs/contributing-writer/",
         "topics": [
             "Front-End Development",
@@ -272,6 +301,7 @@
     },
     {
         "name": "TechWell",
+        "status": "green",
         "type": "publication",
         "link": "https://www.techwell.com/techwell-submission-guidelines",
         "topics": [
@@ -282,6 +312,7 @@
     },
     {
         "name": "TestDriven.io",
+        "status": "green",
         "type": "publication",
         "link": "https://testdriven.io/join-testdriven/",
         "topics": [
@@ -293,7 +324,8 @@
     },
     {
         "name": "WonderProxy",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://wonderproxy.com/blog/looking-for-authors/",
         "topics": [
             "Testing"
@@ -303,6 +335,7 @@
     },
     {
         "name": "Tutorialspoint",
+        "status": "green",
         "type": "publication",
         "link": "https://www.tutorialspoint.com/about/tutorials_writing.htm",
         "contact": "contact@tutorialspoint.com",
@@ -310,6 +343,7 @@
     },
     {
         "name": "Envato Tuts+",
+        "status": "green",
         "type": "publication",
         "link": "https://tutsplus.com/teach",
         "topics": [
@@ -320,7 +354,8 @@
     },
     {
         "name": "Twilio",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://www.twilio.com/voices",
         "topics": [
             "Full-Stack Development",
@@ -333,7 +368,8 @@
     },
     {
         "name": "Vonage",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://developer.nexmo.com/spotlight#submit-your-idea",
         "topics": [
             "Full-Stack Development"
@@ -343,6 +379,7 @@
     },
     {
         "name": "WPHUB",
+        "status": "green",
         "type": "publication",
         "link": "https://wphub.com/about-us/#Become_a_Guest_Author",
         "topics": [
@@ -353,6 +390,7 @@
     },
     {
         "name": "Zift",
+        "status": "green",
         "type": "publication",
         "link": "https://wezift.com/write-for-zift/",
         "topics": [
@@ -363,13 +401,19 @@
     },
     {
         "name": "Soshace",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
+        "contact": "content@soshace.com",
         "link": "https://soshace.com/write-for-us/",
+        "topics": [
+            "Full-Stack Development"
+        ],
         "maxRate": 100
     },
     {
         "name": "Hasura",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://hasura.io/blog/the-hasura-technical-writer-program/",
         "topics": [
             "Back-End Development"
@@ -379,7 +423,8 @@
     },
     {
         "name": "Arctype",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://blog.arctype.com/contribute/",
         "topics": [
             "Back-End Development",
@@ -391,8 +436,9 @@
     },
     {
         "name": "Draft.dev",
+        "status": "green",
         "type": "agency",
-        "link": "https://draft.dev/#write",
+        "link": "https://draft.dev/write",
         "contact": "karl@draft.dev",
         "topics": [
             "Full-Stack Development",
@@ -405,6 +451,7 @@
     },
     {
         "name": "Hit Subscribe",
+        "status": "green",
         "type": "agency",
         "link": "https://www.hitsubscribe.com/apply-to-be-an-author/",
         "minRate": 100,
@@ -412,54 +459,30 @@
     },
     {
         "name": "Neptune",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://neptune.ai/write-for-us",
         "contact": "guestwriters@neptune.ai",
         "topics": [
             "Data Science"
         ],
-        "minRate": 200,
-        "maxRate": 500,
+        "minRate": 300,
+        "maxRate": 600,
         "notes": "Also pays $50-150 for non-technical blog posts."
     },
     {
-        "name": "SUSE Writers Network (SUSE Rancher)",
-        "type": "publication",
-        "link": "https://www.suse.com/writing-program/",
-        "topics": [
-            "DevOps",
-            "Infrastructure"
-        ],
-        "maxRate": 300
-    },
-    {
         "name": "Section.io",
+        "status": "green",
         "type": "publication",
-        "link": "https://github.com/section-engineering-education/engineering-education",
+        "link": "https://github.com/section-engineering-education/engineering-education#engineering-education",
         "minRate": 50,
         "maxRate": 150,
         "notes": "Section takes submissions specifically from university-level computer science students."
     },
     {
-        "name": "Tech Beacon",
-        "type": "publication",
-        "link": "https://techbeacon.com/aboutus",
-        "topics": [
-            "DevOps",
-            "Infrastructure"
-        ],
-        "maxRate": 400,
-        "notes": "The \"write for us\" page is currently behind an authentication barrier."
-    },
-    {
-        "name": "TypingDNA",
-        "type": "publication",
-        "link": "https://www.typingdna.com/guest-author-program#get-started",
-        "maxRate": 500
-    },
-    {
         "name": "Vultr",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://www.vultr.com/docs/vultr-docs-program-guidelines",
         "topics": [
             "Infrastructure"
@@ -469,7 +492,8 @@
     },
     {
         "name": "Agora",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://www.agora.io/en/agora-content-contributor-program/",
         "topics": [
             "APIs"
@@ -478,18 +502,9 @@
         "notes": "Bonus swag and payment based on signups from your article."
     },
     {
-        "name": "DeepSource",
-        "type": "publication",
-        "link": "https://deepsource.io/tech-writer/",
-        "topics": [
-            "DevOps"
-        ],
-        "contact": "tech-writer@deepsource.io",
-        "maxRate": 150
-    },
-    {
         "name": "Sanity.io",
-        "type": "publication",
+        "status": "yellow",
+        "type": "program",
         "link": "https://www.sanity.io/guest-authorship",
         "topics": [
             "Front-End Development"
@@ -499,7 +514,8 @@
     },
     {
         "name": "ImageKit",
-        "type": "publication",
+        "status": "yellow",
+        "type": "program",
         "link": "https://imagekit.io/blog/",
         "topics": [
             "Infrastructure"
@@ -509,6 +525,7 @@
     },
     {
         "name": "Wizard on Demand",
+        "status": "green",
         "type": "agency",
         "link": "https://wizardondemand.com",
         "topics": [
@@ -522,19 +539,20 @@
     },
     {
         "name": "NoteBook Share",
+        "status": "green",
         "type": "publication",
-        "link": "https://www.nbshare.io/new-post/",
+        "link": "https://www.nbshare.io/write-for-us/",
         "contact": "johnludhi@outlook.com",
         "topics": [
             "Data Science"
         ],
-        "minRate": 100,
-        "maxRate": 150,
-        "notes": "Publishes Jupyter-style data science notebooks."
+        "maxRate": 20,
+        "notes": "Payment only offered to students."
     },
     {
         "name": "Adeva",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://adevait.com/write-for-us",
         "topics": [
             "Infrastructure",
@@ -545,21 +563,23 @@
         "notes": "Looking for technical guides, thought leadership content, and resources for Engineering Managers."
     },
     {
-        "name":"Editmode",
-        "type":"publication",
-        "link":"https://editmode.com",
-        "contact":"tony@editmode.com",
-        "topics":[
+        "name": "Editmode",
+        "status": "green",
+        "type": "program",
+        "link":" https://editmode.com",
+        "contact": "tony@editmode.com",
+        "topics": [
             "APIs"
         ],
-        "maxRate":150,
-        "notes":"Articles must implement some part of the Editmode API or client libraries in any programming language."
+        "maxRate": 150,
+        "notes": "Articles must implement some part of the Editmode API or client libraries in any programming language."
     },
     {
-        "name": "raywenderlich.com",
+        "name": "Kodeco",
+        "status": "green",
         "type": "publication",
-        "link": "https://www.raywenderlich.com/11455688-write-for-us",
-        "contact": "annette@raywenderlich.com",
+        "link": "https://www.kodeco.com/11455688-write-for-us",
+        "contact": "applications@kodeco.com",
         "topics": [
             "Mobile Development",
             "Back-End Development"
@@ -569,7 +589,8 @@
     },
     {
         "name": "CodeSubmit",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://codesubmit.io/blog/",
         "contact": "dom@codesubmit.io",
         "topics": [
@@ -579,7 +600,8 @@
     },
     {
         "name": "Bejamas",
-        "type": "agency",
+        "status": "green",
+        "type": "program",
         "link": "https://bejamas.io/paid-writing-program/",
         "topics": [
             "Front-End Development",
@@ -589,7 +611,8 @@
     },
     {
         "name": "Hygraph (formerly GraphCMS)",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://hygraph.com/write-for-hygraph",
         "topics": [
             "Front-End Development",
@@ -599,6 +622,7 @@
     },
     {
         "name": "Topcoder Thrive",
+        "status": "green",
         "type": "publication",
         "link": "https://www.topcoder.com/thrive/articles/Submitting%20a%20Thrive%20Article",
         "topics": [
@@ -610,7 +634,8 @@
     },
     {
         "name": "Magic Link",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://magic-fortmatic.typeform.com/to/Wgzsocor",
         "topics": [
             "Back-End Development"
@@ -620,8 +645,10 @@
     },
     {
         "name": "Appsmith",
-        "type": "publication",
+        "status": "yellow",
+        "type": "program",
         "link": "https://blog.appsmith.com/launching-the-appsmith-writers-program",
+        "contact": "writersprogram@appsmith.com",
         "topics": [
             "Back-End Development"
         ],
@@ -631,7 +658,8 @@
     },
     {
         "name": "QuickNode",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://quicknode.notion.site/quicknode/QuickNode-Authorship-Program-d808a87ee50b48c9a16ed19b13e09115",
         "topics": [
             "Crypto"
@@ -640,19 +668,9 @@
         "notes": "Tutorials should cover building with one or more web3 technologies."
     },
     {
-        "name": "Okteto",
-        "type": "publication",
-        "link": "https://okteto.com/tech-writer/",
-        "contact": "writers@okteto.com",
-        "topics": [
-            "Kubernetes"
-        ],
-        "maxRate": 200,
-        "notes": "Focus on Kubernetes and Cloud-Native Applications, or application development and deployment with Okteto."
-    },
-    {
         "name": "Warrant",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://blog.warrant.dev",
         "contact": "hello@warrant.dev",
         "topics": [
@@ -663,6 +681,7 @@
     },
     {
         "name": "SQL Shack",
+        "status": "green",
         "type": "publication",
         "link": "https://www.sqlshack.com/about-us/",
         "topics": [
@@ -673,18 +692,20 @@
     },
     {
         "name": "Alan AI",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLSfLGZO7fDt4OGIWVjNYIStkXrog3teq19qmeFErujQOtoWfFA/viewform",
         "topics": [
             "Data Science"
         ],
-        "minRate": 50,
-        "maxRate": 250,
+        "minRate": 75,
+        "maxRate": 200,
         "notes": "Aricles must relate to Alan AI platform."
     },
     {
         "name": "Ambassador Labs",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://www.getambassador.io/write-for-us/",
         "topics": [
             "Kubernetes",
@@ -694,7 +715,8 @@
     },
     {
         "name": "Airbyte",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://airbyte.com/write-for-the-community",
         "topics": [
             "Infrastructure",
@@ -705,7 +727,8 @@
     },
     {
         "name": "webapp.io",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "contact": "hello@webapp.io",
         "link": "https://webapp.io/",
         "topics": [
@@ -715,19 +738,9 @@
         "maxRate": 150
     },
     {
-        "name": "Magalix",
-        "type": "publication",
-        "link": "https://www.magalix.com/the-sac-writers-club",
-        "topics": [
-            "Open Source",
-            "DevOps",
-            "Infrastructure"
-        ],
-        "maxRate": 200
-    },
-    {
         "name": "OneSignal",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://onesignal.com/guest-author-program",
         "topics": [
             "Mobile Development"
@@ -736,7 +749,8 @@
     },
     {  
         "name": "Mattermost",
-        "type": "publication",
+        "status": "yellow",
+        "type": "program",
         "link": "https://handbook.mattermost.com/contributors/contributors/ways-to-contribute/community-content-program",
         "topics": [
             "DevOps",
@@ -748,7 +762,8 @@
     },
     {
         "name": "Colabra",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://www.colabra.app/blog/",
         "contact": "hello@colabra.app",
         "topics": [
@@ -761,7 +776,8 @@
     },
     {
         "name": "CloudCannon",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://cloudcannon.com/blog/",
         "contact": "olivia@cloudcannon.com",
         "topics": [
@@ -773,7 +789,8 @@
     },
     {
         "name": "The Bot Forge",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://www.thebotforge.io/guest-authors/",
         "topics": [
             "Data Science",
@@ -784,7 +801,8 @@
     },
     {
         "name": "Civo",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://www.civo.com/write-for-us",
         "topics": [
             "Infrastructure",
@@ -795,6 +813,7 @@
     },
     {
         "name": "Enlear",
+        "status": "green",
         "type": "agency",
         "link": "https://www.enlear.com/",
         "topics": [
@@ -807,18 +826,8 @@
         "notes": "Enlear also offers opportunities for content strategy and editorial roles."
     },
     {
-        "name": "Figment",
-        "type": "publication",
-        "link": "https://www.notion.so/Contributing-to-Figment-Learn-d8ff9cdc32ca4b58838d81d07eab49bd",
-        "topics": [
-            "Crypto"
-        ],
-        "minRate": 100,
-        "maxRate": 1000,
-        "notes": "Payouts range from $100 for guides to $1000 for full-stack dApp tutorials."
-    },
-    {
         "name": "MSSQL Tips",
+        "status": "green",
         "type": "publication",
         "link": "https://www.mssqltips.com/contribute/",
         "topics": [
@@ -829,7 +838,8 @@
     },
     {
         "name": "CodingSight",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://codingsight.com",
         "contact": "marketing@devart.com",
         "topics": [
@@ -843,7 +853,8 @@
     },
     {
         "name": "Hashnode",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://web3.hashnode.com/contribute-to-the-web3-blog",
         "topics": [
             "Crypto"
@@ -854,7 +865,8 @@
     },
     {
         "name": "Simple Talk",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://www.red-gate.com/simple-talk/write-for-us/",
         "topics": [
             "SQL",
@@ -865,8 +877,10 @@
     },
     {
         "name": "SigNoz",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://signoz.io/technical-writer-program/",
+        "contact": "writing@signoz.io",
         "topics": [
             "DevOps",
             "Infrastructure"
@@ -875,7 +889,8 @@
     },
     {
         "name": "ButterCMS",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://buttercms.com/blog/",
         "contact": "jessica@buttercms.com",
         "topics": [
@@ -887,7 +902,8 @@
     },
     {
         "name": "Medusa",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://medusajs.notion.site/Write-for-us-74a2bf43b4ce43eeba200382f599321a",
         "contact": "shahed@medusajs.com",
         "topics": [
@@ -901,7 +917,8 @@
     },
     {
         "name": "VisWiz.io",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://blog.viswiz.io",
         "contact": "blog@viswiz.io",
         "topics": [
@@ -913,18 +930,9 @@
         "maxRate": 300
     },
     {
-        "name": "CodeCov",
-        "type": "publication",
-        "link": "https://about.codecov.io/write-for-us/",
-        "topics": [
-            "DevOps",
-            "Testing"
-        ],
-        "maxRate": 500
-    },
-    {
         "name": "Earthly",
-        "type": "publication",
+        "status": "yellow",
+        "type": "program",
         "link": "https://earthly.dev/blog/write-for-us/",
         "contact": "support@earthly.dev",
         "topics": [
@@ -937,6 +945,7 @@
     },
     {
         "name": "Initial Commit",
+        "status": "green",
         "type": "publication",
         "link": "https://initialcommit.com/write-for-us",
         "topics": [
@@ -947,7 +956,8 @@
     },
     {
         "name": "Solace",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://solace.com/scholars/",
         "topics": [
             "APIs"
@@ -957,6 +967,7 @@
     },
     {
         "name": "Content Turbine",
+        "status": "green",
         "type": "agency",
         "link": "https://www.contentturbine.com/freelance",
         "topics": [
@@ -968,29 +979,20 @@
         "maxRate": 300
     },
     {
-        "name": "Cohesive",
-        "type": "publication",
-        "link": "https://cohesiveso.notion.site/Cohesive-Writers-Program-114332379ec8444f8ca0ee774b805253",
-        "topics": [
-            "Infrastructure",
-            "Kubernetes"
-        ],
-        "minRate": 200,
-        "maxRate": 500
-    },
-    {
         "name": "Webiny",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://www.webiny.com/docs/write-with-webiny/write-with-webiny",
         "topics": [
             "Front-End Development"
         ],
-        "maxRate": 200,
+        "maxRate": 300,
         "notes": "Webiny is an open source serverless CMS."
     },
     {
         "name": "RunX",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://blog.runx.dev/announcing-runxs-technical-writer-program-ea3790f0a80",
         "topics": [
             "Infrastructure",
@@ -1001,29 +1003,10 @@
         "notes": "Seeking tutorials on Opta, pays an extra 100 dollars for Opta tutorials that hit 1000 views in 4 weeks."
     },
     {
-        "name": "Hevo",
-        "type": "publication",
-        "link": "https://community.hevodata.com/write-for-hevo",
-        "topics": [
-            "Data Science"
-        ],
-        "maxRate": 100
-    },
-    {
-        "name": "Codiga",
-        "type": "publication",
-        "link": "https://www.codiga.io/write-for-us/",
-        "topics": [
-            "Programming"
-        ],
-        "minRate": 100,
-        "maxRate": 150,
-        "notes": "Asks authors to publish content on the author's own site, which Codiga will then promote."
-    },
-    {
         "name": "Kili technology",
-        "type": "publication",
-        "link": "https://github.com/kili-technology/kili-blogger-program",
+        "status": "green",
+        "type": "program",
+        "link": "https://github.com/kili-technology/kili-blogger-program#kili-blogger-program",
         "contact": "theo.dullin@kili-technology.com",
         "topics": [
             "Data Science",
@@ -1034,7 +1017,8 @@
     },
     {
         "name": "AppSignal",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://blog.appsignal.com/write-for-us",
         "contact": "editorial@appsignal.com",
         "topics": [
@@ -1045,7 +1029,8 @@
     },
     {
         "name": "Sweetcode",
-        "type": "publication",
+        "status": "yellow",
+        "type": "program",
         "link": "https://sweetcode.io/join-community/",
         "topics": [
             "Full-Stack Development",
@@ -1054,18 +1039,8 @@
         "maxRate": 150
     },
     {
-        "name": "Syntropy",
-        "type": "publication",
-        "link": "https://www.syntropystack.com/writers",
-        "topics": [
-            "Crypto",
-            "DevOps"
-        ],
-        "minRate": 250,
-        "maxRate": 650
-    },
-    {
         "name": "Argot",
+        "status": "green",
         "type": "agency",
         "link": "https://argot.dev/writers",
         "contact": "writers@argot.dev",
@@ -1079,7 +1054,8 @@
     },
     {
         "name": "CodeSee",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://learn.codesee.io/guest-author-program/",
         "contact": "josh@codesee.io",
         "topics": [
@@ -1090,7 +1066,8 @@
     },
     {
         "name": "memphis.dev",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://forms.gle/EJvfgLGivUzFMfcY9",
         "contact": "team@memphis.dev",
         "topics": [
@@ -1102,8 +1079,9 @@
         "notes": "Write in-depth pieces relevant to memphis.dev in Go"
     },
     {
-        "name": "neverinstall",
-        "type": "publication",
+        "name": "Neverinstall",
+        "status": "green",
+        "type": "program",
         "link": "https://blog.neverinstall.com/neverinstall-technical-writer-program",
         "topics": [
             "Back-End Development",
@@ -1111,11 +1089,12 @@
         ],
         "minRate": 100,
         "maxRate": 250,
-        "notes": "neverinstall offers a way to stream apps to browser and seeks relevant technical content"
+        "notes": "Neverinstall offers a way to stream apps to browser and seeks relevant technical content"
     },
     {
         "name": "TransactionLink",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://transactionlink.io",
         "contact": "hello@transactionlink.io",
         "topics": [
@@ -1128,7 +1107,8 @@
     },
     {
         "name": "NimbleBox.ai",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://nimblebox.ai/technical-writer-program",
         "contact": "rugman@nimblebox.ai",
         "topics": [
@@ -1140,7 +1120,8 @@
     },
     {
         "name": "Nyckel",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://www.nyckel.com/blog/",
         "contact": "writers@nyckel.com",
         "topics": [
@@ -1152,7 +1133,8 @@
     },
     {
         "name": "Ant Media",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://antmedia.io/write-for-us-looking-for-technical-authors/",
         "topics": [
             "Infrastructure",
@@ -1162,8 +1144,10 @@
         "maxRate": 150
     },
     {
-        "name": "Open Relay",
+        "name": "Open Replay / StackAcademy",
+        "status": "green",
         "type": "publication",
+        "contact": "federico@openreplay.com",
         "link": "https://medium.com/stackanatomy/write-for-us-ad11489bd7c3",
         "topics": [
             "Front-End Development"
@@ -1172,7 +1156,8 @@
     },
     {
         "name": "Storyblok",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://www.storyblok.com/tp/guest-writing-terms",
         "topics": [
             "Front-End Development",
@@ -1182,7 +1167,8 @@
     },
     {
         "name": "Dolby.io",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://go.dolby.io/community-writing",
         "topics": [
             "Full-Stack Development",
@@ -1194,7 +1180,8 @@
     },
     {
         "name": "Semaphore",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://semaphoreci.com/resources/write-with-us",
         "topics": [
             "Open Source",
@@ -1205,7 +1192,8 @@
     },
     {
         "name": "Strapi",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://strapi.io/write-for-the-community",
         "topics": [
             "Full-Stack Development"
@@ -1214,19 +1202,9 @@
         "maxRate": 350
     },
     {
-        "name": "Cube,js",
-        "type": "publication",
-        "link": "https://www.notion.so/Cube-js-Guest-Authors-8ddd5046be9048d9869410b60d4a2b98",
-        "contact": "igor@cube.dev",
-        "topics": [
-            "Data Science",
-            "Analytics"
-        ],
-        "maxRate": 300
-    },
-    {
         "name": "Invertase",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://invertase.io/authors-program",
         "topics": [
             "Mobile Development",
@@ -1236,7 +1214,8 @@
     },
     {
         "name": "Turnkey Labs",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://turnkey-labs.com/tech-trends/",
         "contact": "alex.p@turnkey-labs.com",
         "topics": [
@@ -1247,6 +1226,7 @@
     },
     {
         "name": "NXNE",
+        "status": "yellow",
         "type": "agency",
         "link": "https://nxne.media",
         "contact": "editorial@nxne.media",
@@ -1260,7 +1240,8 @@
     },
     {
         "name": "LambdaTest",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://www.lambdatest.com/lambdatest-write-for-us",
         "topics": [
             "DevOps",
@@ -1270,7 +1251,8 @@
     },
     {
         "name": "Giskard",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://www.giskard.ai/write-for-the-community",
         "topics": [
             "Artificial Intelligence"
@@ -1280,7 +1262,8 @@
     },
     {
         "name": "LakeFS",
-        "type": "publication",
+        "status": "yellow",
+        "type": "program",
         "link": "https://info.lakefs.io/writer-program",
         "topics": [
             "Back-End Development",
@@ -1291,6 +1274,7 @@
     },
     {
         "name": "Software Testing Help",
+        "status": "green",
         "type": "publication",
         "link": "https://www.softwaretestinghelp.com/opportunity-freelance-qa-testers/",
         "contact": "info@softwaretestinghelp.com",
@@ -1302,7 +1286,8 @@
     },
     {
         "name": "Plural",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://www.plural.sh/blog/plurals-content-contribution-program/",
         "topics": [
             "Infrastructure",
@@ -1313,6 +1298,7 @@
     },
     {
         "name": "Code Maze",
+        "status": "green",
         "type": "publication",
         "link": "https://code-maze.com/write-for-codemaze/",
         "contact": "content@code-maze.com",
@@ -1325,7 +1311,8 @@
     },
     {
         "name": "Dyte",
-        "type": "publication",
+        "status": "green",
+        "type": "program",
         "link": "https://dyte.io/blog/",
         "contact": "gtm-team@dyte.io",
         "topics": [

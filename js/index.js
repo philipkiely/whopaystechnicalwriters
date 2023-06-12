@@ -213,6 +213,11 @@ var Resources = {
                     rateInfo += el.minRate ? `$${el.minRate} &ndash; ` : ''
                     rateInfo += el.maxRate ? `$${el.maxRate}` : ''
                     break;
+                
+                case 'program':
+                    rateInfo += el.minRate ? `$${el.minRate} &ndash; ` : ''
+                    rateInfo += el.maxRate ? `$${el.maxRate}` : ''
+                    break;
     
                 case 'publisher':
                     rateInfo += el.royaltyRate ? `$${el.royaltyRate}` : ''
@@ -449,6 +454,9 @@ var Resources = {
         switch (this.activeType) {
             case 'agency':
                 resourceCountText += this.relevantData.length != 1 ? 'agencies' : 'agency'
+                break;
+            case 'program':
+                resourceCountText += this.relevantData.length != 1 ? 'programs' : 'program'
                 break;
             case 'publication':
                 resourceCountText += this.relevantData.length != 1 ? 'publications' : 'publication'
